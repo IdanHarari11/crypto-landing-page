@@ -1,4 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { GradientBlobs } from "@/components/ui/gradient-blobs";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,10 +19,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" dir="rtl">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <GradientBlobs />
         {children}
       </body>
     </html>
