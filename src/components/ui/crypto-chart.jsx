@@ -77,11 +77,11 @@ export function CryptoChart({
     <div className="glass p-3 rounded-xl h-full flex flex-col">
       <div className="flex flex-col gap-1">
         <div className="flex justify-between items-center">
-          <h3 className="text-sm font-bold text-white">{coinName}</h3>
-          {!isLoading && data && (
+          <h3 className="text-sm font-bold text-black">{coinName}</h3>
+          {/* {!isLoading && data && ( */}
             <div className="flex items-center gap-1 text-right">
-              <span className="text-base font-bold text-white">
-                ${data[data.length - 1].value.toFixed(2)}
+              <span className="text-base font-bold text-black">
+                ${data?.[data?.length - 1]?.value?.toFixed(2) || 0}
               </span>
               <span className={`text-xs font-medium ${
                 priceChange >= 0 ? 'text-primary-green' : 'text-red-500'
@@ -89,7 +89,7 @@ export function CryptoChart({
                 {priceChange >= 0 ? '↑' : '↓'} {Math.abs(priceChange).toFixed(2)}%
               </span>
             </div>
-          )}
+          {/* )} */}
         </div>
 
         <div className="flex flex-wrap gap-1">

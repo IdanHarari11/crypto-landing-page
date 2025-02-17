@@ -35,7 +35,7 @@ export function HeroSection() {
   const containerRef = useRef(null)
 
   return (
-    <section className="relative min-h-screen pb-10 overflow-hidden">
+    <section className="relative min-h-screen pb-10 overflow-hidden top-[-4rem] sm:top-[-4rem] -mt-16 sm:mt-0">
       {/* Animated Background Blobs */}
       <div className="blob top-0 left-0" />
       <div className="blob bottom-0 right-0" style={{ opacity: 0.3 }} />
@@ -55,8 +55,10 @@ export function HeroSection() {
             </h1>
 
             {/* Subtitle with Success Color */}
-            <h2 className="text-xl md:text-2xl font-medium text-primary-green">
-              עמלה קבועה של 5% בלבד – המסלול הבטוח שלך לעולם הקריפטו.
+            <h2 className="text-xl md:text-2xl font-medium">
+              <span className="text-primary-green">עמלה קבועה של 5% בלבד</span>
+              <span className="text-primary-green"> – המסלול הבטוח שלך </span>
+              <span className="text-black marker-line">לעולם הקריפטו.</span>
             </h2>
 
             {/* CTA Button */}

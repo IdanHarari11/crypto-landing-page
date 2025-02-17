@@ -1,0 +1,75 @@
+import { motion } from 'framer-motion'
+
+export function ChecklistFeatures() {
+  const features = [
+    {
+      title: 'פתיחת תיק',
+      description: 'תהליך מהיר, מאובטח ויעיל להתחלת הדרך שלך בעולם הקריפטו.',
+    },
+    {
+      title: 'המרה לכסף קריפטו בהעברה בנקאית',
+      description: 'שירות אמין עם עמלות נמוכות ותנאים נוחים.',
+    },
+    {
+      title: 'העברות ללא הגבלה',
+      description: 'שליטה מלאה בכספים שלך ללא מגבלות מיותרות.',
+    },
+    {
+      title: 'ניהול תיקים מקצועי',
+      description: 'אסטרטגיות מתקדמות להגדלת הרווחים שלך.',
+    },
+    {
+      title: 'ליווי אישי לפתיחת ארנק קריפטו',
+      description: 'נוודא שכל שלב מתבצע נכון ובצורה בטוחה.',
+    },
+  ]
+
+  return (
+    <div className="flex flex-col md:flex-row items-center justify-between mt-40 px-8 pb-14 space-y-8 md:space-y-0">
+      <div className="relative mr-0 md:mr-18 w-full md:w-1/2 h-80 mb-8 md:mb-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute inset-0 w-full h-full rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20"></div>
+        <img
+          src="/arthur-mazi-PIwz4C6wr9A-unsplash.jpg"
+          alt="Decorative"
+          className="absolute inset-0 w-full h-full object-cover rounded-full opacity-80"
+        />
+      </div>
+
+      <div className="w-full md:w-1/2 pr-0 md:pr-48">
+        <ul className="space-y-4 md:space-y-6">
+          {features.map((feature, index) => (
+            <motion.li
+              key={index}
+              className="flex flex-col md:flex-row items-start md:items-center text-lg md:text-xl"
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: index * 0.3 }}
+            >
+              <motion.span
+                className="text-green-500 ml-0 md:ml-4 mb-2 md:mb-0"
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                transition={{ delay: index * 0.3 }}
+              >
+                ✔
+              </motion.span>
+              <div className="flex flex-col md:flex-row">
+                <span className="font-semibold">{feature.title}</span>
+                <span className="md:ml-2">- {feature.description}</span>
+              </div>
+            </motion.li>
+          ))}
+        </ul>
+        <div className="relative mt-4 flex items-center justify-center text-lg font-medium text-gray-700 text-xl font-semibold">
+          <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-green-500 to-teal-500 rounded-full blur-2xl opacity-40 backdrop-blur-lg"></div>
+          <div className="absolute inset-0 flex items-center justify-center w-full md:w-3/4 h-[3rem] rounded-full bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30">
+            <div className="relative z-10 text-center">
+              💡 שקיפות, אמינות ורווחיות – כל מה שאתה צריך במקום אחד!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+} 
