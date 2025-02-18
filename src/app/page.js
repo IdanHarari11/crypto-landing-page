@@ -34,7 +34,7 @@ export default function Page() {
         <CryptoChart coinId="bitcoin" name="Bitcoin" />
         <CryptoChart coinId="ripple" name="XRP" />
         <CryptoChart coinId="stellar" name="XLM" />
-        <CryptoChart coinId="ethereum" name="Ethereum" />
+        {/* <CryptoChart coinId="ethereum" name="Ethereum" /> */}
       </div>
       <ChecklistFeatures />
       <ContactForm />
