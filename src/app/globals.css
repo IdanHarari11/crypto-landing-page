@@ -276,6 +276,10 @@
   z-index: 99999999999;
 }
 
+.company-number {
+  z-index: 99999999999;
+}
+
 @keyframes ring {
   0% { transform: rotate(0deg); }
   1% { transform: rotate(10deg); }
@@ -288,4 +292,11 @@
   15% { transform: rotate(-2deg); }
   17% { transform: rotate(0deg); }
   100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 640px) {
+  .ellipse-image {
+    border-radius: 50%;
+    overflow: hidden;
+  }
 }

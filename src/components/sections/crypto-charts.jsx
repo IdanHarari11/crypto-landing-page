@@ -16,7 +16,7 @@ const COINS = [
 export function CryptoCharts() {
   return (
     <QueryClientProvider client={queryClient}>
-      <section className="container mx-auto px-4 -mt-48 sm:-mt-32">
+      <section id="charts" className="container mx-auto px-4 -mt-48 sm:-mt-32">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
           {COINS.map((coin) => (
             <div key={coin.id} className="w-full min-h-[200px] lg:min-h-[280px]">

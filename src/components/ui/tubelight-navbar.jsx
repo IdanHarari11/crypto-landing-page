@@ -19,12 +19,39 @@ export function NavBar({ items, className }) {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = items.map(item => document.getElementById(item.url.substring(1)));
+      const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+      sections.forEach((section, index) => {
+        if (section && section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+          setActiveTab(items[index].name);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [items]);
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div
       className={cn(
-        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-50 mb-6 sm:pt-6",
+        "fixed bottom-0 sm:top-0 left-1/2 -translate-x-1/2 z-[100] mb-6 sm:pt-6",
         className,
       )}
+
+      style={{
+        height: "fit-content"
+      }}
     >
       <div className="glass flex items-center gap-3 py-1 px-1 rounded-full">
         {items.map((item) => {
@@ -35,16 +62,22 @@ export function NavBar({ items, className }) {
             <Link
               key={item.name}
               href={item.url}
-              onClick={() => setActiveTab(item.name)}
+              onClick={(e) => {
+                e.preventDefault();
+                handleScroll(item.url.substring(1));
+              }}
               className={cn(
-                "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors",
+                "relative cursor-pointer text-sm font-semibold px-6 py-2 rounded-full transition-colors group",
                 "text-gray-600 hover:text-primary-green",
                 isActive && "glass-success text-primary-green",
               )}
             >
               <span className="hidden md:inline">{item.name}</span>
-              <span className="md:hidden">
+              <span className="md:hidden relative">
                 <Icon size={18} strokeWidth={2.5} />
+                <span className="absolute bottom-full mb-1 text-xs bg-white text-black rounded-md px-2 py-1 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity">
+                  {item.name}
+                </span>
               </span>
               {isActive && (
                 <motion.div
