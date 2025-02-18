@@ -39,7 +39,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div id="contact-us" className="relative max-w-lg mx-auto p-8 bg-white bg-opacity-50 backdrop-blur-md rounded-lg shadow-md mt-40 z-50 mb-12">
+    <div className="relative max-w-lg mx-auto p-8 bg-white bg-opacity-50 backdrop-blur-md rounded-lg shadow-md mt-40 z-50 mb-12">
       <h2 className="text-3xl font-bold mb-6 text-center">צור קשר</h2>
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div>

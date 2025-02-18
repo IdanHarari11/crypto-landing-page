@@ -25,7 +25,7 @@ export function ChecklistFeatures() {
   ]
 
   return (
-    <div id="services" className="flex flex-col md:flex-row items-center justify-between mt-40 px-8 pb-14 space-y-8 md:space-y-0">
+    <div className="flex flex-col md:flex-row items-center justify-between mt-40 px-8 pb-14 space-y-8 md:space-y-0">
       <div className="relative mr-0 md:mr-18 w-full md:w-1/2 h-80 mb-8 md:mb-0">
         <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute inset-0 w-full h-full rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20"></div>
