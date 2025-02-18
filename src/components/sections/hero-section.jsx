@@ -42,7 +42,7 @@ export function HeroSection() {
   const containerRef = useRef(null)
 
   return (
-    <section className="relative min-h-screen pb-10 overflow-hidden top-[-4rem] sm:top-[-4rem] -mt-16 sm:mt-0">
+    <section className="relative min-h-screen overflow-hidden top-[-4rem] sm:top-[-4rem] -mt-16 sm:mt-0">
       {/* Animated Background Blobs */}
       <div className="blob top-0 left-0" />
       <div className="blob bottom-0 right-0" style={{ opacity: 0.3 }} />

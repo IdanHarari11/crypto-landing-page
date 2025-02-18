@@ -7,6 +7,7 @@ import { CryptoCharts } from '@/components/sections/crypto-charts'
 import { ChecklistFeatures } from '@/components/sections/checklist-features'
 import ContactForm from '@/components/sections/contact-form'
 import Image from "next/image"
+import { CryptoChart } from '@/components/ui/crypto-chart'
 
 export default function Page() {
   const navItems = [
@@ -28,7 +29,13 @@ export default function Page() {
       </div>
       <NavBar items={navItems} />
       <HeroSection />
-      <CryptoCharts />
+      {/* <CryptoCharts /> */}
+      <div className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
+        <CryptoChart coinId="bitcoin" name="Bitcoin" />
+        <CryptoChart coinId="ripple" name="XRP" />
+        <CryptoChart coinId="stellar" name="XLM" />
+        <CryptoChart coinId="ethereum" name="Ethereum" />
+      </div>
       <ChecklistFeatures />
       <ContactForm />
     </main>

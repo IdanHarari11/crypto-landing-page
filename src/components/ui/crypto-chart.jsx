@@ -1,115 +1,93 @@
 "use client"
 
-import { useEffect, useRef, useState } from 'react'
-import { createChart } from 'lightweight-charts'
-import { format } from 'date-fns'
-import { useQuery } from '@tanstack/react-query'
-import { getCoinData, TIME_RANGES } from '@/lib/crypto-service'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react';
+import { LineChart, Line, Tooltip, ResponsiveContainer, Area } from 'recharts';
+import axios from 'axios';
 
-export function CryptoChart({ 
-  coinId, 
-  coinName, 
-  className = "" 
-}) {
-  const chartContainerRef = useRef(null)
-  const [selectedRange, setSelectedRange] = useState('1D')
-  const [priceChange, setPriceChange] = useState(0)
+const timeRanges = {
+  '1D': '1',
+  '1W': '7',
+  '1M': '30',
+  'YTD': 'year_to_date',
+  '1Y': '365',
+  'ALL': 'max'
+};
 
-  const { data, isLoading } = useQuery({
-    queryKey: ['crypto', coinId, selectedRange],
-    queryFn: () => getCoinData(coinId, TIME_RANGES[selectedRange])
-  })
+export const CryptoChart = ({ coinId, name, color = "#39FF14" }) => {
+  const [data, setData] = useState([]);
+  const [range, setRange] = useState('1Y');
+  const [currentPrice, setCurrentPrice] = useState(null);
+  const [priceChange, setPriceChange] = useState(null);
 
   useEffect(() => {
-    if (!chartContainerRef.current || !data || data.length === 0) return
-
-    const chart = createChart(chartContainerRef.current, {
-      layout: {
-        background: { type: 'transparent' },
-        textColor: '#ffffff',
-        fontFamily: 'Rubik',
-      },
-      grid: {
-        vertLines: { color: 'rgba(255, 255, 255, 0.1)' },
-        horzLines: { color: 'rgba(255, 255, 255, 0.1)' },
-      },
-      width: chartContainerRef.current.clientWidth,
-      height: 200,
-      rightPriceScale: {
-        visible: false,
-      },
-      timeScale: {
-        visible: true,
-        borderVisible: false,
-      },
-    })
-
-    const lineSeries = chart.addLineSeries({
-      color: data[data.length - 1].value > data[0].value ? '#22c55e' : '#ef4444',
-      lineWidth: 2,
-      lineStyle: 0,
-      priceLineVisible: false,
-      lastValueVisible: false,
-    })
-
-    lineSeries.setData(data)
-
-    // Calculate price change
-    const startPrice = data[0].value
-    const endPrice = data[data.length - 1].value
-    const change = ((endPrice - startPrice) / startPrice) * 100
-    setPriceChange(change)
-
-    const handleResize = () => {
-      chart.applyOptions({ width: chartContainerRef.current.clientWidth })
-    }
-
-    window.addEventListener('resize', handleResize)
-
-    return () => {
-      chart.remove()
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [data])
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart`, {
+          params: {
+            vs_currency: 'usd',
+            days: timeRanges[range]
+          }
+        });
+        const formattedData = response.data.prices.map(([timestamp, price]) => ({
+          date: new Date(timestamp).toLocaleDateString(),
+          price
+        }));
+        setData(formattedData);
+        const latestPrice = formattedData[formattedData.length - 1]?.price;
+        const initialPrice = formattedData[0]?.price;
+        setCurrentPrice(latestPrice);
+        setPriceChange(((latestPrice - initialPrice) / initialPrice) * 100);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+    fetchData();
+  }, [coinId, range]);
 
   return (
-    <div className="glass p-3 rounded-xl h-full flex flex-col">
-      <div className="flex flex-col gap-1">
-        <div className="flex justify-between items-center">
-          <h3 className="text-sm font-bold text-black">{coinName}</h3>
-          {/* {!isLoading && data && ( */}
-            <div className="flex items-center gap-1 text-right">
-              <span className="text-base font-bold text-black">
-                ${data?.[data?.length - 1]?.value?.toFixed(2) || 0}
-              </span>
-              <span className={`text-xs font-medium ${
-                priceChange >= 0 ? 'text-primary-green' : 'text-red-500'
-              }`}>
-                {priceChange >= 0 ? '↑' : '↓'} {Math.abs(priceChange).toFixed(2)}%
-              </span>
-            </div>
-          {/* )} */}
-        </div>
-
-        <div className="flex flex-wrap gap-1">
-          {Object.keys(TIME_RANGES).map((range) => (
-            <button
-              key={range}
-              onClick={() => setSelectedRange(range)}
-              className={`px-1.5 py-0.5 rounded-full text-[10px] font-medium transition-all ${
-                selectedRange === range
-                  ? 'bg-primary-green text-white'
-                  : 'text-white hover:bg-primary-green/10'
-              }`}
-            >
-              {range}
-            </button>
-          ))}
-        </div>
+    <div className="p-4 bg-white bg-opacity-50 backdrop-blur-lg shadow-lg rounded-lg mb-6 w-full md:w-1/5 border border-white border-opacity-30">
+      <div className="flex justify-between items-center mb-2">
+        <h2 className="text-lg font-bold text-black">{name}</h2>
+        {currentPrice && (
+          <div className="text-right">
+            <p className={`text-sm ${priceChange >= 0 ? 'text-green-500' : 'text-red-500'}`}>
+              {priceChange >= 0 ? '↑' : '↓'} {priceChange.toFixed(2)}%
+            </p>
+            <p className="text-xl font-bold text-black">${currentPrice.toFixed(2)}</p>
+          </div>
+        )}
       </div>
-
-      <div ref={chartContainerRef} className="w-full flex-1 mt-1" />
+      <div className="flex justify-between mb-4">
+        {Object.keys(timeRanges).map((key) => (
+          <button
+            key={key}
+            onClick={() => setRange(key)}
+            className={`px-2 py-1 rounded ${range === key ? 'bg-green-500 text-white' : 'text-black'}`}
+          >
+            {key}
+          </button>
+        ))}
+      </div>
+      <ResponsiveContainer width="100%" height={200}>
+        <LineChart data={data}>
+          <defs>
+            <linearGradient id={`gradient-${coinId}`} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={color} stopOpacity={0.4} />
+              <stop offset="100%" stopColor={color} stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <Tooltip contentStyle={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', borderRadius: '8px' }} />
+          <Area type="monotone" dataKey="price" stroke="none" fill={`url(#gradient-${coinId})`} />
+          <Line
+            type="monotone"
+            dataKey="price"
+            stroke={color}
+            strokeWidth={2.5}
+            dot={false}
+            style={{ filter: 'drop-shadow(0 0 10px #39FF14)' }}
+          />
+        </LineChart>
+      </ResponsiveContainer>
     </div>
-  )
-} 
+  );
+};
