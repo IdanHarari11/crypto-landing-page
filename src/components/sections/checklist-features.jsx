@@ -37,21 +37,20 @@ export function ChecklistFeatures() {
       </div>
 
       <div className="w-full md:w-1/2 pr-0 md:pr-48">
-        <ul className="space-y-4 md:space-y-6">
+        <ul className="space-y-2 md:space-y-4">
           {features.map((feature, index) => (
             <motion.li
               key={index}
-              className="flex flex-col md:flex-row items-start md:items-center text-lg md:text-xl"
+              className="flex flex-col items-start text-lg md:text-xl"
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: index * 0.3 }}
             >
-
-              <div className="flex items-center">
+              <div className="flex items-center mb-1">
                 <span className="text-primary-green ml-2">✔</span>
                 <h3 className="text-lg font-bold">{feature.title}</h3>
               </div>
-              <span className="md:ml-2">- {feature.description}</span>
+              <span className="ml-8">{feature.description}</span>
             </motion.li>
           ))}
         </ul>

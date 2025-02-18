@@ -31,6 +31,13 @@ const CRYPTO_COINS = [
   }
 ]
 
+const handleScrollToContactForm = () => {
+  const contactFormElement = document.getElementById('contact-us');
+  if (contactFormElement) {
+    contactFormElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
 export function HeroSection() {
   const containerRef = useRef(null)
 
@@ -66,6 +73,7 @@ export function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
               className="btn-primary mt-8 px-8 py-4 text-lg font-medium rounded-full"
+              onClick={handleScrollToContactForm}
             >
               התחל עכשיו
             </motion.button>
