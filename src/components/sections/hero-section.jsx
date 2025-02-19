@@ -1,6 +1,5 @@
 "use client"
 
-import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
@@ -9,7 +8,7 @@ const CRYPTO_COINS = [
     name: "Bitcoin",
     symbol: "BTC",
     image: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg",
-    position: { x: "10%", y: "25%" }
+    position: { x: "10%", y: "35%" }
   },
   {
     name: "Ethereum",
@@ -26,7 +25,7 @@ const CRYPTO_COINS = [
   {
     name: "Solana",
     symbol: "SOL",
-    image: "/xrp-crypto-coin-free-png.webp",
+    image: "/xrp-crypto-coin.webp",
     position: { x: "70%", y: "60%" }
   }
 ]
@@ -39,8 +38,6 @@ const handleScrollToContactForm = () => {
 };
 
 export function HeroSection() {
-  const containerRef = useRef(null)
-
   return (
     <section className="relative min-h-screen overflow-hidden top-[-4rem] sm:top-[-4rem] -mt-16 sm:mt-0">
       {/* Animated Background Blobs */}
@@ -58,7 +55,7 @@ export function HeroSection() {
           >
             {/* Main Headline */}
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-glow leading-tight">
-              המרת כסף לקריפטו במהירות, באמינות, ובתשואה מקסימלית.
+              המרת כסף לקריפטו במהירות, באמינות, וללא עמלות מיותרות.
             </h1>
 
             {/* Subtitle with Success Color */}

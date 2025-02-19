@@ -30,7 +30,7 @@ export function ChecklistFeatures() {
         <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-green-600 rounded-full blur-3xl opacity-50"></div>
         <div className="absolute inset-0 w-full h-full rounded-full bg-white bg-opacity-10 backdrop-blur-md border border-white border-opacity-20"></div>
         <img
-          src="/arthur-mazi-PIwz4C6wr9A-unsplash.jpg"
+          src="/green-white-toggle.jpg"
           alt="Decorative"
           className="absolute inset-0 w-full h-full object-cover rounded-full opacity-80"
         />
