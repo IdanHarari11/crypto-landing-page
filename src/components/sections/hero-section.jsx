@@ -55,7 +55,7 @@ export function HeroSection() {
           >
             {/* Main Headline */}
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-glow leading-tight">
-              המרת כסף לקריפטו במהירות, באמינות, וללא עמלות מיותרות.
+              המרת כסף לקריפטו במהירות, באמינות, וללא עמלות שקל-דולר.
             </h1>
 
             {/* Subtitle with Success Color */}

@@ -8,9 +8,8 @@ const queryClient = new QueryClient()
 
 const COINS = [
   { id: COIN_IDS.bitcoin, name: 'ביטקוין (BTC)' },
-  { id: COIN_IDS.ethereum, name: 'אתריום (ETH)' },
   { id: COIN_IDS.ripple, name: 'ריפל (XRP)' },
-  { id: COIN_IDS.stellar, name: 'סטלר (XLM)' },
+  { id: COIN_IDS.ethereum, name: 'אתריום (ETH)' },
 ]
 
 export function CryptoCharts() {

@@ -8,9 +8,9 @@ const timeRanges = {
   '1D': '1',
   '1W': '7',
   '1M': '30',
-  'YTD': 'year_to_date',
+  // 'YTD': 'year_to_date',
   '1Y': '365',
-  'ALL': 'max'
+  // 'ALL': 'max'
 };
 
 export const CryptoChart = ({ coinId, name, color = "#39FF14" }) => {
