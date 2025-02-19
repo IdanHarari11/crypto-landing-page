@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         <title>Ceaser-Change</title>
         <meta name="description" content="Ceaser-Change: Your trusted partner in cryptocurrency exchange." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/xrp-crypto-coin.ico" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
