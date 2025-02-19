@@ -8,7 +8,7 @@ const CRYPTO_COINS = [
     name: "Bitcoin",
     symbol: "BTC",
     image: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg",
-    position: { x: "10%", y: "35%" }
+    position: { x: "5%", y: "30%" }
   },
   {
     name: "Ethereum",
