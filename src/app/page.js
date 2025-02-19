@@ -24,8 +24,8 @@ export default function Page() {
         <Image width={90} height={70} src="/whatsapp-image.png" alt="WhatsApp" className="whatsapp-icon" />
       </div>
       <div className="fixed top-0 right-0 m-2 text-black font-bold company-number">
-        <span className="underline">מספר חברה:</span>
-        <span> 516799988</span>
+        <span className="underline">מספר עוסק:</span>
+        <span> 206626855</span>
       </div>
       <NavBar items={navItems} />
       <HeroSection id="home" />
