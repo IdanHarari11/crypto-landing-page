@@ -30,7 +30,7 @@ export default function Page() {
       <NavBar items={navItems} />
       <HeroSection />
       {/* <CryptoCharts /> */}
-        <div className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
+        <div id="charts" className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
           <CryptoChart coinId="bitcoin" name="Bitcoin" />
           <CryptoChart coinId="ripple" name="XRP" />
           <CryptoChart coinId="ethereum" name="Ethereum" />
