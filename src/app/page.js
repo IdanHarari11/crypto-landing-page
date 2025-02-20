@@ -32,8 +32,8 @@ export default function Page() {
       {/* <CryptoCharts /> */}
         <div id="charts" className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
           <CryptoChart coinId="bitcoin" name="Bitcoin" />
-          <CryptoChart coinId="ripple" name="XRP" />
           <CryptoChart coinId="ethereum" name="Ethereum" />
+          <CryptoChart coinId="ripple" name="XRP" />
           {/* <CryptoChart coinId="ethereum" name="Ethereum" /> */}
         </div>
       <ChecklistFeatures />
