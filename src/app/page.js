@@ -28,16 +28,16 @@ export default function Page() {
         <span> 206626855</span>
       </div>
       <NavBar items={navItems} />
-      <HeroSection id="home" />
+      <HeroSection />
       {/* <CryptoCharts /> */}
-      <div id="charts" className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
-        <CryptoChart coinId="bitcoin" name="Bitcoin" />
-        <CryptoChart coinId="ripple" name="XRP" />
-        <CryptoChart coinId="ethereum" name="Ethereum" />
-        {/* <CryptoChart coinId="ethereum" name="Ethereum" /> */}
-      </div>
-      <ChecklistFeatures id="services" />
-      <ContactForm id="contact-us" />
+        <div className="flex flex-wrap gap-4 items-center justify-center mt-[-8rem]">
+          <CryptoChart coinId="bitcoin" name="Bitcoin" />
+          <CryptoChart coinId="ripple" name="XRP" />
+          <CryptoChart coinId="ethereum" name="Ethereum" />
+          {/* <CryptoChart coinId="ethereum" name="Ethereum" /> */}
+        </div>
+      <ChecklistFeatures />
+      <ContactForm />
     </main>
   )
 }
