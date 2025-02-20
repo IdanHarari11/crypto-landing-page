@@ -34,7 +34,7 @@ const ContactForm = () => {
       setErrors(validationErrors);
     } else {
       const message = `
-      היי זה ${formData.fullName}👋\nהגעתי דרך הדף נחיתה ואשמח לשמוע פרטים נוספים\n${formData.isNew === 'yes' ? 'תחום הקריפטו חדש לי' : 'תחום הקריפטו לא חדש לי'}.\n\n${formData.message}
+      היי זה ${formData.fullName}👋\nהגעתי דרך הדף נחיתה ואשמח לשמוע פרטים נוספים.\n${formData.isNew === 'yes' ? 'תחום הקריפטו חדש לי' : 'תחום הקריפטו לא חדש לי'}.\n\n${formData.message}
       `;
       // Replace line breaks with %0A
       const encodedMessage = encodeURIComponent(message.replace(/\n/g, '%0A'));
