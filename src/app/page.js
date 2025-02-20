@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <main id="home" className="min-h-screen">
-      <div className="whatsapp-icon-container fixed top-0 left-0 m-2 text-center cursor-pointer">
+      <div className="whatsapp-icon-container fixed top-0 left-0 m-2 text-center cursor-pointer" onClick={() => window.open('https://wa.me/972523646416', '_blank')}>
         <span className="block text-black pl-2 font-bold">דברו איתנו כאן!</span>
         <Image width={90} height={70} src="/whatsapp-image.png" alt="WhatsApp" className="whatsapp-icon" />
       </div>

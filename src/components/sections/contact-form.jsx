@@ -33,8 +33,14 @@ const ContactForm = () => {
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      // Submit form
-      console.log('Form submitted:', formData);
+      const message = `
+      היי זה ${formData.fullName}👋
+      הגעתי דרך הדף נחיתה ואשמח לשמוע פרטים נוספים
+      ${formData.isNew === 'yes' ? 'תחום הקריפטו חדש לי' : 'תחום הקריפטו לא חדש לי'}.
+
+      ${formData.message}
+      `;
+      window.open(`https://wa.me/972523646416?text=${encodeURIComponent(message)}`, '_blank');
     }
   };
 
