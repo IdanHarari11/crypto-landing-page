@@ -7,19 +7,19 @@ const CRYPTO_COINS = [
   {
     name: "Bitcoin",
     symbol: "BTC",
-    image: "https://cryptologos.cc/logos/bitcoin-btc-logo.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png",
     position: { x: "2%", y: "27%" }
   },
   {
     name: "Ethereum",
     symbol: "ETH",
-    image: "https://cryptologos.cc/logos/ethereum-eth-logo.svg",
+    image: "https://png.pngtree.com/png-clipart/20220302/original/pngtree-ethereum-vector-illustration-design-png-image_7360543.png",
     position: { x: "80%", y: "30%" }
   },
   {
     name: "USDT",
     symbol: "USDT",
-    image: "https://cryptologos.cc/logos/tether-usdt-logo.svg",
+    image: "https://static.vecteezy.com/system/resources/previews/024/239/841/non_2x/tether-usdt-coin-free-png.png",
     position: { x: "20%", y: "70%" }
   },
   {
