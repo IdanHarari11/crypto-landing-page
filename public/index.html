@@ -1246,6 +1246,13 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 @media (min-width:1025px) and (max-height:760px){
   .dai #deals .wheel{--cw:clamp(150px,calc((100svh - 118px) / 2.172),300px)}
 }
+/* phone home: more air, and the first screen ends before the calculator title (also behind the browser's bars) */
+@media (max-width:640px){
+  html.dai .hero{min-height:calc(100vh - var(--head) + 40px);min-height:calc(100lvh - var(--head) + 40px);padding-bottom:64px}
+  html.dai .hero .lead{margin:28px 0 44px}
+  html.dai .hero .fee-cards{margin-bottom:48px}
+  html.dai .hero .cta-row{gap:20px}
+}
 </style>
 
 
