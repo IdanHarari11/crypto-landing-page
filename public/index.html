@@ -1229,12 +1229,12 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 @media (min-width:1025px) and (max-width:1199px){.dai .dai-chip{display:none}}
 @media (prefers-reduced-motion:reduce){.dai-dock{transition:none}}
 
-/* bigger screenshots, smaller arrows (deals and community) */
-.dai .wheel-btn{width:36px;height:36px;border-radius:10px}
-.dai .wheel-btn svg{width:16px;height:16px}
-.dai .wheel-ctrl{gap:6px;margin-top:4px}
-.dai .wheel-cap{min-height:0;margin-top:8px}
+/* desktop: bigger screenshots, smaller arrows (deals and community) */
 @media (min-width:1025px){
+  .dai .wheel-btn{width:36px;height:36px;border-radius:10px}
+  .dai .wheel-btn svg{width:16px;height:16px}
+  .dai .wheel-ctrl{gap:6px;margin-top:4px}
+  .dai .wheel-cap{min-height:0;margin-top:8px}
   .dai #deals .wheel{--cw:clamp(150px,min(26vw,calc((100svh - 190px) / 2.172)),340px);--sp:clamp(10px,2vh,20px);grid-template-columns:minmax(0,1fr) 36px auto 36px minmax(0,1fr)}
   .dai #community{--phH:clamp(380px,calc(100svh - var(--head) - 100px),780px)}
   html.dai main > section#community{padding-block:14px}
@@ -1245,18 +1245,6 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 }
 @media (min-width:1025px) and (max-height:760px){
   .dai #deals .wheel{--cw:clamp(150px,calc((100svh - 118px) / 2.172),300px)}
-}
-@media (max-width:1024px){
-  .dai .wheel{--cw:clamp(250px,min(42vw,60svh),330px)}
-  #community .cA-fan{height:calc(var(--cw2) * 2.172 + 30px)}
-  #community{--cw2:clamp(250px,42vw,330px)}
-  #community .cA-ph{width:var(--cw2)}
-  #community .cA-ph.pos-l{transform:translate(-50%,-50%) translateX(calc(var(--cw2) * -.667)) scale(.84)}
-  #community .cA-ph.pos-r{transform:translate(-50%,-50%) translateX(calc(var(--cw2) * .667)) scale(.84)}
-}
-@media (max-width:640px){
-  .dai .wheel{--cw:min(74vw,320px)}
-  #community{--cw2:min(74vw,320px)}
 }
 </style>
 
