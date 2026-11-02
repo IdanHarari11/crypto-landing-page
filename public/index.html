@@ -1682,7 +1682,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   function load(id, vs, d, force){
     var key = id + ':' + vs + ':' + d, hit = cache[key];
     if (hit && !force && Date.now() - hit.t < REFRESH_MS) return Promise.resolve(hit.data);
-    return fetch('/api/prices/chart?id=' + id + '&vs=' + vs + '&days=' + d)
+    return fetch('/api/prices/chart/' + id + '/' + vs + '/' + d)
       .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function(j){ cache[key] = { t: Date.now(), data: j.prices }; return j.prices; });
   }
@@ -2282,7 +2282,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   var T = {
     buy: { lead: 'בוחרים קנייה או משיכה, מקלידים סכום<br class=\"dk-br\"> ורואים מיד כמה תקבלו.', amt: 'סכום להמרה בדולרים', fee: 'עמלת עסקה',
            out: 'תקבלו USDT בשווי', go: 'אני רוצה להתחיל', head: 'כמה תקבלו?', file: 'calc.usdt' },
-    withdraw: { lead: 'עמלה קבועה של 6% במשיכת USDT<br class=\"dk-br\"> ישירות לחשבון הבנק.', amt: 'סכום למשיכה בדולרים', fee: 'עמלת משיכה קבועה',
+    withdraw: { lead: 'בוחרים קנייה או משיכה, מקלידים סכום<br class=\"dk-br\"> ורואים מיד כמה תקבלו.', amt: 'סכום למשיכה בדולרים', fee: 'עמלת משיכה קבועה',
            out: 'יגיע לחשבון הבנק בשווי', go: 'אני רוצה למשוך', head: 'כמה יגיע לחשבון?', file: 'withdraw.usdt' }
   };
   var $ = function(id){ return document.getElementById(id); };
