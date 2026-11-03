@@ -1292,15 +1292,19 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   html.dai .flipmode .ca-coin.flip .ca-body{transform:rotateY(180deg)!important}
   html.dai .flipmode .ca-face{-webkit-backface-visibility:hidden;backface-visibility:hidden}
   html.dai .ca-back{display:none}
-  html.dai .flipmode .ca-back{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:50%;background:#F4F4F3;color:#0B0B0C;box-shadow:0 0 0 4px rgba(242,101,42,.38),0 26px 46px -24px rgba(0,0,0,.95);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;text-align:center;direction:rtl}
-  html.dai .ca-back .cb-t{font:700 calc(var(--d) * .085)/1 var(--mono);letter-spacing:.08em;color:#5A5A5E}
+  /* the chosen coin in the calculator's colors: dark grey surface, light text, orange accent */
+  html.dai .flipmode .ca-coin.on .ca-face{background:var(--surface);border-color:var(--line-2);box-shadow:0 0 0 3px rgba(242,101,42,.38),0 26px 46px -24px rgba(0,0,0,.95)}
+  html.dai .flipmode .ca-coin.on .ca-sym{color:var(--text)}
+  html.dai .flipmode .ca-coin.on .ca-face::before{color:var(--muted)}
+  html.dai .flipmode .ca-back{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:50%;background:var(--surface);border:1px solid var(--line-2);color:var(--text);box-shadow:0 0 0 3px rgba(242,101,42,.38),0 26px 46px -24px rgba(0,0,0,.95);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;text-align:center;direction:rtl}
+  html.dai .ca-back .cb-t{font:700 calc(var(--d) * .085)/1 var(--mono);letter-spacing:.08em;color:var(--accent)}
   html.dai .ca-back .cb-p{font:800 calc(var(--d) * .15)/1.15 var(--num);direction:ltr;margin-top:2px}
-  html.dai .ca-back .cb-s{font:600 calc(var(--d) * .08)/1.2 var(--num);color:#5A5A5E;direction:ltr}
+  html.dai .ca-back .cb-s{font:600 calc(var(--d) * .08)/1.2 var(--num);color:var(--muted);direction:ltr}
   html.dai .ca-back .cb-s:empty{display:none}
-  html.dai .ca-back .cb-c{font:700 calc(var(--d) * .075)/1.3 var(--sans);color:#5A5A5E}
-  html.dai .ca-back .cb-c.up{color:#13915A} html.dai .ca-back .cb-c.dn{color:#C8322C}
+  html.dai .ca-back .cb-c{font:700 calc(var(--d) * .075)/1.3 var(--sans);color:var(--muted)}
+  html.dai .ca-back .cb-c.up{color:#3CCB8C} html.dai .ca-back .cb-c.dn{color:#F2706B}
   html.dai .ca-back .cb-c bdi{direction:ltr;unicode-bidi:isolate}
-  html.dai .ca-back .cb-more{pointer-events:auto;margin-top:4px;font:600 calc(var(--d) * .075)/1 var(--sans);color:#0B0B0C;text-decoration:none;border-bottom:1px solid rgba(242,101,42,.7)}
+  html.dai .ca-back .cb-more{pointer-events:auto;margin-top:4px;font:600 calc(var(--d) * .075)/1 var(--sans);color:var(--text);text-decoration:none;border-bottom:1px solid var(--accent)}
   html.dai .flipmode .ca-rate{clip-path:inset(50%);pointer-events:none}
   @media (prefers-reduced-motion:reduce){ html.dai .flipmode .ca-coin .ca-body{transition:none} }
   html.dai main > section#calc{padding-top:clamp(40px,7vh,72px);margin-top:clamp(48px,8vh,88px)} /* more space between the coins and the calculator (the margin sits outside, so the menu jump still fits the screen) */
@@ -2227,7 +2231,13 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
     b.querySelector('.cb-more').addEventListener('click', function(e){ e.stopPropagation(); close(); });
     c.querySelector('.ca-body').appendChild(b); return b;
   });
-  function flip(i, on){ if (FLIP && i >= 0) coins[i].classList.toggle('flip', on); }
+  var flipT;
+  // after 5 seconds the coin turns back by itself and the row moves on
+  function flip(i, on){ if (!FLIP || i < 0) return; coins[i].classList.toggle('flip', on); clearTimeout(flipT); if (on) flipT = setTimeout(function(){
+    var c = coins[sel]; close();
+    // a mouse click leaves focus on the coin, which would keep the row still; keyboard focus stays
+    if (c && document.activeElement === c && !c.matches(':focus-visible')) { c.blur(); focusIn = false; tick(); }
+  }, 5000); }
   var rates = null, failed = false, pos = 0, speed = reduce ? 0 : SPEED, sel = -1, selAmt = 0, hover = false, focusIn = false, onScreen = true;
   var geo = null, anim = null, last = 0, raf = 0, dirty = true, paused = false, pauseBtn = arc.querySelector('.ca-pause');
   function wrap(v){ return ((v % n) + n) % n; }
