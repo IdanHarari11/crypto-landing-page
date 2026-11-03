@@ -1,0 +1,2530 @@
+<!doctype html>
+<html lang="he" dir="rtl" class="js dai">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Caesar Change</title>
+<meta name="description" content="ממירים שקלים ל־USDT בהעברה בנקאית, ללא עמלות שקל-דולר, ומושכים USDT ישירות לחשבון הבנק. עמלה מקסימלית של 6% וליווי אישי מהשיחה הראשונה.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%3E%3Crect%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2228%22%20fill%3D%22%23F2652A%22/%3E%3Cg%20transform%3D%22translate%28-0.5%200%29%22%3E%3Cpath%20d%3D%22M79.28%2082.98%20A30%2030%200%201%201%2079.28%2037.02%22%20fill%3D%22none%22%20stroke%3D%22%230A0A0B%22%20stroke-width%3D%2218%22/%3E%3Crect%20x%3D%2285%22%20y%3D%2253%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230A0A0B%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAANAklEQVR4nOyde3BU1RnAz77fm012s0k2CYaEZwqIYYQAEREISA111E7BMrUMVevoqO0MMsPYKrVO6x/YOsXXaFspD6fWyvjAUUODmoASYkREEElAISTZV177yN3H3d0eZIZB5RgJ99x7z8n3GyaTGf7Y7O7vnsf3fed8+sgd1QgALoYeAQABkAMgAnIAREAOgAjIARABOQAiIAdABOQAiIAcABGQAyACcgBEQA6ACMgBEAE5ACIgB0AE5ACIgBwAEZADIAJyAERADoAIyAEQATkAIiAHQATkAIiAHAARkAMgAnIAREAOgAjIARABOQAiY1GOrlg6nMyGE5mQkAklsuls7vx/mXUam0Fj12vxT4deW2DSFVm0HssYfYTGxNs+NphsC6XaQon2cOpEVESXjs+iLbHqZ7pNdcWmeUXmPKMOjQE0vF7e0h0X3z4z/F6vsD+QjIo5JCkzCwx1xealpdbZXjPiF97k2OsXGs8I7/sTXwylEX3cJu31ZZaGcbbrfBbEHZzIERLEHZ2xF0/ETsczSAnyjdqbK2yrJ9iq802IF5iXo6lb2NoRfadbQOpgRoHh1ir7qkq7Ra9FjMOwHLu7h//48eDxiBzTx6WC9zjrp7tunWDXajSIWZiU47P+1Ia2/rZwEqmbKXmG31+Vv7iU1eUIY3JEU5lHDg5u64gidp7IxT7LX2oLihgMlrA0L+J96fw3erd1xhgyA9PUI9S93rPleCSXk3hHTRs2Ro6BZObBjwZ2fhVHLFPjNj45z1PpNCBGYGDkONSXvHZXL+tmYD7uSy18s+flkzHECGqXA3+UDY3+YEKZ6IXkpLLo3g/71rf2pTIMTDHqlQN/fA+0hvFHmc4iztjaedb4gDCaLI+cqFQO/MHduNu/rZP5qYTEp/2pzUciSN2ocX/VFRNXNPr9AidTyUWZ5TE+XJOP1I3q5DgVTd+4O8C3GeU23Y6FXoNW7RtydcmBzbih0R9OcLfKuAC7XvPSoiKXiYGKEBWtOU5EUg28m4H554JCVkIdahk5+hKZlXuCId7NeKLWvaCEmVSLKuQQxOyqPcEzcZ7XGZg7JztWVdkROygvRzaXu70ldHgghbhmQbF54yy1b0++hfJyrD/Q39STQFwz0anfcm0hc7UdCsvx35PR7Z3M5BpGR6FZ+9LiIiuDhWFKynE6Jj5wYABxjVl3duPqszJ5BESxP1rM5tY2BwUW8k+Xw/N1nup8I2ITxeTY9OngZwNqLP+UkA1XuurLrIhZlJGjNZh4Qh1pp6kuw+Q8w3iHXqfR4H1TKJEJCtlgIhM++0smeRlhl5srbPdPy0Mso4wc938YRgoxs8C4pNRSnW+Y5DRMyBthwD8ZSX8YSLSGEvuDyUs6EVNbaHp6vgcxjgJyPH9s6KuY3PGuuiLTj8uty8utJZeyNsRxbvxv9UQH/j0wnNn5VWzz0Uj/SONJhV2HY+SIfeSuIe1PZOa+3j2Ulm8diif+2yba8yVKdCXE7NaO6N+ORkg5IJxXa1xeXOlkdRF6IXKPHJsOD8lmRr3P/Nhsd6lNyvdo1mvvnJr3y0kOHJ7ZfGTIL3xDEZyE37rQy4cZSOaRwz8sznq1W4bdq8+qe3yOm/bhZjyK/K69f/sF5Wo4r8ZW9uT7kTVs9+znURnMmOs1NTf4ZDj2jkeRTXM8LywozDOe/RjvmuLkyQwk57QylMps64wiytx0hfWZOlkXg3iRO9Nt3HI8umEmY3m1EZFv5NhyPBYX6Y4bv57ikNmMc+AdEH9mINlGjlQm99wxulGvx64uWDPJgQDpkEmOt87E+5IUq7yenOf+6Xiu5ns1IJMcO78cRtS4Z6oDzKCBHHLE09mmHlo379R6TQ9exeF8rwbkkOO1U7RWoqVWHd5JMn17jpqRQ45XT1GZU3BwYft13nwWDoAwCnU5Eplci59Kieh9P8qb6uIkUK1OqMvRGhRoTCkuo/buaicCaEJdjgMhKte6/Xaak8WSXbagLsf+oPRylFh0ayfDsEEdunKI2dxHFEaOddPz1H9EnQPoyvFJX1LyuKhZp+Es+ala6MpxhMIhx3qfRcfFsHE6lv7PydFfXVRm09N+SOjKcSom/bVXy8o56U/QFRM3HR5Co2Wu18S2HKellgMPGctYPgnCFnTl6IpLLAd+XBwG2MHKBO1pReIjCMuYvWSeRSjKkc3lBlMS71VmFEC8XD4oyhGlcLus1wJpNvmgKIdAIU/vMYMc8kFRjrgo8cih1yDn2OjZqRJoyiH1ybYSK5ghKzSnFakPMMGcIjPQyx4gQlEOnCFDktLHS9cVVqAoh00vsRy9XN+Wr0IohqIl77qL4yZx/jrzqBiacuikT6yHYGaREYpyWPXSyxEGOWSEohxmvdYutR9HeL8iXVXQTX9XOSVe8NI7Vgl8F7pyVNgl7jrT4k9mspxfeqwe6Mox3iHxyIGjrvsCnLdYUA90I6QVDun7Ve3pSTDU7Oh7KLfr100f/RXHZTbq0W26L1Dtkl6Od3uFjYiHOxfG2Q3rZriQiqE7rUwrMEoeRP9iKN0ahJlFDujKodVo5hSakNQ81M55lxaVQL2S+2oKchzqT73VxW0nc/VAXY7ZFOTAPHpwMJuDPS1d5Bg5aJxdPBEV/32C8+ZwikNdDpybnV9EZfB45OBgd1z645bAeeQ4PXbTFTZEgcFU9ufvBiGJTw855Lixwqancyweb2vvaAnlYPFBBznksBu09dSOMe7pTWw6PIgACsh0KPmW8VRmlnM8fjjy8klYnEqPTHJcX2Z1myi+1r0fhJ86Mvq7LoCLotswS44eFDhUilcd7/uphb01mmZ/IpTILPFZNHChsUTId9fFbRMdTgPdr+1fHbG1zSEkO73D4p8+4TCiL9PIgTHqNEOpzIEQ3Tq/zoiI07YrxtlMOpnGjzdPD/+sKdASSMbF3EIuagnOI+stOXdNzZPhWp72cOqaXd0vdkZpx9cjqczd+8K/agnFvr5P4JnPI5wFbeUbOdDZenRtLJ1tC1MvEsYP8Tvdwuun4lNcxnK79DUrgpj9+7HIXfvC7d98L43dwlyvmcYrKoLcTYeHxWztaz1BGU8YLCoxbawpmCTRFfrC102HnzwaCX1f0+GSSqf0VU7yI7ccmFe+jN3zQR+Sk1wO5/9WjLM2jLP5Rltdl8xkt3VENx+NBIQRAvblNt3u5SUu9nt9KCAH5ieNfkoX5o/IlfmG+jJrdb5hktMwIW/k4eTzgeS+QAJvwj/4esmJfhi1haZXlxYjxlFGjpOR9Lw3epAKmJZvmOA0VDr0OBKTQ7lYOjcs5rAEOJ+Hfzk6mBp138JbKmxPzfcgllFGDgweoh840I+4ZsOVrvunjb6+XHEUu/D1FxMd9bxfKvrnQ4O7z1Bsi0kbJW8D3jzXTTXhogbu2Bs+yuz5XiW/G7yeZ31WHpFEJrdyT6BnmMmKNYUfXBxvvpxTX0yAIyIrmwLDInsVa8qP6utmuG4o57wRQkdEXPN+iLlyeVVM+U/P98zycH6pebM/sZG1s1iqkANnUHcs9OLAIuKa576IspWZU8tmAS9OX1rk9Zg537z8Zn9fcy8z98+o6MuodBrfXFpczHtfhLXNIRwgRiygrif1CofhjaXFZVzPLzHx7OZ2MMnAzXeqG8bL7XrsxzheSiIuSlc8s/q9YFr191epcY4vserfXlZUS+cEtkpoD6f+8LHaNy8qXQAWmPWvLClaM5Hb5sIz3cb7fqT26J96dwc6reax2e4nat067k4a3D7ZsWtpsfpbkql9al9VZa9y6m97LzSQ4uHAtEWnebbOw0prXAbiClcXmltW+Bb7mM/vzysyNTf4GGqazEbQyWPW7bjO+49rPIVsRslcRs1f57h3LilmqzCdpc/6hnG2vSt8KysZy9I1lFtaGny3TmBvca1YmeDl8Elf8tGDA3sDypQo/3Bq3MaHa/LneM2ITZiU4xytwcRD7QOH+tVYZzU937B+hqueneXFRWFYjnNgRV44Ht11Oi7mlN/yalGuvtS6drL92hIeKlSYl+McIUHc3hnb1hHtEZTZ8RaYtKurbGsmOUtt/AT+OZHjHNlc7mA4ubtb+F+P8NmAHJlPr1mLt6bLy6zXlJgNWt6idVzJcSEBQXyra7ipR9gfSEZFKVNcNr2mxm2q8RgX+SzsLjZ/CNzKcSHHBpNtoVRbKIF/fhm75ELwKoe+0qGf7DJMcRmvchurnJxXNJ5nTMjxLbpi6XAyG05kQkImlMhemDo36zR2g8am19oMGodeW2rTVY4ZFb7LWGxXXm43lHOb7pUS6GUPEAE5ACIgB0AE5ACIgBwAEZADIAJyAERADoAIyAEQATkAIiAHQATkAIiAHAARkAMgAnIAREAOgAjIARABOQAiIAdABOQAiIAcABGQAyACcgBEQA6ACMgBEAE5ACIgB0AE5ACIgBwAEZADIPJ/AAAA///Av3NsAAAABklEQVQDAHrkTnO7/RHnAAAAAElFTkSuQmCC">
+<meta name="theme-color" content="#0B0B0C">
+<script>document.documentElement.lang="he";document.documentElement.dir="rtl";document.documentElement.classList.add("js","dai");</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+:root{color-scheme:dark}
+/* ===== Caesar Change v14: one midnight environment, orange for actions only ===== */
+:root{
+  --bg:#121212; --surface:#1B1B1B; --surface-2:#232323;
+  --text:#F4F4F3; --muted:#A3A3A3;
+  --accent:#F2652A; --accent-hover:#FF7A40; --on-accent:#121212; --accent-soft:rgba(242,101,42,.12);
+  --line:rgba(255,255,255,.10); --line-2:rgba(255,255,255,.18); --line-3:rgba(255,255,255,.32);
+  --up:#3CCB8C; --down:#F2706B;
+  --sans:'Assistant','Heebo',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --wrap:1280px; --gut:32px; --head:80px; --sec:64px;
+  --r-panel:14px; --r-field:10px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--head) + env(safe-area-inset-top, 0px));color-scheme:dark}
+html.menu-open{overflow:hidden}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+a{color:inherit}
+svg{display:block}
+h1,h2,h3{margin:0;font-weight:400}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+.num{direction:ltr;unicode-bidi:isolate;font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.say{font:300 clamp(30px,3.4vw,48px)/1.2 var(--sans);letter-spacing:-.012em;max-width:18em}
+.sec-head{display:flex;flex-direction:column;gap:20px}
+
+/* buttons: pills are reserved for actions; panels and fields use smaller radii */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;font:600 17px/1 var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}
+.btn svg{width:20px;height:20px;flex-shrink:0}
+.btn-accent{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn-accent:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+.btn-line{background:transparent;border-color:var(--line-2);color:var(--text)}
+.btn-line:hover{border-color:var(--text);background:var(--surface)}
+.link-cta{display:inline-flex;align-items:center;color:var(--text);font-weight:600;text-decoration:none;padding:6px 0;border-bottom:1px solid var(--line-3);transition:border-color .2s,color .2s}
+.link-cta:hover{border-color:var(--accent);color:var(--accent)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top, 0px);z-index:30;background:rgba(18,18,18,.86);backdrop-filter:saturate(1.3) blur(14px);-webkit-backdrop-filter:saturate(1.3) blur(14px)}
+.nav{position:relative;display:flex;align-items:center;gap:32px;height:var(--head)}
+.nav::after{content:"";position:absolute;right:var(--gut);left:var(--gut);bottom:0;height:1px;background:var(--line-2)}
+.nav-links{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav-links a{color:var(--text);text-decoration:none;font-size:16px;padding:6px 0;transition:color .2s}
+.nav-links a:hover{color:var(--accent)}
+.nav .btn{min-height:42px;padding:0 20px;font-size:15px}
+.now{flex:1;min-width:0;font:600 15px/1 var(--sans);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;transition:opacity .3s ease}
+.now:empty{opacity:0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text);direction:ltr;flex-shrink:0}
+.brand svg{width:30px;height:30px}
+.brand .wm b{font:700 15px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase}
+.menu-btn{display:none;width:44px;height:44px;border:0;background:transparent;cursor:pointer;padding:10px;flex-shrink:0}
+.menu-btn span{display:block;height:1.5px;background:var(--text);margin:6px 0;transition:transform .3s ease,opacity .3s ease}
+.menu-btn[aria-expanded="true"] span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:nth-child(2){opacity:0;transform:scaleX(0)}
+.menu-btn[aria-expanded="true"] span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.menu{position:fixed;inset:calc(var(--head) + env(safe-area-inset-top, 0px)) 0 0 0;z-index:25;background:var(--bg);color:var(--text);padding:40px var(--gut) 48px;display:flex;flex-direction:column;justify-content:space-between;gap:32px;overflow:auto}
+.menu[hidden]{display:none}
+.menu ul{list-style:none;margin:0;padding:0}
+.menu li{border-bottom:1px solid var(--line)}
+.menu a.m-link{display:block;padding:16px 0;color:var(--text);text-decoration:none;font:300 36px/1.15 var(--sans)}
+.menu a.m-link:hover{color:var(--accent)}
+.menu .btn{align-self:stretch}
+
+/* hero: the headline carries the page, the calculator answers it */
+.hero{padding:96px 0 var(--sec)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:72px;align-items:center}
+.hero h1{font-weight:300;font-size:clamp(40px,5.8vw,88px);line-height:1.02;letter-spacing:-.025em}
+.nw{white-space:nowrap}
+.hero h1 > span{display:block}
+.hero h1 > span+span{font-weight:600}
+.sq{display:inline-block;width:.15em;height:.15em;background:var(--accent);margin-inline-start:.07em}
+.hero .lead{margin:28px 0 40px;font-size:clamp(19px,1.6vw,23px);font-weight:300;color:var(--muted);max-width:26em}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:32px}
+
+/* calculator: amount -> rate -> fee -> what you receive -> action */
+.calc{background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-panel);overflow:hidden}
+.calc-head{padding:18px 26px;border-bottom:1px solid var(--line)}
+.calc-head h2{font:400 21px/1.2 var(--sans)}
+.calc-in{padding:22px 26px 16px}
+.calc label{display:block;font-size:15px;color:var(--muted);margin-bottom:2px}
+.amount{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--line-2);padding-bottom:6px;transition:border-color .2s}
+.amount:focus-within{border-color:var(--accent)}
+.calc:has(#calc-msg:not([hidden])) .amount{border-color:var(--down)}
+.amount span{font:300 28px/1 var(--sans);color:var(--muted)}
+.amount input{flex:1;min-width:0;background:transparent;border:0;outline:0;color:var(--text);font:300 54px/1.15 var(--sans);letter-spacing:-.02em;direction:ltr;text-align:right;padding:0;caret-color:var(--accent);font-variant-numeric:tabular-nums}
+.calc-msg{margin:12px 0 0;font-size:15px;line-height:1.5;color:var(--text)}
+.rows{list-style:none;margin:0;padding:4px 26px 14px}
+.rows li{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:9px 0;font-size:16px;color:var(--muted)}
+.rows b{font:500 18px var(--sans);color:var(--text)}
+.rate-line{display:inline-flex;align-items:baseline;gap:10px;direction:ltr}
+.rate-line .c{font:600 13px var(--sans)}
+.calc-out{display:flex;flex-direction:column;align-items:stretch;padding:20px 26px 22px;background:var(--surface-2);border-top:1px solid var(--line)}
+.out{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
+.out span{font-size:15px;color:var(--muted)}
+.out b{font:500 clamp(42px,4.1vw,58px)/1.08 var(--sans);letter-spacing:-.025em;color:var(--text)}
+.calc-out .btn{margin-top:18px}
+.ils-eq{margin:8px 0 0;color:var(--muted);font-size:14px;direction:rtl}
+.ils-eq:empty{display:none}
+.tiers .lim{color:var(--muted);font-weight:400}
+.calc small{display:block;margin-top:12px;color:var(--muted);font-size:13.5px;line-height:1.6}
+
+/* fee tiers, folded under the action */
+.tiers-box{margin-top:16px;border-top:1px solid var(--line)}
+.tiers-box summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0 2px;font:500 15px/1.3 var(--sans);color:var(--text);transition:color .2s}
+.tiers-box summary::-webkit-details-marker{display:none}
+.tiers-box summary::after{content:"";width:8px;height:8px;flex-shrink:0;border-left:1.5px solid var(--muted);border-bottom:1.5px solid var(--muted);transform:rotate(-45deg) translateY(-2px);transition:transform .25s ease}
+.tiers-box[open] summary::after{transform:rotate(135deg) translateY(-2px)}
+.tiers-box summary:hover{color:var(--accent)}
+.tiers{list-style:none;margin:8px 0 0;padding:0}
+.tiers li{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:38px;padding:0 10px;margin:0 -10px;border-radius:8px;font-size:15px;color:var(--muted);transition:background-color .2s ease}
+.tiers .pct{font-weight:600;color:var(--text)}
+.tiers .ask{font-size:14px}
+.tiers li.on{background:var(--surface);color:var(--text)}
+.tiers li.on .pct{color:var(--accent)}
+
+/* sections share one background; a hairline marks each new chapter */
+section{padding:var(--sec) 0}
+main > section:not(.hero){padding-top:0}
+main > section:not(.hero) > .wrap::before{content:"";display:block;height:1px;background:var(--line);margin-bottom:var(--sec)}
+
+/* market: a data table, aligned numbers */
+.market-head{display:flex;justify-content:flex-end;margin-bottom:28px}
+.ranges{display:inline-flex;gap:2px;direction:ltr;border:1px solid var(--line-2);border-radius:999px;padding:3px}
+.ranges button{min-height:38px;min-width:56px;border:0;border-radius:999px;background:transparent;color:var(--muted);font:600 14px var(--sans);cursor:pointer;transition:background-color .2s,color .2s}
+.ranges button:hover{color:var(--text)}
+.ranges button[aria-pressed="true"]{background:var(--accent);color:var(--on-accent)}
+.coins{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.coin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);grid-template-areas:"id id" "p spark" "c spark";align-items:end;column-gap:14px;row-gap:2px;padding:20px;border:1px solid var(--line-2);border-radius:18px;background:var(--surface);transition:border-color .2s}
+.coin:hover{border-color:var(--line-3)}
+.mhead{padding-bottom:12px;border-bottom:1px solid var(--line-2);font:500 14px var(--sans);color:var(--muted)}
+.coin.featured,.coin.featured:hover{border-color:var(--accent)}
+.badge{display:none}
+.coin-id{grid-area:id;display:flex;align-items:baseline;gap:12px;min-width:0;margin-bottom:22px}
+.pv{display:contents}
+.coin .p{grid-area:p;display:block;direction:ltr;text-align:right;font:500 24px/1.2 var(--sans);font-variant-numeric:tabular-nums}
+.coin .c{grid-area:c;display:block;direction:ltr;text-align:right;font:600 14px var(--sans);font-variant-numeric:tabular-nums}
+.spark{width:100%;height:44px}
+.spark-wrap{grid-area:spark;position:relative;cursor:crosshair;touch-action:pan-y;padding-block:6px;width:100%;align-self:end}
+.sp-line{position:absolute;top:0;bottom:0;width:1px;background:var(--line-3);opacity:0;pointer-events:none}
+.sp-dot{position:absolute;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;background:var(--text);box-shadow:0 0 0 3px rgba(242,101,42,.4);opacity:0;pointer-events:none}
+.sp-tip{position:absolute;bottom:calc(100% + 4px);transform:translateX(-50%);display:flex;gap:8px;align-items:baseline;white-space:nowrap;padding:6px 10px;border-radius:8px;background:var(--surface-2);border:1px solid var(--line-2);direction:ltr;opacity:0;pointer-events:none;z-index:3;box-shadow:0 10px 24px -12px rgba(0,0,0,.8)}
+.sp-tip b{font:600 14px/1.2 var(--sans);color:var(--text);font-variant-numeric:tabular-nums}
+.sp-tip span{font:500 12px/1.2 var(--sans);color:var(--muted);font-variant-numeric:tabular-nums}
+.spark-wrap.on .sp-line,.spark-wrap.on .sp-dot,.spark-wrap.on .sp-tip{opacity:1}
+.up{color:var(--up)}.down{color:var(--down)}.muted{color:var(--muted)}
+.market-note{margin-top:18px;color:var(--muted);font-size:14px}
+
+/* services: one statement, one list */
+.svc-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.svc-grid .sec-head{position:sticky;top:calc(var(--head) + 32px + env(safe-area-inset-top, 0px))}
+.svc-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line-2)}
+.svc-list li{padding:28px 0 30px;border-bottom:1px solid var(--line)}
+.svc-list h3{font:400 clamp(22px,2vw,27px)/1.25 var(--sans);margin-bottom:6px}
+.svc-list p{color:var(--muted);max-width:34em}
+
+/* contact: one column, in reading order */
+.contact-grid{max-width:560px;margin-inline:auto}
+.contact-head{text-align:center;margin-bottom:40px}
+.cta-title{font:300 clamp(40px,4.4vw,64px)/1.05 var(--sans);letter-spacing:-.03em}
+#contact .say{font-size:clamp(19px,1.7vw,24px);margin:16px auto 0;color:var(--muted);max-width:none}
+.fields{display:flex;flex-direction:column;gap:20px}
+form label,legend{display:block;font:500 15px/1.3 var(--sans);margin-bottom:8px;padding:0;color:var(--text)}
+form input[type=text],form input[type=tel],form textarea{width:100%;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-field);color:var(--text);font:400 17px var(--sans);padding:14px 16px;min-height:54px;transition:border-color .2s,box-shadow .2s}
+form input:hover,form textarea:hover{border-color:var(--line-3)}
+form input:focus,form textarea:focus{outline:0;border-color:var(--accent);box-shadow:0 0 0 3px rgba(242,101,42,.2)}
+form [aria-invalid="true"]{border-color:var(--down)}
+form textarea{min-height:110px;resize:vertical}
+.err{margin-top:6px;font-size:14px;color:var(--down)}
+.err[hidden]{display:none}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+.radios{display:flex;gap:10px}
+.radios label{flex:1;margin:0;font-weight:400}
+.radios input{position:absolute;opacity:0;pointer-events:none}
+.radios span{display:flex;align-items:center;justify-content:center;min-height:50px;border:1px solid var(--line-2);border-radius:var(--r-field);background:var(--surface);color:var(--text);cursor:pointer;transition:background-color .2s,border-color .2s}
+.radios span:hover{border-color:var(--line-3)}
+.radios input:checked+span{border-color:var(--accent);background:var(--surface-2);font-weight:600}
+.radios input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+form .btn{width:100%;margin-top:4px}
+.form-note{font-size:14px;color:var(--muted);text-align:center}
+.thanks{display:none;text-align:center;padding:40px 16px;border:1px solid var(--line-2);border-radius:var(--r-panel);background:var(--surface)}
+.thanks h3{font:300 34px/1.2 var(--sans);margin-bottom:6px}
+.thanks p{color:var(--muted)}
+form.sent .fields{display:none}
+form.sent .thanks{display:block}
+.contact-alt{display:flex;flex-direction:column;gap:18px;margin-top:28px}
+.contact-alt .btn{width:100%}
+.or{display:flex;align-items:center;gap:16px;font-size:14px;color:var(--muted)}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.contact-side ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:6px 32px;font-size:15px;color:var(--muted)}
+
+/* contact sits in a panel, same surface and frame as the calculator */
+.contact-grid{max-width:640px;background:var(--surface);border:1px solid var(--line-2);border-radius:var(--r-panel);padding:44px 40px 40px}
+.contact-head{margin:0 -40px 32px;padding:0 40px 32px;border-bottom:1px solid var(--line)}
+.contact-grid form input[type=text],.contact-grid form input[type=tel],.contact-grid form textarea,.contact-grid .radios span{background:var(--bg)}
+.contact-grid .radios input:checked+span{background:var(--surface-2)}
+.contact-grid .thanks{border:0;background:transparent;padding:24px 0}
+.thanks .btn{margin-top:22px}
+@media (max-width:640px){.contact-grid{padding:32px 18px 28px}.contact-head{margin:0 -18px 28px;padding:0 18px 28px}}
+
+/* footer: quiet */
+footer{color:var(--muted);padding:0 0 40px;font-size:15px}
+.foot{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px 40px;align-items:center;padding-top:40px;border-top:1px solid var(--line)}
+footer .brand{justify-self:start}
+.foot-nav{display:flex;flex-wrap:wrap;gap:28px;list-style:none;margin:0;padding:0}
+.foot-nav a{color:var(--text);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.foot-nav a:hover{border-color:var(--text)}
+.foot-meta{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:4px 28px;padding-top:0;border-top:0;font-size:14px;line-height:1.7}
+.legal{flex-basis:100%;margin:0}
+
+/* floating WhatsApp: still at rest, turns only when you reach for it */
+.wa-float{position:fixed;left:20px;bottom:20px;z-index:20;width:96px;height:96px;border-radius:50%;background:var(--accent);display:grid;place-items:center;text-decoration:none;opacity:0;visibility:hidden;transform:translateY(12px) scale(.9);transition:opacity .3s ease,transform .3s ease,visibility .3s}
+.wa-float.show{opacity:1;visibility:visible;transform:none}
+.wa-float .ring{position:absolute;inset:0;width:100%;height:100%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+@media (prefers-reduced-motion:no-preference){.wa-float:hover .ring{transform:rotate(90deg)}}
+.wa-float .ring text{font-family:var(--sans);font-size:11.5px;font-weight:700;letter-spacing:.04em;fill:var(--on-accent)}
+.wa-float .core{position:relative;width:48px;height:48px;border-radius:50%;background:var(--bg);display:grid;place-items:center;transition:background-color .25s ease}
+.wa-float .core svg{width:24px;height:24px;color:var(--text)}
+.wa-float:hover .core{background:#1A9E52}
+.m-cta{display:none}
+
+/* one load moment, in the hero only */
+.js .hero .reveal{opacity:0;transform:translateY(10px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .hero .reveal.in{opacity:1;transform:none}
+.js .hero .calc.reveal{transition-delay:.12s}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .hero .reveal{opacity:1;transform:none;transition:none}
+  *{transition:none!important;animation:none!important}
+}
+
+
+/* ===== v24: atmosphere and icons ===== */
+.hero{position:relative;isolation:isolate}
+.hero > .wrap{position:relative;z-index:1}
+.hero h1 > span.hl{color:var(--accent)}
+
+/* short orange rule above section titles */
+.sec-title,.svc-grid .say,.cta-title{position:relative}
+.sec-title::before,.svc-grid .say::before,.cta-title::before{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-bottom:22px}
+.cta-title::before{margin-inline:auto;margin-bottom:26px}
+.sec-title{font:300 clamp(28px,3vw,42px)/1.15 var(--sans);letter-spacing:-.01em}
+.market-head{justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px}
+
+/* coin icons */
+.coin-id{align-items:center;gap:14px}
+.badge{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:50%;background:var(--surface-2);border:1px solid var(--line-2);color:var(--text);font:600 18px/1 var(--sans);overflow:hidden}
+.badge.has-img{background:transparent;border-color:transparent}
+.badge img{width:100%;height:100%;object-fit:contain;display:block}
+.nm{display:flex;flex-direction:column;min-width:0}
+.nm b{font:500 21px/1.2 var(--sans);letter-spacing:.01em}
+.nm span{font-size:14px;color:var(--muted)}
+
+/* services with icons */
+.svc-list li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:0 20px;align-items:start}
+.svc-ic{width:52px;height:52px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);display:grid;place-items:center}
+.svc-ic svg{width:24px;height:24px;fill:none;stroke:var(--accent);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.svc-list h3{margin-top:4px}
+
+/* facts */
+.facts{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.facts li{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;padding:8px 16px}
+.facts li + li{border-inline-start:1px solid var(--line-2)}
+.facts b{font:500 clamp(40px,4.4vw,60px)/1 var(--sans);letter-spacing:-.02em;color:var(--accent)}
+.facts span{font-size:16px;color:var(--muted)}
+@media (max-width:640px){
+    .badge{width:38px;height:38px;font-size:16px}
+  .coin-id{flex-direction:row;align-items:center;gap:12px}
+  .nm b{font-size:19px}
+  .svc-list li{grid-template-columns:44px minmax(0,1fr);gap:0 14px}
+  .svc-ic{width:44px;height:44px}
+  .svc-ic svg{width:21px;height:21px}
+  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .facts li{padding:4px 6px}
+  .facts b{font-size:30px}
+  .facts span{font-size:13px;line-height:1.35}
+}
+
+/* fee line: two stats, a bold number over a one-line label */
+.fee-line{list-style:none;margin:0 0 40px;padding:0;display:flex}
+.fee-line li{display:flex;flex-direction:column;gap:10px;padding-inline:0 40px}
+.fee-line li + li{padding-inline:40px 0;border-inline-start:1px solid var(--line-2)}
+.fee-line b{font:800 clamp(36px,3.2vw,46px)/1 var(--sans);letter-spacing:-.02em;color:var(--text)}
+.fee-line span{font-size:15px;line-height:1.3;color:var(--muted);white-space:nowrap}
+.hero .lead{margin-bottom:32px}
+@media (max-width:640px){
+  .fee-line{display:grid;grid-template-columns:1fr 1fr;margin-bottom:30px;padding-block:20px;border-block:1px solid var(--line)}
+  .fee-line li,.fee-line li + li{align-items:center;text-align:center;gap:8px;padding-inline:8px}
+  .fee-line b{font-size:36px}
+  .fee-line span{font-size:14px;white-space:normal;text-wrap:balance}
+}
+
+/* softer panels (calculator and contact share one radius) and a smaller type scale inside the contact panel */
+:root{--r-panel:24px;--r-field:12px}
+.contact-grid{max-width:600px;padding:36px 32px 32px}
+.contact-head{margin:0 -32px 28px;padding:0 32px 28px}
+.cta-title{font-size:clamp(34px,3.6vw,52px)}
+#contact .say{font-size:clamp(17px,1.4vw,20px);margin-top:10px}
+.contact-grid .fields{gap:16px}
+.contact-grid form label,.contact-grid legend{font-size:14px;margin-bottom:6px}
+.contact-grid form input[type=text],.contact-grid form input[type=tel],.contact-grid form textarea{font-size:16px;min-height:48px;padding:11px 14px}
+.contact-grid form textarea{min-height:96px}
+.contact-grid .radios span{min-height:46px;font-size:15px}
+.contact-grid .btn{min-height:50px;font-size:16px}
+.contact-grid .form-note{font-size:13px}
+.contact-grid .or{font-size:13px}
+.contact-grid .contact-alt{gap:14px;margin-top:22px}
+.contact-grid.contact-side ul,.contact-grid .contact-side ul{font-size:14px}
+.contact-grid .err{font-size:13px}
+@media (max-width:640px){.contact-grid{padding:28px 18px 24px}.contact-head{margin:0 -18px 24px;padding:0 18px 24px}}
+
+/* contact laid out like services: the title beside the panel, the panel holds only the form */
+.contact-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.contact-intro{position:sticky;top:calc(var(--head) + 32px + env(safe-area-inset-top, 0px))}
+.contact-intro h2{font:300 clamp(30px,3.4vw,48px)/1.2 var(--sans);letter-spacing:-.012em}
+.contact-intro h2::before{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-bottom:22px}
+.contact-intro p{margin-top:14px;font-size:clamp(17px,1.4vw,20px);font-weight:300;color:var(--muted)}
+.contact-layout .contact-grid{max-width:none;margin:0;padding:32px}
+@media (max-width:1024px){.contact-layout{grid-template-columns:minmax(0,1fr);gap:28px}.contact-intro{position:static}}
+@media (max-width:640px){.contact-layout .contact-grid{padding:24px 18px}}
+
+/* hero in the link-preview style: heavy type, the C behind the calculator */
+.hero h1{font-weight:800;font-size:clamp(40px,5.4vw,78px);line-height:1.04;letter-spacing:-.02em}
+.hero h1 > span+span{font-weight:800}
+/* section titles in the same heavy weight */
+.sec-title,.svc-grid .say,.contact-intro h2{font-weight:800;letter-spacing:-.015em}
+.sec-title{font-size:clamp(28px,3vw,44px)}
+.svc-grid .say,.contact-intro h2{font-size:clamp(30px,3.2vw,46px);line-height:1.15}
+
+@media (max-width:640px){.hero .lead .l2{display:block}}
+
+/* hero = the link-preview image: heavy headline beside the whole C */
+.hero{padding:120px 0 calc(var(--sec) + 24px)}
+/* calculator section: title beside the panel, like the other chapters */
+.calc-layout{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:72px;align-items:start}
+.calc-intro{position:sticky;top:calc(var(--head) + 32px + env(safe-area-inset-top, 0px))}
+.calc-layout .calc{max-width:560px;width:100%;justify-self:start}
+.calc-intro h2{font:800 clamp(30px,3.2vw,46px)/1.15 var(--sans);letter-spacing:-.015em}
+.calc-intro h2::before{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-bottom:22px}
+.calc-intro p{margin-top:14px;font-size:clamp(17px,1.4vw,20px);font-weight:300;color:var(--muted);max-width:26em}
+@media (max-width:1024px){.calc-layout{grid-template-columns:minmax(0,1fr);gap:28px}.calc-layout .calc{max-width:560px}.calc-intro{position:static}}
+
+/* the C sits in the corner like the link-preview image, cropped by the edge, and peeks into the calculator below */
+.hero{overflow:visible}
+.hero-grid{grid-template-columns:minmax(0,1fr)}
+.hero-grid > .reveal{max-width:780px;justify-self:start}
+.mark-wrap{position:absolute;left:0;right:0;top:0;bottom:-340px;overflow:hidden;pointer-events:none;z-index:0}
+.mk{position:absolute}
+.mk-d{left:-185px;bottom:25px;width:730px;height:710px}
+.mk-m{display:none}
+#calc > .wrap{position:relative;z-index:1}
+@media (max-width:1024px){
+  .mark-wrap{bottom:-160px}
+  .mk-d{display:none}
+  .mk-m{display:block;left:-45px;bottom:35px;width:208px;height:200px}
+  #calc .calc-intro{padding-top:14px}
+}
+@media (max-width:640px){
+  .mark-wrap{display:none}
+  #calc .calc-intro{padding-top:0}
+}
+
+/* tablet */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:minmax(0,1fr);gap:56px}
+  .calc{max-width:560px}
+  .nav-links,.nav .btn{display:none}
+  .menu-btn{display:block;order:-1}
+  .now{order:0}
+  .nav .brand{order:1}
+  .coins{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .svc-grid{grid-template-columns:minmax(0,1fr);gap:40px}
+  .svc-grid .sec-head{position:static}
+}
+/* phone */
+@media (max-width:640px){
+  :root{--gut:20px;--head:64px;--sec:44px}
+  body{font-size:17px}
+  .now{display:none}
+  .nav{justify-content:space-between;gap:12px}
+  .menu-btn{margin-inline-start:-10px}
+  .hero{padding:40px 0 var(--sec)}
+  .hero .lead{margin:18px 0 28px}
+  .cta-row{flex-direction:column;align-items:center;gap:14px}
+  .cta-row .btn{min-width:264px}
+  .cta-row .link-cta{align-self:center}
+  .calc-head,.calc-in,.rows,.calc-out{padding-inline:18px}
+  .amount input{font-size:44px}
+  .ranges{display:flex;width:100%}
+  .ranges button{flex:1}
+  .mhead{display:none}
+  .coins{gap:10px}
+  .coin{grid-template-columns:minmax(0,1fr);grid-template-areas:"id" "p" "c" "spark";padding:14px;border-radius:16px}
+  .coin-id{margin-bottom:14px}
+  .coin .p{font-size:20px}
+  .coin .c{font-size:13px}
+  .spark{height:34px}
+  .svc-list li{padding:22px 0 24px}
+  .foot{grid-template-columns:minmax(0,1fr)}
+  footer{padding-bottom:96px}
+  .menu a.m-link{font-size:30px}
+  .wa-float{display:none}
+  .m-cta{display:block;position:fixed;left:0;right:0;bottom:0;z-index:22;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(18,18,18,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s ease}
+  .m-cta.show{transform:none}
+  .m-cta .btn{width:100%;min-height:52px}
+}
+
+/* "our community" page: text and the one-month gift box on the right, three group screenshots side by side on the left */
+.cA{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.cA-txt h2{font:800 clamp(30px,3.2vw,46px)/1.15 var(--sans);letter-spacing:-.015em}
+.cA-txt h2::before{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-bottom:22px}
+.cA-lead{margin-top:14px;font-size:clamp(17px,1.4vw,20px);font-weight:300;color:var(--muted);max-width:28em;text-wrap:pretty}
+.cA-pts{list-style:none;margin:32px 0 0;padding:0;border-top:1px solid var(--line)}
+.cA-pts li{display:flex;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.cA-pts .n{font:800 15px/1.6 var(--sans);color:var(--accent)}
+.cA-pts b{display:block;font:700 20px/1.3 var(--sans)}
+.cA-pts div span{display:block;margin-top:4px;font-size:16px;color:var(--muted)}
+.cA-gift{margin-top:30px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 24px;padding:28px 32px;border-radius:30px;background:var(--accent);color:var(--on-accent)}
+.cA-gift b{display:block;font:800 clamp(26px,2.3vw,34px)/1.1 var(--sans);letter-spacing:-.02em}
+.cA-gift div span{display:block;margin-top:6px;font:600 17px var(--sans)}
+.btn-dark{background:var(--bg);color:var(--text);border-color:var(--bg)}
+.btn-dark:hover{background:#1F1F1F;border-color:#1F1F1F}
+.cA-note{margin-top:12px;font-size:13px;color:var(--muted)}
+.cA-fan{position:relative;height:640px;touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.cA-ph{position:absolute;top:50%;left:50%;width:270px;padding:0;border:1px solid var(--line-2);border-radius:30px;overflow:hidden;background:var(--surface);cursor:pointer;box-shadow:0 40px 80px -40px rgba(0,0,0,.95);transition:transform .5s cubic-bezier(.2,.7,.2,1),filter .5s ease}
+.cA-ph img{display:block;width:100%;height:auto;aspect-ratio:540/1173;pointer-events:none;-webkit-user-drag:none}
+.cA-ph.pos-c{transform:translate(-50%,-50%);z-index:3;cursor:zoom-in}
+.cA-ph.pos-l{transform:translate(-50%,-50%) translateX(-180px) scale(.84);z-index:2;filter:brightness(.6)}
+.cA-ph.pos-r{transform:translate(-50%,-50%) translateX(180px) scale(.84);z-index:2;filter:brightness(.6)}
+.cA-ph.pos-l:hover,.cA-ph.pos-r:hover{filter:brightness(.8)}
+.cA-ph.pos-b{transform:translate(-50%,-50%) scale(.7);z-index:1;opacity:0;pointer-events:none;filter:brightness(.6)}
+.cA-ctrl{margin-top:6px}
+@media (max-width:1024px){
+  .cA{grid-template-columns:minmax(0,1fr);gap:28px}
+  .cA-fan{height:500px}
+  .cA-ph{width:205px}
+  .cA-ph.pos-l{transform:translate(-50%,-50%) translateX(-120px) scale(.84)}
+  .cA-ph.pos-r{transform:translate(-50%,-50%) translateX(120px) scale(.84)}
+}
+@media (max-width:640px){
+  .cA-gift{flex-direction:column;align-items:stretch;text-align:center;padding:26px 22px}
+  .cA-gift .btn{width:100%}
+  .cA-fan{height:420px;overflow:hidden;margin:0 calc(-1 * var(--gut))}
+  .cA-ph{width:172px}
+  .cA-ph.pos-l{transform:translate(-50%,-50%) translateX(-102px) scale(.84)}
+  .cA-ph.pos-r{transform:translate(-50%,-50%) translateX(102px) scale(.84)}
+}
+
+/* phones with a notch: the header and the menu sit below the status bar, which is painted in the page colour */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:31;background:var(--bg)}
+
+/* tabs: one topic per page, footer stays at the bottom of short pages */
+body{min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+main{flex:1 0 auto}
+main > section[hidden]{display:none!important}
+main > section[data-page]:not([data-page="home"]){padding-top:clamp(48px,6vw,96px)}
+main > section[data-page]:not([data-page="home"]) > .wrap::before{display:none}
+.nav-links a{position:relative}
+.nav-links a[aria-current="page"]{color:var(--accent)}
+.nav-links a[aria-current="page"]::after{content:"";position:absolute;inset-inline:0;bottom:-3px;height:2px;border-radius:2px;background:var(--accent)}
+.menu a.m-link[aria-current="page"]{color:var(--accent)}
+.foot-nav a[aria-current="page"]{border-color:var(--text)}
+/* desktop tabs: each page fills the screen with its content centred, and the market cards are taller with bigger charts */
+@media (min-width:1025px){
+  main > section[data-page]:not([data-page="home"]){min-height:calc(100vh - var(--head) - env(safe-area-inset-top, 0px));min-height:calc(100svh - var(--head) - env(safe-area-inset-top, 0px));display:flex;flex-direction:column;justify-content:center;padding-block:56px}
+  main > section[data-page]:not([data-page="home"]) > .wrap{width:100%}
+  #market .market-head{margin-bottom:56px}
+  .market-note{margin-top:24px}
+}
+
+@media (prefers-reduced-motion:no-preference){
+  main > section.page-in{animation:page-in .45s cubic-bezier(.2,.7,.2,1)}
+  @keyframes page-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+}
+
+/* market: one coin per row across the page, like the early versions */
+.coins{display:flex;flex-direction:column;gap:0}
+.coin{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto) minmax(0,260px);grid-template-areas:"id pv spark";align-items:center;column-gap:56px;row-gap:0;padding:20px 24px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent}
+.coin:hover{border-color:var(--line);background:rgba(255,255,255,.03)}
+.coin.featured,.coin.featured:hover{border:1px solid rgba(242,101,42,.55);border-radius:18px;background:var(--surface)}
+.coin-id{margin:0}
+.coin .pv{grid-area:pv;display:flex;align-items:baseline;gap:14px;direction:ltr;min-width:0}
+.coin .p{font-size:24px;margin:0;text-align:left}
+.coin .c{font-size:14px;text-align:left}
+.coin .spark-wrap{margin:0}
+.coin .spark{height:46px}
+@media (max-width:1024px){
+  .coin{grid-template-columns:minmax(0,1fr) minmax(0,auto) minmax(0,180px);column-gap:28px}
+}
+@media (max-width:640px){
+  .coin{grid-template-columns:minmax(0,1fr) auto 76px;column-gap:14px;padding:14px 12px}
+  .coin.featured,.coin.featured:hover{border-radius:14px}
+  .coin .pv{flex-direction:column;align-items:flex-end;gap:2px}
+  .coin .p{font-size:18px}
+  .coin .c{font-size:12.5px}
+  .coin .spark{height:32px}
+  .coin .badge{width:34px;height:34px;font-size:15px}
+  .coin .nm b{font-size:17px}
+  .coin .nm span{font-size:12.5px}
+}
+
+/* fee cards: 0% and 6% as two coloured squares (beside the headline on desktop, under it on phones) */
+.fee-cards{list-style:none;margin:0 0 36px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:560px}
+.fee-cards li{border-radius:26px;padding:26px 26px 24px;display:flex;flex-direction:column;min-height:220px}
+.fee-cards b{font:800 clamp(64px,6vw,96px)/.9 var(--sans);letter-spacing:-.04em;text-align:right;direction:ltr}
+.fee-cards span{margin-top:auto;padding-top:18px;font:800 19px/1.25 var(--sans)}
+.fee-cards small{display:block;margin-top:6px;font-size:14px;line-height:1.4;opacity:.8}
+.fc-or{background:var(--accent);color:var(--on-accent)}
+.fc-nv{background:#2B2B2B;color:var(--text);border:1px solid rgba(255,255,255,.13)}
+/* hero (desktop): headline card on the right, the 0% and 6% squares on its left; the calculator has its own section below */
+@media (min-width:1025px){
+  .hero{padding:28px 0 var(--sec)}
+  .hero-grid > .reveal.hero-bento{max-width:none;justify-self:stretch;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);grid-template-areas:"head cards";gap:16px}
+  .hb-head{grid-area:head;background:var(--surface);border:1px solid rgba(255,255,255,.10);border-radius:30px;padding:48px 52px 46px}
+  .hero h1{font-size:clamp(48px,4.7vw,70px);line-height:1.02}
+  .hero h1 > span{display:block}
+  .hero .lead{margin:20px 0 28px}
+  .fee-cards{grid-area:cards;margin:0;max-width:none;gap:16px}
+  .fee-cards li{min-height:0;padding:30px 30px 28px;border-radius:30px}
+  .fee-cards b{font-size:clamp(64px,5.4vw,84px)}
+  /* the two squares lie on their side: one above the other, number and words side by side */
+  .fee-cards{grid-template-columns:minmax(0,1fr);grid-template-rows:1fr 1fr}
+  .fee-cards li{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:1fr auto;column-gap:30px;padding:26px 36px}
+  .fee-cards b{grid-column:1;grid-row:1 / 3;align-self:center}
+  .fee-cards span{grid-column:2;grid-row:1;align-self:end;margin:0;padding:0}
+  .fee-cards small{grid-column:2;grid-row:2}
+  /* smaller and without colour: same quiet panel as the headline card */
+  .hero-grid > .reveal.hero-bento{grid-template-columns:minmax(0,8fr) minmax(0,4fr)}
+  .fee-cards .fc-or,.fee-cards .fc-nv{background:var(--surface);color:var(--text);border:1px solid rgba(255,255,255,.10)}
+  /* balanced: number and words centred in the box, the words sitting on the middle of the number */
+  .fee-cards li{grid-template-columns:auto auto;grid-template-rows:auto auto;justify-content:center;align-content:center;align-items:center;column-gap:22px;row-gap:4px;padding:22px 28px}
+  .fee-cards b{font-size:clamp(52px,4.4vw,64px);line-height:.85}
+  .fee-cards span{align-self:end}
+  .fee-cards small{align-self:start}
+  .fee-cards span{font-size:17px}
+  .fee-cards small{font-size:14px;color:var(--muted);opacity:1}
+}
+/* phones and tablets: the calculator follows the fee squares directly, as before */
+@media (max-width:1024px){
+  .hero-grid > .reveal.hero-bento{justify-self:stretch;width:100%;min-width:0;max-width:none}
+  .hb-head{margin-bottom:30px}
+  .hero{padding-bottom:0}
+  #calc > .wrap::before{display:none}
+  #calc .calc-intro{display:none}
+}
+@media (max-width:640px){
+  .fee-cards{gap:10px;margin-bottom:30px}
+  .fee-cards li{min-height:170px;padding:18px 18px 16px;border-radius:20px}
+  .fee-cards b{font-size:54px}
+  .fee-cards span{font-size:16px;padding-top:12px}
+  .fee-cards small{font-size:12.5px}
+}
+/* phones and tablets: no boxes, just the two numbers with a thin line between them, as before */
+@media (max-width:1024px){
+  .fee-cards{gap:0;max-width:560px;margin-bottom:30px;padding-block:20px;border-block:1px solid var(--line)}
+  .fee-cards li,.fee-cards .fc-or,.fee-cards .fc-nv{min-height:0;align-items:center;text-align:center;padding:2px 12px;border:0;border-radius:0;background:none;color:var(--text)}
+  .fee-cards .fc-nv{border-inline-start:1px solid var(--line-2)}
+  .fee-cards b{font-size:40px;text-align:center}
+  .fee-cards span{margin-top:0;padding-top:10px;font:400 15px/1.3 var(--sans);color:var(--muted)}
+  .fee-cards small{display:none}
+  /* the fee line sits between the lead and the WhatsApp button */
+  .hero-grid > .reveal.hero-bento{display:flex;flex-direction:column}
+  .hb-head{display:contents}
+  .hero h1{order:1}
+  .hero .lead{order:2}
+  .fee-cards{order:3}
+  .hero .cta-row{order:4;margin-bottom:40px}
+}
+
+/* deals: real WhatsApp chats (blurred) on a looping wheel; the centre card is the one being read */
+.deals-head{display:flex;flex-direction:column;gap:14px;margin-bottom:28px}
+.deals-head h2{font:800 clamp(30px,3.2vw,46px)/1.15 var(--sans);letter-spacing:-.015em;text-wrap:balance}
+.deals-head h2::before{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-bottom:22px}
+.deals-head p{font-size:clamp(17px,1.4vw,20px);font-weight:300;color:var(--muted);max-width:32em}
+.wheel{--cw:clamp(200px,17vw,236px);position:relative;border-radius:24px}
+.wheel:focus-visible{outline-offset:8px}
+.wheel-stage{position:relative;height:calc(var(--cw) * 2.172 + 40px);perspective:1600px;overflow:hidden;touch-action:pan-y;cursor:grab;user-select:none;-webkit-user-select:none}
+.wheel-stage.dragging{cursor:grabbing}
+.deal{position:absolute;top:20px;left:50%;width:var(--cw);margin:0 0 0 calc(var(--cw) / -2);transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.7,.2,1),opacity .6s ease}
+.wheel-stage.dragging .deal{transition:none}
+.deal-open{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line-2);border-radius:22px;background:var(--surface);overflow:hidden;cursor:inherit;color:inherit;font:inherit;box-shadow:0 30px 60px -34px rgba(0,0,0,.95);transition:border-color .3s ease}
+.deal-open img{display:block;width:100%;height:auto;aspect-ratio:540/1173;pointer-events:none;-webkit-user-drag:none}
+.deal-open::after{content:"";position:absolute;inset:0;background:var(--bg);opacity:var(--dim,0);pointer-events:none;transition:opacity .6s ease}
+.wheel-stage.dragging .deal-open::after{transition:none}
+.deal.is-on .deal-open{cursor:zoom-in}
+.wheel-stage.dragging .deal.is-on .deal-open{cursor:grabbing}
+.wheel-cap{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:14px;min-height:66px;text-align:center}
+.wheel-cap b{font:800 clamp(28px,2.6vw,36px)/1.1 var(--sans);letter-spacing:-.02em}
+.wheel-cap span{font-size:15px;color:var(--muted)}
+.wheel-ctrl{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px}
+.wheel-btn{width:48px;height:48px;flex-shrink:0;border-radius:50%;border:1px solid var(--line-2);background:transparent;color:var(--text);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,background-color .2s}
+.wheel-btn:hover{border-color:var(--accent);background:var(--surface)}
+.wheel-btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wheel-dots{display:flex;align-items:center}
+.wheel-dots button{width:22px;height:32px;padding:0;border:0;background:transparent;cursor:pointer;display:grid;place-items:center}
+.wheel-dots button::before{content:"";width:7px;height:7px;border-radius:999px;background:var(--line-3);transition:width .3s ease,background-color .3s ease}
+.wheel-dots button[aria-current="true"]{width:30px}
+.wheel-dots button[aria-current="true"]::before{width:22px;background:var(--accent)}
+.deals-foot{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:28px;text-align:center}
+.deals-foot p{font-size:14px;color:var(--muted)}
+@media (max-width:360px){.deals-foot .btn{font-size:15px;padding:0 18px;white-space:nowrap}}
+/* enlarged receipt */
+.lb{position:fixed;inset:0;z-index:40;background:rgba(18,18,18,.95);display:grid;place-items:center;padding:calc(64px + env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) calc(24px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px))}
+.lb img{display:block;width:auto;max-width:min(100%,520px);max-height:calc(100vh - 110px);max-height:calc(100svh - 110px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));border-radius:16px}
+.lb-close{position:absolute;top:calc(12px + env(safe-area-inset-top, 0px));left:calc(12px + env(safe-area-inset-left, 0px));width:48px;height:48px;border-radius:50%;border:1px solid var(--line-2);background:var(--surface);color:var(--text);display:grid;place-items:center;cursor:pointer}
+.lb-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+html.lb-open{overflow:hidden}
+@media (max-width:640px){
+  .wheel{--cw:min(54vw,214px)}
+  .deals-head{margin-bottom:18px}
+  .wheel-dots button{width:18px}
+}
+
+/* desktop home: an arc of coins on the left that turns; tap a coin to see its rate. Fees sit under the headline as a simple line */
+.coin-arc{display:none}
+@media (min-width:1025px){
+  .hero{padding:72px 0 calc(var(--sec) + 16px);min-height:600px;overflow:hidden}
+  .hero-grid > .reveal.hero-bento{display:flex;flex-direction:column;justify-self:start;width:54%;max-width:640px;grid-template-columns:none;gap:0}
+  .hb-head{display:contents}
+  .hero h1{order:1}
+  .hero .lead{order:2;margin:22px 0 32px}
+  .hero .cta-row{order:4}
+  .fee-cards{order:3;display:grid;grid-template-columns:auto auto;grid-template-rows:none;justify-content:start;gap:0;max-width:none;margin:0 0 36px;padding-block:20px;border-block:1px solid var(--line)}
+  .fee-cards li,.fee-cards .fc-or,.fee-cards .fc-nv{display:flex;flex-direction:column;align-items:flex-start;min-height:0;padding:2px 36px;border:0;border-radius:0;background:none;color:var(--text)}
+  .fee-cards .fc-or{padding-inline-start:0}
+  .fee-cards .fc-nv{border-inline-start:1px solid var(--line-2)}
+  .fee-cards b{font-size:46px;line-height:1;text-align:start}
+  .fee-cards span{margin:0;padding:10px 0 0;font:400 16px/1.3 var(--sans);color:var(--muted)}
+  .fee-cards small{display:none}
+
+  .hero-grid{pointer-events:none} .hero-grid > *{pointer-events:auto}
+  .coin-arc{display:block;position:absolute;left:0;top:0;bottom:0;width:46%;overflow:hidden;z-index:1}
+  .ca-bg{position:absolute;inset:0;pointer-events:none;-webkit-mask:linear-gradient(180deg,transparent,#000 14%,#000 80%,transparent);mask:linear-gradient(180deg,transparent,#000 14%,#000 80%,transparent)}
+  .ca-orbit{position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.07)}
+  /* frosted coins with a blue glass edge */
+  .ca-coin{--d:clamp(144px,12vw,172px);--t:30px;position:absolute;left:0;top:0;width:var(--d);height:var(--d);margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);padding:0;border:0;border-radius:50%;background:none;cursor:pointer;color:inherit;perspective:700px;will-change:transform}
+  .ca-coin:focus-visible{outline:2px solid var(--accent);outline-offset:8px}
+  .ca-body{position:absolute;inset:0;transform-style:preserve-3d;pointer-events:none}
+  .ca-l{position:absolute;inset:0;border-radius:50%;border:1px solid rgba(255,255,255,.16);background:transparent;transform:translateZ(calc(var(--t) * var(--z)))}
+  .ca-l.back{border:1.5px solid rgba(255,255,255,.22);background:rgba(255,255,255,.015);box-shadow:0 26px 50px -18px rgba(0,0,0,.7)}
+  .ca-face{position:absolute;inset:0;border-radius:50%;display:grid;place-items:center;transform:translateZ(calc(var(--t) / 2));background:radial-gradient(120% 120% at 30% 18%,rgba(255,255,255,.16),rgba(255,255,255,.04) 45%,rgba(255,255,255,.02) 70%),rgba(255,255,255,.015);border:1.5px solid rgba(255,255,255,.42);-webkit-backdrop-filter:blur(3px) saturate(140%);backdrop-filter:blur(3px) saturate(140%);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),inset 0 -10px 24px rgba(255,255,255,.04);transition:box-shadow .35s ease,border-color .35s ease}
+  .ca-face::before{content:"";position:absolute;inset:8%;border-radius:50%;border:1px solid rgba(255,255,255,.18)}
+  .ca-face::after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(125deg,rgba(255,255,255,0) 28%,rgba(255,255,255,.16) 38%,rgba(255,255,255,0) 48%),radial-gradient(90% 45% at 30% 0%,rgba(255,255,255,.22),rgba(255,255,255,0) 65%);pointer-events:none}
+  .ca-sym{position:relative;font:700 calc(var(--d) * .42)/1 var(--sans);color:rgba(255,255,255,.9);-webkit-text-stroke:0;text-shadow:0 0 18px rgba(255,255,255,.25);transition:color .35s ease}
+  .ca-coin:hover .ca-face{border-color:rgba(255,255,255,.7);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 0 24px rgba(255,255,255,.12)}
+  .ca-coin.on .ca-face{border-color:rgba(255,140,95,.95);background:radial-gradient(120% 120% at 30% 18%,rgba(255,170,120,.20),rgba(242,101,42,.06) 50%,rgba(242,101,42,.03) 75%);box-shadow:0 0 0 1px rgba(242,101,42,.5),0 0 44px rgba(242,101,42,.38),inset 0 1px 0 rgba(255,255,255,.5)}
+  .ca-coin.on .ca-sym{color:#FF8A55;text-shadow:0 0 18px rgba(242,101,42,.45)}
+  /* rate card: appears only after a click */
+  .ca-rate{position:absolute;left:0;top:50%;width:216px;display:flex;flex-direction:column;gap:4px;direction:rtl;text-align:right;padding:18px 20px 16px;border-radius:22px;z-index:40;
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 24px 50px -16px rgba(0,0,0,.65);
+    -webkit-backdrop-filter:blur(22px) saturate(160%);backdrop-filter:blur(22px) saturate(160%);
+    opacity:0;visibility:hidden;transform:translate(-10px,-50%);transition:opacity .3s ease,transform .3s ease,visibility 0s linear .3s}
+  .ca-rate.show{opacity:1;visibility:visible;transform:translate(0,-50%);transition:opacity .3s ease,transform .3s ease,visibility 0s}
+  .ca-x{position:absolute;left:10px;top:10px;width:28px;height:28px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.08);color:var(--muted);font:400 18px/1 var(--sans);cursor:pointer}
+  .ca-x:hover{background:rgba(255,255,255,.16);color:var(--text)}
+  .ca-x:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  .ca-name{display:flex;align-items:baseline;gap:8px}
+  .ca-name b{font:800 18px var(--sans)}
+  .ca-name span{font-size:14px;color:var(--muted)}
+  .ca-price{font:600 30px/1.15 var(--sans);direction:ltr;text-align:right}
+  .ca-sub{font-size:14px;color:var(--muted);direction:ltr;text-align:right}
+  .ca-sub:empty{display:none}
+  .ca-chg{font:600 14px var(--sans);color:var(--muted);direction:rtl;font-variant-numeric:tabular-nums} .ca-chg bdi{direction:ltr;unicode-bidi:isolate}
+  .ca-chg.up{color:#3CCB8C} .ca-chg.dn{color:#F2706B}
+  .ca-more{margin-top:8px;font-size:14px;color:var(--text);text-decoration:none;border-bottom:1px solid var(--line-3);align-self:flex-start}
+  .ca-more:hover{border-color:var(--accent)}
+}
+@media (min-width:1025px) and (prefers-reduced-motion:reduce){.ca-coin,.ca-rate,.ca-rate.show{transition:none}}
+
+.hero-eyebrow,.hero-trust{display:none}
+@media (min-width:1025px){
+  .hero{min-height:calc(100svh - var(--head));display:flex;align-items:center;padding:56px 0 72px}
+  .hero > .wrap{width:100%}
+  .hero-eyebrow{order:0;display:flex;align-items:center;gap:14px;margin:0 0 26px;font:600 16px/1 var(--sans);letter-spacing:.01em;color:var(--muted)}
+  .hero-eyebrow::before{content:"";width:44px;height:2px;background:var(--accent)}
+  .hero .lead{margin:22px 0 36px}
+  .fee-cards{border-block:0;padding-block:0;margin:0 0 44px}
+  .hero-trust{order:5;display:flex;flex-wrap:wrap;gap:10px 28px;margin:40px 0 0;padding:0;list-style:none;font-size:16px;color:var(--muted)}
+  .hero-trust li{display:flex;align-items:center;gap:8px}
+  .hero-trust svg{width:16px;height:16px;flex:none;color:var(--accent)}
+}
+
+/* warm orange light on black */
+.hero h1 > span.hl{background:linear-gradient(270deg,#FF7A40 0%,#F2652A 45%,#D9481A 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media (min-width:1025px){
+}
+
+/* header: logo · centred tabs · orange pill */
+.nav-cta{display:none}
+@media (min-width:1025px){
+  .nav{gap:24px}
+  .nav .brand{order:0}
+  .nav > nav{order:1;flex:1;display:flex;justify-content:center}
+  .nav .now{display:none}
+  .nav-links{gap:6px;padding:5px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.03)}
+  .nav-links a{display:block;position:relative;padding:9px 16px;border-radius:999px;font-size:15px;color:var(--muted);transition:color .2s,background-color .2s}
+  .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.05)}
+  .nav-links a[aria-current="page"]{color:var(--text);background:rgba(255,255,255,.09)}
+  .nav-links a[aria-current="page"]::after{display:none}
+  .nav-cta{order:2;display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:0 18px 0 20px;border-radius:999px;background:var(--accent);color:var(--on-accent);font:700 15px/1 var(--sans);text-decoration:none;transition:background-color .2s}
+  .nav-cta:hover{background:var(--accent-hover)}
+  .nav-cta svg{width:14px;height:14px}
+}
+
+/* phone + tablet: headline and lead centred, like the buttons under them */
+@media (max-width:1024px){
+  .hero h1,.hero .lead{text-align:center}
+  .hero .lead{margin-inline:auto}
+  .hero .cta-row{justify-content:center}
+}
+
+/* desktop: centred headline block; rate card opens under the coin */
+@media (min-width:1025px){
+  .hero-grid{display:flex;justify-content:center}
+  .hero-grid > .reveal.hero-bento{justify-self:auto;align-items:center;text-align:center;width:auto;max-width:780px;margin-inline:auto}
+  .hero-eyebrow{justify-content:center}
+  .hero-eyebrow::after{content:"";width:44px;height:2px;background:var(--accent)}
+  .hero .lead{margin-inline:auto}
+  .fee-cards{justify-content:center}
+  .fee-cards li,.fee-cards .fc-or,.fee-cards .fc-nv{align-items:center;padding:2px 40px}
+  .fee-cards b{text-align:center}
+  .hero .cta-row{justify-content:center}
+  .hero-trust{justify-content:center}
+  .ca-rate{transform:translateY(-8px)}
+  .ca-rate.show{transform:none}
+}
+
+/* desktop home: headline on top, coin horizon rising from the bottom */
+@media (min-width:1025px){
+  .hero{min-height:max(calc(100svh - var(--head)), 500px);align-items:flex-start;padding:clamp(24px,6vh,96px) 0 0}
+  .hero-grid > .reveal.hero-bento{max-width:1100px}
+  .hero h1{font-size:clamp(44px,min(6.4vw,10.5vh),104px);line-height:1}
+  .hero .lead{margin:clamp(12px,2.6vh,24px) auto clamp(16px,3.2vh,30px)}
+  .fee-cards{order:3;display:flex;justify-content:center;gap:0;margin:0 0 clamp(18px,3.8vh,36px);padding:0;border:0}
+  .hero .cta-row{order:4}
+  .hero .cta-row .link-cta{display:none}
+  .fee-cards li,.fee-cards .fc-or,.fee-cards .fc-nv{flex-direction:row;align-items:baseline;gap:8px;padding:0 20px;border:0}
+  .fee-cards .fc-nv{border-inline-start:1px solid var(--line-2)}
+  .fee-cards b{font-size:19px;font-weight:700}
+  .fee-cards span{padding:0;font-size:16px}
+  .coin-arc{left:0;right:0;width:auto}
+  .ca-coin{--d:clamp(96px,min(10.4vw,17vh),156px)}
+  .ca-bg{-webkit-mask:linear-gradient(180deg,#000 86%,transparent);mask:linear-gradient(180deg,#000 86%,transparent)}
+  .ca-rate{transform:translateY(8px);background:rgba(24,24,24,.9)}
+  .ca-rate.show{transform:none}
+}
+
+/* desktop community: phone shots sized to the screen height so the whole section fits on one screen */
+@media (min-width:1025px){
+  #community{--phH:clamp(340px,calc(100svh - var(--head) - 190px),586px);--phW:calc(var(--phH) * 540 / 1173)}
+  #community .cA-fan{height:calc(var(--phH) + 36px)}
+  #community .cA-ph{width:var(--phW)}
+  #community .cA-ph.pos-l{transform:translate(-50%,-50%) translateX(calc(var(--phW) * -.667)) scale(.84)}
+  #community .cA-ph.pos-r{transform:translate(-50%,-50%) translateX(calc(var(--phW) * .667)) scale(.84)}
+}
+@media (min-width:1025px) and (max-height:760px){
+  main > section#community{padding-block:22px}
+  #community .cA-txt h2{font-size:clamp(28px,2.7vw,40px)}
+  #community .cA-txt h2::before{margin-bottom:14px}
+  #community .cA-lead{margin-top:10px;font-size:17px}
+  #community .cA-pts{margin-top:18px}
+  #community .cA-pts li{padding:10px 0}
+  #community .cA-pts b{font-size:18px}
+  #community .cA-pts div span{font-size:15px;margin-top:2px}
+  #community .cA-gift{margin-top:16px;padding:16px 24px}
+  #community .cA-gift b{font-size:26px}
+  #community .cA-note{margin-top:8px;font-size:12px}
+}
+
+/* desktop: name + phone on one row; tighter spacing on short screens */
+.wheel-stage:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:24px}
+@media (min-width:1025px){
+  #calc,#deals{--ovh:129px}
+  .contact-grid .fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px 16px}
+  .contact-grid .fields > :nth-child(n+3){grid-column:1/-1}
+}
+@media (min-width:1025px) and (max-height:760px){
+  #calc,#deals{--ovh:57px;padding-bottom:28px}
+  #calc > .wrap::before,#deals > .wrap::before{margin-bottom:28px}
+  main > section[data-page]:not([data-page="home"]){padding-block:28px}
+  .contact-grid .fields{gap:10px 14px}
+  .contact-layout .contact-grid{padding:18px 24px}
+  .contact-grid form label,.contact-grid legend{margin-bottom:4px}
+  .contact-grid form input[type=text],.contact-grid form input[type=tel]{min-height:44px;padding:9px 14px}
+  .contact-grid .radios span{min-height:44px}
+  .contact-grid form textarea{min-height:48px}
+  .contact-alt{flex-direction:row;align-items:center;gap:14px;margin-top:12px}
+  .contact-alt .or{flex:none}
+  .contact-alt .or::before,.contact-alt .or::after{display:none}
+  .contact-alt .btn{flex:1}
+}
+
+/* desktop services: slightly tighter rows so the list fits on one screen */
+@media (min-width:1025px){
+  .svc-list li{padding:clamp(16px,2.7vh,28px) 0 clamp(18px,2.9vh,30px)}
+}
+
+/* desktop contact: a narrower form panel */
+@media (min-width:1025px){
+  .contact-layout .contact-grid{width:100%;max-width:500px;justify-self:center}
+}
+
+/* desktop: smaller calculator numbers and deal shots; tighter calculator on short screens */
+@media (min-width:1025px){
+  .amount input{font-size:clamp(38px,6.4vh,54px)}
+  .out b{font-size:clamp(36px,min(4.1vw,6.6vh),58px)}
+  .wheel{--cw:clamp(165px,min(15vw,30svh),236px)}
+}
+@media (min-width:1025px) and (max-height:760px){
+  #calc > .wrap::before{display:none}
+  #calc{padding-top:16px;padding-bottom:12px}
+  .calc-head{padding:12px 24px}
+  .calc-in{padding:14px 24px 10px}
+  .rows{padding:0 24px 8px}
+  .rows li{padding:5px 0}
+  .calc-out{padding:14px 24px 14px}
+  .calc-out .btn{margin-top:12px;min-height:48px}
+  .tiers-box{margin-top:10px}
+  .tiers-box summary{padding-top:10px}
+  .calc small{margin-top:8px;font-size:12.5px;line-height:1.5}
+  .ils-eq{margin-top:4px}
+}
+
+/* ui-ux review fixes: tap targets, minimum text size, clearer focus on the amount field */
+.wheel-dots button{width:26px;height:44px}
+.wheel-dots button[aria-current="true"]{width:34px}
+.tiers-box summary{min-height:44px;padding-top:0;padding-bottom:0}
+.ranges button{min-height:44px}
+.amount:focus-within{box-shadow:0 1px 0 var(--accent)}
+.form-note,.contact-grid .form-note,.contact-grid .err,.cA-note,.calc small,.rate-line .c{font-size:14px}
+@media (max-width:640px){
+  .coin .nm span,.coin .c{font-size:14px}
+  .cta-row .link-cta{min-height:44px}
+}
+@media (max-width:400px){
+  .wheel-dots button{width:24px}
+  .wheel-dots button[aria-current="true"]{width:30px}
+  .wheel-ctrl{gap:8px}
+  .wheel-btn{width:44px;height:44px}
+}
+@media (min-width:1025px) and (max-height:760px){
+  #community .cA-note{font-size:14px}
+  .calc small{font-size:14px;line-height:1.4;margin-top:6px}
+  .calc-head{padding:9px 24px}
+  .calc-in{padding:10px 24px 6px}
+  .rows{padding:0 24px 4px}
+  .calc-out{padding:10px 24px 10px}
+  .calc-out .btn{margin-top:8px}
+  .tiers-box{margin-top:6px}
+}
+
+@media (min-width:1025px){ .coin-arc{pointer-events:none} .coin-arc .ca-coin,.coin-arc .ca-rate{pointer-events:auto} }
+
+/* a little air between a number and its % sign */
+.pc{display:inline!important;margin:0 0 0 .3em!important;padding:0!important;border:0!important;font:inherit!important;letter-spacing:inherit!important;color:inherit!important;background:none!important}
+/* calculator: the $ always sits right after the number (on its right), in the field and in the results */
+.amount{justify-content:flex-start;gap:3px;cursor:text}
+.amount input{flex:0 1 auto;width:4ch;max-width:100%}
+
+/* ui-ux round 2: skip link, pause buttons, one primary button per screen, page CTAs, deals and market fit one screen */
+.skip-link{position:fixed;top:calc(10px + env(safe-area-inset-top, 0px));right:max(16px, env(safe-area-inset-right, 0px));z-index:1000;padding:12px 20px;border-radius:999px;background:var(--accent);color:var(--on-accent);font:700 16px/1 var(--sans);text-decoration:none;transform:translateY(-200%);transition:transform .2s ease}
+.skip-link:focus{transform:none}
+h1[tabindex="-1"]:focus,h2[tabindex="-1"]:focus{outline:none}
+.motion-btn{display:grid;place-items:center;width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--line-2);background:rgba(18,18,18,.72);color:var(--muted);cursor:pointer;transition:border-color .2s ease,color .2s ease}
+.motion-btn:hover{border-color:var(--text);color:var(--text)}
+.motion-btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.motion-btn .i-play{display:none;fill:currentColor;stroke:none}
+.motion-btn[aria-pressed="true"] .i-pause{display:none}
+.motion-btn[aria-pressed="true"] .i-play{display:block}
+.wheel-pause{display:none}
+.page-cta{display:none}
+.ranges{direction:rtl}
+@media (min-width:1025px){
+  .ca-pause{position:absolute;left:max(var(--gut), calc((100% - var(--wrap)) / 2 + var(--gut)));bottom:20px;z-index:40;pointer-events:auto}
+  .page-cta{display:inline-flex}
+  .svc-grid .page-cta{margin-top:32px;align-self:flex-start;justify-self:start;width:auto}
+  .market-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:24px}
+  .market-foot .market-note{margin:0}
+  .contact-alt .btn-accent{background:transparent;border-color:var(--line-2);color:var(--text)}
+  .contact-alt .btn-accent:hover{background:var(--surface);border-color:var(--text)}
+
+  /* deals: title row with the button beside it; amount between the arrows; shots sized to the screen height */
+  #deals > .wrap{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"line line" "head foot" "wheel wheel";column-gap:40px}
+  #deals > .wrap::before{grid-area:line;margin-bottom:clamp(18px,4.5vh,64px)}
+  #deals .deals-head{grid-area:head;gap:clamp(4px,1.2vh,14px);margin-bottom:clamp(8px,2vh,24px)}
+  #deals .deals-head h2{font-size:clamp(30px,min(3.2vw,6.4vh),46px)}
+  #deals .deals-head h2::before{margin-bottom:clamp(10px,2.2vh,22px)}
+  #deals .deals-head p{font-size:clamp(16px,2.6vh,20px)}
+  #deals .deals-foot{grid-area:foot;align-self:end;align-items:flex-end;text-align:left;gap:8px;margin:0 0 clamp(8px,2vh,24px)}
+  #deals .wheel{grid-area:wheel;--cw:clamp(116px,min(17vw,calc((77svh - 198px) / 2.172)),236px);--sp:clamp(16px,3.5vh,40px);display:grid;grid-template-columns:minmax(0,1fr) 48px auto 48px minmax(0,1fr);grid-template-areas:"stage stage stage stage stage" ". prev cap next pause" ". dots dots dots .";column-gap:28px;align-items:center}
+  #deals .wheel-stage{grid-area:stage;height:calc(var(--cw) * 2.172 + var(--sp))}
+  #deals .deal{top:calc(var(--sp) / 2)}
+  #deals .wheel-cap{grid-area:cap;margin-top:clamp(4px,1vh,14px);min-height:0;min-width:210px}
+  #deals .wheel-cap b{font-size:clamp(26px,min(2.6vw,5.4vh),36px)}
+  #deals .wheel-ctrl{display:contents}
+  #deals .wheel-btn[data-step="-1"]{grid-area:prev}
+  #deals .wheel-btn[data-step="1"]{grid-area:next}
+  #deals .wheel-dots{grid-area:dots;justify-content:center}
+  #deals .wheel-dots button{height:28px}
+  #deals .wheel-pause{display:grid;grid-area:pause;justify-self:end}
+}
+@media (min-width:1025px) and (max-height:760px){
+  #market .market-head{margin-bottom:18px}
+  #market .coin{padding:10px 24px}
+  #market .coin .spark{height:38px}
+  #market .badge{width:36px;height:36px;font-size:16px}
+  .market-foot{margin-top:12px}
+  .market-foot .btn{min-height:48px}
+}
+
+/* ================= DesignAI vibe, in Caesar colours (preview) ================= */
+:root{--sans:'Heebo',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;--mono:'JetBrains Mono','Heebo',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;--bg:#0B0B0C;--surface:#151516;--surface-2:#1D1D1F;--glass:rgba(17,17,19,.78);--num:'Space Grotesk','Heebo',system-ui,sans-serif}
+.dai body{font-weight:500}
+/* heavy, tight headlines */
+.dai .hero h1,.dai .hero h1 > span,.dai .hero h1 > span+span{font-weight:900;letter-spacing:-.045em}
+.dai .calc-intro h2,.dai .deals-head h2,.dai #deals .deals-head h2,.dai .sec-title,.dai .svc-grid .say,.dai .cA-txt h2,.dai .contact-intro h2{font-weight:900;letter-spacing:-.035em}
+.dai .hero .lead,.dai .calc-intro p,.dai .deals-head p,.dai .cA-lead,.dai .contact-intro p,.dai .svc-list p{font-weight:600;color:rgba(244,244,243,.62)}
+.dai .svc-list h3,.dai .cA-pts b{font-weight:800;letter-spacing:-.015em}
+/* mono labels instead of the orange line */
+.dai .calc-intro h2::before,.dai .deals-head h2::before,.dai .sec-title::before,.dai .svc-grid .say::before,.dai .cA-txt h2::before,.dai .contact-intro h2::before{width:auto;height:auto;background:none;font:500 14px/1 var(--mono);letter-spacing:0;color:var(--accent);margin-bottom:18px}
+.dai .calc-intro h2::before{content:"// מחשבון"}
+.dai .deals-head h2::before{content:"// עסקאות"}
+.dai .sec-title::before{content:"// live · CoinGecko"}
+.dai .svc-grid .say::before{content:"// ליווי אישי"}
+.dai .cA-txt h2::before{content:"// קהילת WhatsApp"}
+.dai .contact-intro h2::before{content:"// צור קשר"}
+/* numbers: Space Grotesk (plain zero, no dot) */
+.dai .amount input,.dai .out b,.dai .rows b,.dai .coin .p,.dai .coin .c,.dai .nm b,.dai .wheel-cap b,.dai .fee-cards b,.dai .ca-price,.dai .ca-sub,.dai .rate-line .c,.dai .tiers .pct,.dai .sp-tip b,.dai .sp-tip span,.dai .legal .num,.dai .dai-chip bdi,.dai .dai-depth b{font-family:var(--num);font-variant-numeric:tabular-nums}
+.dai .amount input{font-weight:500;letter-spacing:-.03em}
+.dai .out b{font-weight:600;letter-spacing:-.035em}
+.dai .wheel-cap b{font-weight:700;letter-spacing:-.03em}
+.dai .coin .p{font-weight:600;letter-spacing:-.02em}
+.dai .nm b{font-family:var(--mono);font-weight:700;letter-spacing:0}
+/* squarer controls */
+.dai .btn{border-radius:12px;font-weight:700}
+.dai .svc-ic,.dai .badge{border-radius:12px}
+.dai .wheel-btn,.dai .motion-btn{border-radius:12px}
+.dai .ranges{border-radius:12px;padding:4px;direction:ltr}
+.dai .ranges button{border-radius:9px;font-family:var(--mono);font-weight:600;letter-spacing:.02em}
+.dai .ranges button[aria-pressed="true"]{background:#F4F4F3;color:#0B0B0C}
+.dai .calc,.dai .contact-grid,.dai .cA-gift,.dai .coin.featured{border-radius:16px}
+.dai .legal{font-family:var(--mono);font-size:14px;letter-spacing:-.01em}
+@media (min-width:1025px){
+  /* floating glass header */
+  .dai header{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;padding-top:10px}
+  .dai .nav{height:64px;margin-top:0;padding-inline:14px;background:var(--glass);border:1px solid rgba(255,255,255,.1);border-radius:16px;backdrop-filter:saturate(1.3) blur(16px);-webkit-backdrop-filter:saturate(1.3) blur(16px);max-width:calc(var(--wrap) - 2 * var(--gut));margin-inline:auto}
+  .dai .nav::after{display:none}
+  .dai :root,.dai{--head:84px}
+  .dai .nav-links{border:0;background:transparent;padding:0;gap:2px}
+  .dai .nav-links a{border-radius:10px;font-weight:600;padding:9px 14px}
+  .dai .nav-links a[aria-current="page"]{background:#F4F4F3;color:#0B0B0C}
+  .dai .nav-cta{order:3;border-radius:10px;min-height:40px}
+  .dai .dai-chip{order:2;display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 14px;border:1px solid rgba(255,255,255,.1);border-radius:10px;background:rgba(255,255,255,.03);font:600 14px/1 var(--mono);color:var(--muted);direction:ltr;white-space:nowrap}
+  .dai .dai-chip i{width:8px;height:8px;border-radius:50%;background:#3CCB8C;box-shadow:0 0 0 4px rgba(60,203,140,.16)}
+  .dai .dai-chip bdi{color:var(--text)}
+  /* hero: dot grid + mono eyebrow */
+  .dai .hero{background-image:linear-gradient(180deg,rgba(11,11,12,0) 40%,var(--bg) 92%),radial-gradient(rgba(255,255,255,.085) 1px,transparent 1.3px);background-size:100% 100%,22px 22px}
+  .dai .hero h1::before{content:"// המרת שקלים ל־USDT";display:block;margin-bottom:22px;font:500 15px/1 var(--mono);letter-spacing:0;color:var(--accent)}
+  .dai .hero h1{font-size:clamp(46px,min(6.6vw,11vh),108px);line-height:.98}
+  .dai .fee-cards span{font-family:var(--mono);font-size:14px;font-weight:500;letter-spacing:-.01em}
+  .dai .fee-cards b{font-size:17px}
+  /* window chrome on the calculator and the contact form */
+  .dai .calc,.dai .contact-layout .contact-grid{position:relative}
+  .dai .calc{padding-top:40px}
+  .dai .contact-layout .contact-grid{padding-top:68px;overflow:hidden}
+  .dai .calc::before,.dai .contact-layout .contact-grid::before{content:attr(data-file);position:absolute;top:0;left:0;right:0;height:40px;box-sizing:border-box;display:flex;align-items:center;padding-left:76px;direction:ltr;font:500 12.5px/1 var(--mono);color:var(--muted);border-bottom:1px solid var(--line);background:radial-gradient(circle at 20px 50%,#F2652A 0 5px,transparent 5.6px),radial-gradient(circle at 38px 50%,#48484B 0 5px,transparent 5.6px),radial-gradient(circle at 56px 50%,#48484B 0 5px,transparent 5.6px),var(--surface-2)}
+  @media (max-height:760px){.dai .contact-layout .contact-grid{padding-top:52px}}
+  /* bottom dock */
+  .dai body{padding-bottom:24px}
+  .dai-dock{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom, 0px));z-index:60;display:flex;align-items:center;gap:6px;padding:7px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:var(--glass);backdrop-filter:saturate(1.3) blur(16px);-webkit-backdrop-filter:saturate(1.3) blur(16px);box-shadow:0 24px 50px -20px rgba(0,0,0,.9);transform:translate(-50%,0);transition:transform .35s cubic-bezier(.2,.7,.2,1),opacity .35s ease}
+  .dai-dock.away{transform:translate(-50%,calc(100% + 28px));opacity:0}
+  .dai-handle{position:fixed;left:50%;bottom:calc(7px + env(safe-area-inset-bottom, 0px));z-index:59;width:54px;height:5px;border-radius:3px;background:rgba(255,255,255,.2);transform:translateX(-50%);pointer-events:none}
+  .dai-dock a{display:flex;align-items:center;gap:8px;height:44px;min-width:44px;padding:0 12px;justify-content:center;border-radius:12px;background:rgba(255,255,255,.05);color:var(--muted);text-decoration:none;font:700 14px/1 var(--sans);transition:background-color .2s,color .2s}
+  .dai-dock a:hover{background:rgba(255,255,255,.1);color:var(--text)}
+  .dai-dock a span{display:none}
+  .dai-dock a.on{background:#F4F4F3;color:#0B0B0C;padding:0 16px}
+  .dai-dock a.on span{display:inline}
+  .dai-dock svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .dai-dock .sep{width:1px;height:26px;background:rgba(255,255,255,.12);margin:0 4px}
+  .dai-dock a.wa{background:var(--accent);color:var(--on-accent)}
+  .dai-dock a.wa:hover{background:var(--accent-hover)}
+  .dai-dock a.wa svg{fill:currentColor;stroke:none}
+  /* scroll depth at the left edge */
+  .dai-depth{position:fixed;left:max(14px, env(safe-area-inset-left, 0px));top:50%;z-index:20;display:flex;flex-direction:column;align-items:center;gap:10px;transform:translateY(-50%);font:600 10.5px/1 var(--mono);color:var(--muted)}
+  .dai-depth span{writing-mode:vertical-rl;transform:rotate(180deg);letter-spacing:.18em}
+  .dai-depth i{position:relative;width:2px;height:72px;border-radius:2px;background:rgba(255,255,255,.1);overflow:hidden}
+  .dai-depth em{position:absolute;left:0;right:0;top:0;height:0;background:var(--accent)}
+  .dai-depth b{font-weight:600;color:var(--text)}
+  .dai .wa-float,.dai .m-cta{display:none!important}
+}
+
+@media (min-width:1025px){
+  /* hero: no button in the middle (header and dock already have WhatsApp) */
+  .dai .hero .cta-row{display:none}
+  .dai .fee-cards{margin-bottom:0}
+  /* coins become token tiles, like the dock icons: dark squircle, symbol, mono ticker; the chosen one turns white */
+  .dai .ca-coin{--d:clamp(90px,min(9.6vw,16vh),144px);border-radius:50%}
+  .dai .ca-coin:focus-visible{outline-offset:6px}
+  .dai .ca-l{display:none}
+  .dai .ca-body{transform:none!important}
+  .dai .ca-face{transform:none;border-radius:50%;background:linear-gradient(160deg,#252528 0%,#161618 55%,#111113 100%);border:1px solid rgba(255,255,255,.13);box-shadow:inset 0 1px 0 rgba(255,255,255,.09),0 26px 46px -24px rgba(0,0,0,.95);-webkit-backdrop-filter:none;backdrop-filter:none;transition:background-color .3s ease,border-color .3s ease,box-shadow .3s ease}
+  .dai .ca-face::before{content:attr(data-t);inset:auto 0 12% 0;border:0;border-radius:0;text-align:center;font:600 calc(var(--d) * .1)/1 var(--mono);letter-spacing:.08em;color:var(--muted)}
+  .dai .ca-face::after{inset:11% auto auto calc(50% - 3px);width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.22)}
+  .dai .ca-sym{font:700 calc(var(--d) * .38)/1 var(--sans);color:#F4F4F3;text-shadow:none;transform:translateY(-9%)}
+  .dai .ca-coin:hover .ca-face{border-color:rgba(255,255,255,.4);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 26px 46px -24px rgba(0,0,0,.95)}
+  .dai .ca-coin.on .ca-face{background:#F4F4F3;border-color:#F4F4F3;box-shadow:0 0 0 4px rgba(242,101,42,.38),0 26px 46px -24px rgba(0,0,0,.95)}
+  .dai .ca-coin.on .ca-sym{color:#0B0B0C;text-shadow:none}
+  .dai .ca-coin.on .ca-face::before{color:#5A5A5E}
+  .dai .ca-coin.on .ca-face::after{background:var(--accent)}
+  .dai .ca-rate{border-radius:16px;background:var(--glass);border:1px solid rgba(255,255,255,.12);-webkit-backdrop-filter:saturate(1.3) blur(16px);backdrop-filter:saturate(1.3) blur(16px)}
+  .dai .ca-name b{font-family:var(--mono);font-weight:700}
+  .dai .ca-x{border-radius:8px}
+  /* community: title, one line, the gift, the fine print */
+  .dai #community .cA-lead{max-width:30em}
+  .dai #community .cA-gift{margin-top:clamp(18px,3.4vh,32px);border-radius:16px}
+  .dai #community .cA-note{max-width:34em}
+  /* deals: only the title row on top; the privacy line under the shots */
+  .dai #deals > .wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"line" "head" "wheel" "foot"}
+  .dai #deals .deals-foot{align-self:auto;align-items:center;text-align:center;margin:clamp(2px,.8vh,10px) 0 0}
+  .dai #deals .deals-foot .btn{display:none}
+  .dai #deals .wheel{--cw:clamp(110px,min(17vw,calc((77svh - 226px) / 2.172)),236px)}
+  /* deals, readable: shorter cards cropped around the confirmation, zoomed in a little; click still opens the full shot */
+  /* deals: the whole screenshot, uncropped, sized so the section fits one screen */
+  .dai #deals .wheel{--cw:clamp(110px,min(19vw,calc((77svh - 214px) / 2.172)),250px)}
+  .dai #deals .wheel-dots{display:none} /* the arrows (and a swipe) move between deals; the space goes to bigger shots */
+  /* community: slightly bigger shots (the text column is shorter now) */
+  .dai #community{--phH:clamp(360px,calc(100svh - var(--head) - 150px),660px)}
+  .dai #deals .deal-open{border-radius:18px}
+}
+@media (min-width:1025px) and (max-height:760px){
+  .dai #deals > .wrap::before{margin-bottom:12px}
+  .dai #deals .deals-head h2::before{margin-bottom:8px}
+  .dai #deals .deals-head{margin-bottom:6px}
+  .dai #deals .wheel-dots button{height:24px}
+  .dai #deals .wheel{--cw:clamp(110px,min(19vw,calc((77svh - 138px) / 2.172)),250px)}
+  .dai #deals .deals-head p{display:none}
+  .dai #deals .deals-head .dai-eb{margin-bottom:10px}
+  .dai #deals .deals-head h2{font-size:34px}
+}
+/* deals, desktop 1200px and up: the title sits beside the shots (like the calculator and the form),
+   so the shots get its height: at least the size of the community shots, and the section still fits one screen */
+@media (min-width:1200px){
+  .dai #deals > .wrap{grid-template-areas:"line" "wheel" "foot"}
+  .dai #deals > .wrap::before{margin-bottom:clamp(12px,2vh,24px)}
+  .dai #deals .deals-head{grid-area:wheel;align-self:start;justify-self:start;position:relative;z-index:3;margin:0}
+  .dai #deals .deals-head p{display:none}
+  .dai #deals .deals-head h2{white-space:nowrap;font-size:clamp(30px,min(2.8vw,4.4vh),40px)}
+  .dai #deals .wheel{--cw:clamp(110px,min(24vw,calc((90svh - 150px) / 2.172)),310px)}
+}
+@media (min-width:1200px) and (max-height:760px){
+  .dai #deals .deals-head h2{font-size:34px}
+  .dai #deals .wheel{--cw:clamp(110px,min(24vw,calc((91svh - 162px) / 2.172)),310px)}
+}
+@media (max-width:1024px){.dai-dock,.dai-depth,.dai-handle,.dai .dai-chip{display:none}}
+/* ---- labels: Hebrew in the regular font; only // and English in mono ---- */
+.dai .calc-intro h2::before,.dai .deals-head h2::before,.dai .sec-title::before,.dai .svc-grid .say::before,.dai .cA-txt h2::before,.dai .contact-intro h2::before,.dai .hero h1::before{content:none!important;display:none!important}
+.dai .dai-eb{display:block;margin-bottom:18px;font:600 15px/1.2 var(--sans);letter-spacing:0;color:var(--accent)}
+.dai .dai-eb b,.dai .dai-eb i{font-family:var(--mono);font-style:normal;font-weight:500;font-size:14px}
+.dai .dai-eb b{margin-inline-end:4px}
+.dai .hero h1 > .dai-eb{display:block;margin-bottom:22px;font:600 16px/1.2 var(--sans);letter-spacing:0;color:var(--accent)}
+.dai .fee-cards span{font-family:var(--sans);font-weight:500;letter-spacing:0}
+.dai .legal{font-family:var(--sans);letter-spacing:0}
+/* ---- accessibility row + statement ---- */
+.dai .a11y-row{flex-basis:100%;display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;margin:0;color:var(--muted)}
+.dai .a11y-btn{min-height:28px;padding:2px 0;border:0;background:none;color:var(--text);font:600 14px/1.4 var(--sans);text-decoration:underline;text-decoration-color:var(--line-3);text-underline-offset:4px;cursor:pointer}
+.dai .a11y-btn:hover{text-decoration-color:var(--accent)}
+.dai .a11y-dlg{position:fixed;inset:0;z-index:200;display:grid;place-items:center;padding:16px;background:rgba(0,0,0,.7)}
+.dai .a11y-box{position:relative;width:min(580px,100%);max-height:min(82vh,680px);overflow:auto;padding:62px 28px 24px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:var(--surface);box-shadow:0 40px 80px -30px rgba(0,0,0,.9)}
+.dai .a11y-box::before{content:"accessibility.md";position:absolute;top:0;left:0;right:0;height:40px;box-sizing:border-box;display:flex;align-items:center;padding-left:76px;direction:ltr;font:500 12.5px/1 var(--mono);color:var(--muted);border-bottom:1px solid var(--line);background:radial-gradient(circle at 20px 50%,#F2652A 0 5px,transparent 5.6px),radial-gradient(circle at 38px 50%,#48484B 0 5px,transparent 5.6px),radial-gradient(circle at 56px 50%,#48484B 0 5px,transparent 5.6px),var(--surface-2)}
+.dai .a11y-x{position:absolute;right:6px;top:4px;width:32px;height:32px;display:grid;place-items:center;padding:0;border:0;border-radius:8px;background:transparent;color:var(--muted);font:400 22px/1 var(--sans);cursor:pointer}
+.dai .a11y-x:hover{background:rgba(255,255,255,.08);color:var(--text)}
+.dai .a11y-box h2{font:900 28px/1.15 var(--sans);letter-spacing:-.03em;margin:0 0 12px}
+.dai .a11y-box h3{font:800 18px/1.3 var(--sans);margin:20px 0 6px}
+.dai .a11y-box p,.dai .a11y-box li{font-size:16px;line-height:1.65;color:rgba(244,244,243,.8)}
+.dai .a11y-box ul{margin:0;padding-inline-start:20px;display:grid;gap:4px}
+.dai .a11y-box a{color:var(--text);text-decoration-color:var(--accent);text-underline-offset:4px}
+.dai .a11y-date{margin-top:18px;font-size:14px!important;color:var(--muted)!important}
+html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+/* ---- desktop: hero not taller than it needs to be on big screens ---- */
+@media (min-width:1025px){
+  .dai .hero{min-height:clamp(500px,calc(100svh - var(--head)),700px)}
+  .dai .hero h1{padding-top:42px} /* the headline stays where it was when the small label sat above it */
+}
+/* ---- phone + tablet in the same style ---- */
+@media (max-width:1024px){
+  .dai{--head:64px}
+  .dai header{background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none;padding-top:8px}
+  .dai .nav{height:56px;margin-inline:10px;padding-inline:12px 14px;background:var(--glass);border:1px solid rgba(255,255,255,.1);border-radius:14px;-webkit-backdrop-filter:saturate(1.3) blur(16px);backdrop-filter:saturate(1.3) blur(16px)}
+  .dai .nav::after{display:none}
+  /* phone: no small orange labels, no dot grid */
+  .dai .dai-eb,.dai .hero h1 > .dai-eb{display:none}
+  .dai .hero{background-image:none}
+  .dai .calc,.dai .contact-layout .contact-grid{position:relative;overflow:hidden}
+  .dai .calc{padding-top:34px}
+  .dai .contact-layout .contact-grid{padding-top:58px}
+  .dai .calc::before,.dai .contact-layout .contact-grid::before{content:attr(data-file);position:absolute;top:0;left:0;right:0;height:34px;box-sizing:border-box;display:flex;align-items:center;padding-left:66px;direction:ltr;font:500 12px/1 var(--mono);color:var(--muted);border-bottom:1px solid var(--line);background:radial-gradient(circle at 17px 50%,#F2652A 0 4.5px,transparent 5px),radial-gradient(circle at 33px 50%,#48484B 0 4.5px,transparent 5px),radial-gradient(circle at 49px 50%,#48484B 0 4.5px,transparent 5px),var(--surface-2)}
+  .dai .menu a.m-link{font-weight:800;letter-spacing:-.03em}
+  .dai .menu ul{counter-reset:m}
+  .dai .menu li{counter-increment:m}
+  .dai .menu a.m-link::before{content:"0" counter(m);display:inline-block;margin-inline-end:14px;font:600 14px/1 var(--num);color:var(--accent);vertical-align:middle}
+}
+
+/* community: the short text on desktop; on the phone the original text with points 01 and 02 */
+@media (min-width:1025px){.dai #community .cA-pts,.dai #community .mb{display:none}}
+/* desktop: no "talk to us" buttons on the market and services tabs (kept in the calculator and the community) */
+@media (min-width:1025px){.dai .page-cta{display:none!important}}
+@media (max-width:1024px){.dai #community .dk{display:none}.dai .dk-br{display:none}}
+@media (min-width:1025px){.dai .calc-intro p{max-width:none}
+  /* calculator and contact form: narrower, in the middle of the page; titles stay on the right like every other tab */
+  .dai .calc-layout,.dai .contact-layout{grid-template-columns:minmax(0,1fr) minmax(0,440px) minmax(0,1fr);gap:32px}
+  .dai .calc-layout .calc,.dai .contact-layout .contact-grid{justify-self:stretch;width:100%;max-width:none}
+  .dai .calc-intro p{font-size:clamp(17px,1.4vw,18px)}}
+@media (min-width:1025px) and (max-height:760px){
+  /* the whole contact form fits a short laptop screen */
+  .dai .contact-layout .contact-grid{padding-top:54px;padding-bottom:16px}
+  .dai .contact-grid form textarea{min-height:48px;height:48px}
+  .dai .contact-grid .contact-alt{margin-top:12px}}
+/* calculator fee line: "(4%)" without the space */
+.dai #rate .pc{margin:0!important}
+.dai .hero .lead .l2{display:block}
+@media (min-width:1025px){
+  /* every tab starts at the same height: content from the top, same padding, same title size */
+  .dai main > section[data-page]:not([data-page="home"]),.dai main > section#community{justify-content:flex-start;padding-top:clamp(24px,5vh,72px);padding-bottom:28px}
+  .dai #community .cA{align-items:start}
+  .dai .sec-title,.dai .svc-grid .say,.dai #community .cA-txt h2,.dai .contact-intro h2{font-size:clamp(30px,min(3.2vw,6.6vh),46px);line-height:1.15}
+  .dai #community .cA-txt h2::before{margin-bottom:18px}
+  .dai #community .cA-lead{margin-top:14px;font-size:clamp(17px,1.4vw,20px)}
+  .dai .svc-grid .sec-head,.dai .contact-intro{top:calc(var(--head) + 12px)}
+  /* no pause buttons */
+  .dai .ca-pause,.dai #deals .wheel-pause{display:none!important}
+}
+.dai .brand .wm b{display:inline-flex;align-items:center;gap:4px;font:600 19px/1 var(--num);letter-spacing:-.03em;text-transform:none}
+.dai .brand .wm i{font-style:normal;font-weight:700;padding:0;background:none;color:inherit;letter-spacing:-.02em} /* "Caesar Change" in plain white, no box around "Change" */
+/* 2. phone: the heavier headline stays on two lines */
+@media (max-width:640px){.dai .hero h1{font-size:clamp(30px,calc((100vw - 40px) / 9.7),40px)}}
+/* phone home: bigger and airier, sized to the screen height so it still fits the first screen */
+@media (max-width:640px){
+  .dai .hero h1{font-size:clamp(26px,calc((100vw - 40px) / 9.6),46px);line-height:1.1} /* the white line and the orange line, each on one line */
+  .dai .hero h1 > span.hl{margin-top:.3em} /* air between the white line and the orange line */
+  .dai .hero .lead{font-size:clamp(17px,2.4svh,20px);line-height:1.55;margin:clamp(14px,2.8svh,24px) 0 clamp(20px,3.8svh,32px)}
+  .dai .fee-cards{padding-block:clamp(14px,3svh,26px);margin-bottom:clamp(20px,4svh,36px)}
+  .dai .fee-cards b{font-size:clamp(36px,5.3svh,46px)}
+  .dai .fee-cards li > span{font-size:clamp(14px,min(3.85vw,1.9svh),16px);padding-top:8px;text-wrap:balance}
+  .dai .hero .cta-row{align-self:stretch;gap:12px}
+  .dai .hero .cta-row .btn{width:100%;min-width:0;min-height:clamp(52px,7.2svh,60px);font-size:18px;border-radius:16px}
+  .dai .hero .cta-row .link-cta{font-size:17px}
+}
+@media (max-width:370px){
+  .dai .fee-cards li > span{max-width:7.5em;margin-inline:auto} /* small phones: both labels on two lines, so the two sides match */
+}
+/* desktop home: a little air between the two headline lines; bigger 0% and 6% */
+@media (min-width:1025px){
+  .dai .hero h1{line-height:1.08}
+  .dai .hero h1 > span.hl{margin-top:.14em}
+  .dai .fee-cards b{font-size:23px}
+  .dai .fee-cards li > span{font-size:15.5px}
+}
+@media (min-width:1025px) and (max-height:760px){
+  .dai .calc{padding-top:30px}
+  .dai .calc::before{height:30px}
+  .dai .calc .calc-head{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+}
+/* calculator switch: buy / withdraw to the bank (same look as the active tab in the header) */
+.dai .calc-mode{display:flex;gap:4px;padding:4px;margin:0 0 18px;border:1px solid var(--line-2);border-radius:12px;background:var(--bg)}
+.dai .calc-mode button{flex:1;white-space:nowrap;min-height:44px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:700 16px/1 var(--sans);cursor:pointer;transition:background-color .2s,color .2s}
+.dai .calc-mode button:hover{color:var(--text)}
+.dai .calc-mode button[aria-pressed="true"]{background:#F4F4F3;color:#0B0B0C}
+@media (min-width:1025px){.dai .ph-only{display:none}}
+@media (max-width:1024px){.dai .dk-only{display:none}}
+/* phone: the calculator opens with its title and the one-line instruction (it changes with the switch); the card header would repeat it */
+@media (max-width:1024px){
+  .dai #calc .calc-intro{display:block;position:static}
+  .dai #calc .calc-intro p{margin-top:10px;max-width:none}
+  .dai #calc .calc .calc-head{display:none}
+  .dai #calc-lead{display:none} /* phone: one sentence for both modes */
+  .dai .nb-br{display:none}
+}
+@media (max-width:370px){
+  .dai .nb-br{display:inline} /* small phones: three short lines instead of a lone word */
+  .dai #calc .calc-layout{gap:20px}
+}
+.dai .rate-lbl{white-space:nowrap}
+.dai #calc .calc-layout{align-content:start} /* the reserved height stays under the calculator, not between its title and the card */ /* phone: "עמלת משיכה קבועה" (on desktop the text beside the calculator says it) */
+.dai .calc[data-mode="withdraw"] .buy-only,.dai .calc[data-mode="withdraw"] .ils-eq,.dai .calc:not([data-mode="withdraw"]) .wd-only{display:none!important}
+/* desktop: the switch sits in the window's title bar, like tabs, so the card stays the same height */
+@media (min-width:1025px){
+  .dai #calc .calc-mode{position:absolute;top:5px;right:12px;z-index:2;margin:0;padding:3px;gap:2px;height:30px;border-radius:9px;background:rgba(0,0,0,.35)}
+  .dai #calc .calc-mode button{min-height:0;height:24px;padding:0 13px;border-radius:6px;font-size:14px}
+}
+@media (min-width:1025px) and (max-height:760px){
+  .dai #calc .calc{padding-top:36px}
+  .dai #calc .calc::before{height:36px}
+  .dai #calc .calc-mode{top:3px}
+}
+@media (max-width:1199px){.dai .dk-br{display:none}}
+/* phone: the opening fills the first screen, so the calculator shows up only after scrolling down */
+@media (max-width:1024px){
+  .dai .hero{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;padding-bottom:40px}
+}
+/* community: the one-month offer keeps its orange and black */
+.dai .svc-list .pc{margin:0!important} /* services: "6%" without the space */
+@media (min-width:1025px){
+  /* desktop: a compact card in proportion with the text above it */
+  .dai #community .cA-gift{padding:20px 24px;gap:14px 28px;width:fit-content;max-width:100%}
+  .dai #community .cA-gift b{font-size:clamp(22px,1.8vw,26px)}
+  .dai #community .cA-gift div span{margin-top:4px;font-size:15px}
+  .dai #community .cA-gift .btn{min-height:46px;padding:0 22px;font-size:15.5px}
+}
+/* header: seven tabs on one line */
+.dai .nav-links a,.dai .nav-cta{white-space:nowrap}
+@media (min-width:1025px) and (max-width:1366px){.dai .nav-links a{padding:9px 11px}}
+@media (min-width:1025px) and (max-width:1240px){.dai .nav-links a{padding:9px 9px;font-size:14.5px}}
+@media (min-width:1025px) and (max-width:1199px){.dai .dai-chip{display:none}}
+@media (prefers-reduced-motion:reduce){.dai-dock{transition:none}}
+
+/* five service rows: a little tighter on short laptop screens so the whole list still fits */
+@media (min-width:1025px){
+  .dai .svc-list li{padding:clamp(10px,calc(4.4vh - 13px),28px) 0 clamp(12px,calc(4.4vh - 11px),30px)}
+  .dai .svc-list h3{margin-bottom:3px}
+}
+
+/* ===== איך זה עובד ===== */
+#how{padding:clamp(20px,4vh,48px) 0 clamp(16px,3vh,40px)}
+#how > .wrap::before{margin-bottom:clamp(18px,4vh,48px)}
+.dai .how-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(16px,3.4vh,32px)}
+.dai .how-head h2{font:900 clamp(30px,min(3.2vw,6.4vh),46px)/1.15 var(--sans);letter-spacing:-.035em}
+.dai .how-head h2 .dai-eb{margin-bottom:10px}
+.dai .how-head p{margin-top:clamp(6px,1.2vh,12px);font-size:clamp(16px,2.6vh,20px);font-weight:600;color:rgba(244,244,243,.62)}
+.dai .how-mode{display:flex;gap:4px;padding:4px;border:1px solid var(--line-2);border-radius:12px;background:var(--bg);flex-shrink:0}
+.dai .how-mode button{white-space:nowrap;min-height:40px;padding:0 22px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:700 15px/1 var(--sans);cursor:pointer;transition:background-color .2s,color .2s}
+.dai .how-mode button:hover{color:var(--text)}
+.dai .how-mode button[aria-pressed="true"]{background:#F4F4F3;color:#0B0B0C}
+.dai .how-panes{display:grid}
+.dai .how-panes > .how-steps{grid-area:1/1;align-self:start}
+.dai .how-panes > .how-steps[aria-hidden="true"]{visibility:hidden}
+.dai .how-steps{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:26px}
+.dai .how-steps li{position:relative;display:flex;flex-direction:column;gap:clamp(12px,2.2vh,20px);padding:clamp(16px,2.8vh,24px) 22px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.dai .how-steps li:not(:last-child)::after{content:"";position:absolute;top:calc(clamp(16px,2.8vh,24px) + 17px);left:-15px;width:9px;height:9px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(45deg)}
+.dai .how-top{display:flex;align-items:center;justify-content:space-between}
+.dai .how-n{font:500 15px/1 var(--mono);color:var(--accent)}
+.dai .how-steps .svc-ic{width:44px;height:44px}
+.dai .how-steps .svc-ic svg{width:21px;height:21px}
+.dai .how-steps h3{font:800 clamp(19px,1.6vw,22px)/1.25 var(--sans);letter-spacing:-.015em;margin-bottom:6px}
+.dai .how-steps p{font-size:15.5px;line-height:1.5;font-weight:600;color:rgba(244,244,243,.62);text-wrap:balance}
+.dai .how-steps .pc{margin:0!important}
+.dai .how-steps .nw{white-space:nowrap}
+/* tablets: two by two, so the titles keep to one line */
+@media (min-width:641px) and (max-width:1024px){
+  .dai .how-steps{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dai .how-steps li:nth-child(2)::after{display:none}
+}
+@media (max-width:640px){
+  .dai .how-head{flex-direction:column;align-items:stretch;gap:16px}
+  .dai .how-head h2 .dai-eb{display:none}
+  .dai .how-mode button{flex:1;min-height:44px;font-size:16px}
+  .dai .how-steps{grid-auto-flow:row;gap:30px}
+  .dai .how-steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 14px;align-items:start;padding:16px}
+  .dai .how-top{display:contents}
+  .dai .how-n{position:absolute;top:18px;left:16px;font-size:14px}
+  .dai .how-steps li:not(:last-child)::after{top:auto;bottom:-17px;left:auto;right:34px;transform:rotate(-45deg)}
+  .dai .how-steps h3{font-size:19px;margin:3px 0 4px}
+}
+.legal .nw{white-space:nowrap}
+/* desktop: bigger screenshots, smaller arrows (deals and community) */
+@media (min-width:1025px){
+  .dai .wheel-btn{width:36px;height:36px;border-radius:10px}
+  .dai .wheel-btn svg{width:16px;height:16px}
+  .dai .wheel-ctrl{gap:6px;margin-top:4px}
+  .dai .wheel-cap{min-height:0;margin-top:8px}
+  .dai #deals .wheel{--cw:clamp(150px,min(26vw,calc((100svh - 190px) / 2.172)),340px);--sp:clamp(10px,2vh,20px);grid-template-columns:minmax(0,1fr) 36px auto 36px minmax(0,1fr)}
+  .dai #community{--phH:clamp(380px,calc(100svh - var(--head) - 130px),780px)}
+  html.dai main > section#community{padding-block:44px 0} /* title level with the other tabs */
+  .dai .cA-ctrl{margin-top:0}
+  /* coin flip: the chosen coin turns over, its back shows the rate; the side card stays only for screen readers */
+  html.dai .flipmode .ca-coin .ca-body{transform:rotateY(0deg)!important;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  html.dai .flipmode .ca-coin.flip .ca-body{transform:rotateY(180deg)!important}
+  html.dai .flipmode .ca-face{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+  html.dai .ca-back{display:none}
+  /* the chosen coin in the calculator's colors: dark grey surface, light text, orange accent */
+  html.dai .flipmode .ca-coin.on .ca-face{background:var(--surface);border-color:var(--accent);box-shadow:0 0 0 2px var(--accent),0 26px 46px -24px rgba(0,0,0,.95)}
+  html.dai .flipmode .ca-coin.on .ca-sym{color:var(--text)}
+  html.dai .flipmode .ca-coin.on .ca-face::before{color:var(--muted)}
+  html.dai .flipmode .ca-back{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;padding:0 12% 4%;border-radius:50%;background:var(--surface);border:1px solid var(--accent);color:var(--text);box-shadow:0 0 0 2px var(--accent),0 26px 46px -24px rgba(0,0,0,.95);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;text-align:center;direction:rtl}
+  /* one size order, all in steps of the coin's size: price (main), chart link (action), coin name and change (labels);
+     the bottom padding lifts the block a little above the middle, where a centred block looks centred */
+  html.dai .ca-back .cb-t{font:700 calc(var(--d) * .115)/1 var(--mono);letter-spacing:.08em;color:var(--accent)}
+  html.dai .ca-back .cb-p{font:800 calc(var(--d) * .175)/1 var(--num);letter-spacing:-.01em;direction:ltr;margin-top:calc(var(--d) * .055)}
+  html.dai .ca-back .cb-s{font:600 calc(var(--d) * .08)/1.2 var(--num);color:var(--muted);direction:ltr}
+  html.dai .ca-back .cb-s:empty{display:none}
+  html.dai .ca-back .cb-c{font:700 calc(var(--d) * .115)/1.1 var(--num);color:var(--muted);margin-top:calc(var(--d) * .04)}
+  html.dai .ca-back .cb-c.up{color:#3CCB8C} html.dai .ca-back .cb-c.dn{color:#F2706B}
+  html.dai .ca-back .cb-c bdi{direction:ltr;unicode-bidi:isolate}
+  html.dai .ca-back .cb-more{pointer-events:auto;margin-top:calc(var(--d) * .08);padding-bottom:calc(var(--d) * .018);border-bottom:1.5px solid var(--accent);font:700 calc(var(--d) * .105)/1 var(--sans);color:var(--text);text-decoration:none;transition:color .2s}
+  html.dai .ca-back .cb-more:hover{color:var(--accent)}
+  html.dai .flipmode .ca-rate{clip-path:inset(50%);pointer-events:none}
+  @media (prefers-reduced-motion:reduce){ html.dai .flipmode .ca-coin .ca-body{transition:none} }
+  html.dai main > section#calc{padding-top:clamp(40px,7vh,72px);margin-top:clamp(48px,8vh,88px)} /* more space between the coins and the calculator (the margin sits outside, so the menu jump still fits the screen) */
+  html.dai #calc > .wrap::before{margin-bottom:clamp(72px,10vh,96px)}
+  html.dai #deals .deals-head{position:sticky;top:116px;align-self:start;z-index:2} /* the title travels with the scroll, like the other sections */
+  /* join card: the button sits next to the text, at the exact middle of the card's height */
+  html.dai #community .cA-gift{flex-wrap:nowrap;align-items:center;justify-content:flex-start;gap:24px;padding:22px 24px}
+  html.dai #community .cA-gift .btn{align-self:center;margin:0}
+}
+/* how it works: more air around the steps, and a clear gap before the deals screenshots */
+@media (min-width:641px){ html.dai #how .how-head{flex-direction:column;align-items:flex-start;gap:clamp(24px,4vh,36px)} } /* buy/withdraw on the right, above the steps */
+@media (min-width:641px){ html.dai #how .how-top{flex-direction:row-reverse} } /* step number on the right, icon on the left (the phone has its own list layout) */
+html.dai #how .how-panes{margin-top:clamp(56px,8vh,88px)}
+html.dai main > section#how{padding-top:clamp(56px,8vh,88px);padding-bottom:clamp(110px,15vh,160px)}
+html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
+@media (min-width:1200px){
+  .dai #deals .wheel{--cw:clamp(150px,min(26vw,calc((100svh - 160px) / 2.172)),380px)}
+}
+@media (min-width:1025px) and (max-height:760px){
+  .dai #deals .wheel{--cw:clamp(150px,calc((100svh - 118px) / 2.172),300px)}
+  .dai #community{--phH:clamp(380px,calc(100svh - var(--head) - 105px),780px)}
+  html.dai main > section#community{padding-block:22px}
+}
+/* phone home: more air, and the first screen ends before the calculator title (also behind the browser's bars) */
+@media (max-width:640px){
+  html.dai .hero{min-height:calc(100vh - var(--head) + 96px);min-height:calc(100svh - var(--head) + 96px);padding-top:56px;padding-bottom:56px}
+  html.dai .hero .lead{margin:36px 0 56px}
+  html.dai .hero .fee-cards{margin-bottom:100px}
+  html.dai .hero .cta-row{gap:22px}
+  /* the computer's dot grid, fainter on the small screen */
+  html.dai .hero{background-image:linear-gradient(180deg,rgba(11,11,12,0) 40%,var(--bg) 92%),radial-gradient(rgba(255,255,255,.028) .8px,transparent 1.1px);background-size:100% 100%,22px 22px}
+}
+</style>
+</head>
+<body>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="logo-tile" viewBox="0 0 120 120">
+      <rect width="120" height="120" rx="28" fill="#F2652A"/>
+      <g transform="translate(-0.5 0)">
+        <path d="M79.28 82.98 A30 30 0 1 1 79.28 37.02" fill="none" stroke="#0A0A0B" stroke-width="18"/>
+        <rect x="85" y="53" width="14" height="14" fill="#0A0A0B"/>
+      </g>
+    </symbol>
+    <symbol id="logo-tile-inv" viewBox="0 0 120 120">
+      <rect width="120" height="120" rx="28" fill="#0A0A0B"/>
+      <g transform="translate(-0.5 0)">
+        <path d="M79.28 82.98 A30 30 0 1 1 79.28 37.02" fill="none" stroke="#F2652A" stroke-width="18"/>
+        <rect x="84" y="52" width="16" height="16" fill="#F2652A"/>
+      </g>
+    </symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm5.8 14.13c-.24.68-1.42 1.3-1.95 1.35-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99s.75-2.12 1.01-2.41c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38Z"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#content">דלג לתוכן</a>
+<header>
+  <div class="wrap nav">
+    <nav aria-label="ניווט ראשי">
+      <ul class="nav-links">
+        <li><a href="#top">ראשי</a></li>
+        <li><a href="#calc">מחשבון המרה</a></li>
+        <li><a href="#market">שוק הקריפטו</a></li>
+        <li><a href="#services">הליווי שלנו</a></li>
+        <li><a href="#community">הקהילה שלנו</a></li>
+        <li><a href="#contact">צור קשר</a></li>
+      </ul>
+    </nav>
+    <span class="now" aria-hidden="true"></span>
+    <a class="brand" href="#top" aria-label="Caesar Change, לעמוד הראשי">
+      <svg aria-hidden="true"><use href="#logo-tile"/></svg>
+      <span class="wm"><b>Caesar<i>Change</i></b></span>
+    </a>
+    <span class="dai-chip" aria-hidden="true"><i></i>USDT <bdi id="dai-rate">—</bdi></span>
+    <a class="nav-cta" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener"><span>דברו איתנו</span><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M12 12L2.5 2.5M2.5 10V2.5H10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="פתיחת תפריט"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <nav aria-label="תפריט">
+    <ul>
+      <li><a class="m-link" href="#top">ראשי</a></li>
+      <li><a class="m-link" href="#calc">מחשבון המרה</a></li>
+      <li><a class="m-link" href="#market">שוק הקריפטו</a></li>
+      <li><a class="m-link" href="#services">הליווי שלנו</a></li>
+      <li><a class="m-link" href="#community">הקהילה שלנו</a></li>
+      <li><a class="m-link" href="#contact">צור קשר</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-accent" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>דברו איתנו בוואטסאפ</span></a>
+</div>
+
+<main id="top">
+  <section class="hero" data-page="home" aria-labelledby="hero-title">
+    <div class="coin-arc" aria-label="שערי מטבעות. לוחצים על מטבע כדי לראות את השער שלו.">
+      
+        <button class="ca-coin" type="button" data-i="0" data-id="tether" aria-label="שער USDT"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₮</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="1" data-id="bitcoin" aria-label="שער BTC"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₿</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="2" data-id="ethereum" aria-label="שער ETH"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">Ξ</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="3" data-id="ripple" aria-label="שער XRP"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">X</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="4" data-id="tether" aria-label="שער USDT"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₮</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="5" data-id="bitcoin" aria-label="שער BTC"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₿</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="6" data-id="ethereum" aria-label="שער ETH"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">Ξ</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="7" data-id="ripple" aria-label="שער XRP"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">X</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="8" data-id="tether" aria-label="שער USDT"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₮</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="9" data-id="bitcoin" aria-label="שער BTC"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">₿</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="10" data-id="ethereum" aria-label="שער ETH"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">Ξ</span></span></span></button>
+        <button class="ca-coin" type="button" data-i="11" data-id="ripple" aria-label="שער XRP"><span class="ca-body"><i class="ca-l back" style="--z:-.5"></i><i class="ca-l" style="--z:-.3"></i><i class="ca-l" style="--z:-.1"></i><i class="ca-l" style="--z:.1"></i><i class="ca-l" style="--z:.3"></i><span class="ca-face"><span class="ca-sym">X</span></span></span></button>
+      <div class="ca-rate" aria-live="polite">
+        <button class="ca-x" type="button" aria-label="סגירה">×</button>
+        <span class="ca-name"><b id="ca-sym">USDT</b><span id="ca-full">Tether</span></span>
+        <b class="ca-price num" id="ca-price">—</b>
+        <span class="ca-sub num" id="ca-ils"></span>
+        <span class="ca-chg" id="ca-chg">טוען…</span>
+        <a class="ca-more" href="#market">לצפייה בגרף</a>
+      </div>
+      <button class="motion-btn ca-pause" type="button" aria-pressed="false" aria-label="עצירת תנועת המטבעות"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M9 6v12M15 6v12"/><path class="i-play" d="M8 5.5v13l11-6.5z"/></svg></button>
+    </div>
+    <div class="wrap hero-grid">
+      <div class="reveal hero-bento">
+        <div class="hb-head">
+        <h1 id="hero-title"><span>קונים קריפטו בשקלים,</span> <span class="hl">ללא עמלות <span class="nw">שקל-דולר.</span></span></h1>
+        <p class="lead">מהיר, אמין ועם ליווי אישי. <span class="l2">המסלול הבטוח שלכם לעולם הקריפטו.</span></p>
+        <div class="cta-row">
+          <a class="btn btn-accent" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%90%D7%99%D7%9A%20%D7%A7%D7%95%D7%A0%D7%99%D7%9D%20%D7%A7%D7%A8%D7%99%D7%A4%D7%98%D7%95%20%D7%91%D7%A9%D7%A7%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>דברו איתנו בוואטסאפ</span></a>
+          <a class="link-cta" href="#contact"><span>השאירו פרטים</span></a>
+        </div>
+        </div>
+        <ul class="fee-cards" aria-label="העמלות">
+          <li class="fc-or"><b class="num">0<span class="pc">%</span></b><span>עמלת המרה שקל-דולר</span><small>בלי עמלה כפולה.</small></li>
+          <li class="fc-nv"><b class="num">6<span class="pc">%</span></b><span>עמלת עסקה מקסימלית</span><small>יורדת לפי סכום ההמרה.</small></li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section id="calc" data-page="home" aria-labelledby="calcsec-title">
+    <div class="wrap">
+      <div class="calc-layout">
+        <div class="calc-intro">
+          <h2 id="calcsec-title"><span class="dai-eb" aria-hidden="true"><b>//</b> מחשבון</span>מחשבון ההמרה</h2>
+          <p id="calc-lead">בוחרים קנייה או משיכה, מקלידים סכום<br class="dk-br"> ורואים מיד כמה תקבלו.</p>
+          <p class="ph-only">בוחרים קנייה או משיכה,<br class="nb-br"> מקלידים סכום<br>ורואים מיד כמה תקבלו.</p>
+        </div>
+      <div class="calc" aria-labelledby="calc-title">
+        <div class="calc-head"><h2 id="calc-title">כמה תקבלו?</h2></div>
+        <div class="calc-in">
+          <div class="calc-mode" role="group" aria-label="סוג הפעולה"><button type="button" data-mode="buy" aria-pressed="true">קנייה</button><button type="button" data-mode="withdraw" aria-pressed="false">משיכה</button></div>
+          <label for="amt" id="amt-lbl">סכום להמרה בדולרים</label>
+          <div class="amount"><span aria-hidden="true">$</span><input id="amt" type="text" inputmode="numeric" value="5,000" autocomplete="off" aria-describedby="calc-note"></div>
+          <p class="ils-eq" id="amt-ils"></p>
+          <p class="calc-msg" id="calc-msg" hidden></p>
+        </div>
+        <ul class="rows">
+          <li><span class="rate-lbl">שער USDT<span class="dk-only"> עכשיו</span></span><span class="rate-line"><b class="num" id="live-price">—</b><span class="c num muted" id="live-change">טוען…</span></span></li>
+          <li><span><span id="fee-lbl">עמלת עסקה</span> (<span id="rate" class="num">4<span class="pc">%</span></span>)</span><b id="fee" class="num">200<span class="pc">$</span></b></li>
+          <li class="wd-only"><span>מינימום למשיכה</span><b class="num">1,000<span class="pc">$</span></b></li>
+        </ul>
+        <div class="calc-out">
+          <div class="out" aria-live="polite"><span id="out-lbl">תקבלו USDT בשווי</span><b id="net" class="num">4,800<span class="pc">$</span></b></div>
+          <a class="btn btn-accent" id="calc-go" href="https://wa.me/972523646416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span id="go-lbl">אני רוצה להתחיל</span></a>
+          <details class="tiers-box buy-only">
+            <summary>מדרגות עמלת העסקה</summary>
+            <ul class="tiers" aria-label="עמלת עסקה לפי סכום ההמרה">
+              <li data-tier="0"><span class="range">מ־<span class="num">500<span class="pc">$</span></span> עד <span class="num">999<span class="pc">$</span></span></span><span class="pct num">6<span class="pc">%</span></span></li>
+              <li data-tier="1"><span class="range">מ־<span class="num">1,000<span class="pc">$</span></span> עד <span class="num">₪10,000</span> <span class="lim num" id="lim-usd"></span></span><span class="pct num">5<span class="pc">%</span></span></li>
+              <li data-tier="2"><span class="range">מ־<span class="num">₪10,000</span> ומעלה</span><span class="pct num">4<span class="pc">%</span></span></li>
+            </ul>
+          </details>
+          <small id="calc-note" class="buy-only">מינימום <span class="num">500<span class="pc">$</span></span>. הסף של <span class="num">₪10,000</span> מחושב לפי שער הדולר העדכני. החישוב להמחשה, והשווי נקבע בזמן ההמרה.</small>
+          <small id="wd-note" class="wd-only">החישוב להמחשה, והשווי נקבע בזמן המשיכה.</small>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" data-page="home" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="how-head">
+        <div><h2 id="how-title"><span class="dai-eb" aria-hidden="true"><b>//</b> שלבים</span>איך זה עובד</h2>
+        <p id="how-lead">מהפנייה הראשונה ועד שה־USDT בארנק.</p></div>
+        <div class="how-mode" role="group" aria-label="שלבים לפי סוג הפעולה"><button type="button" data-how="buy" aria-pressed="true">קנייה</button><button type="button" data-how="withdraw" aria-pressed="false">משיכה</button></div>
+      </div>
+      <div class="how-panes">
+      <ol class="how-steps" data-how="buy" aria-hidden="false"><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><span class="how-n num">01</span></div><div><h3>פונים אלינו</h3><p><span class="nw">בוואטסאפ או בטופס.</span> <span class="nw">אין ארנק? נפתח אותו יחד.</span></p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1-1.4 1.8-1.4 2.3 0s1.4 1.4 2.4 0 1.5-1 2.3.3"/><path d="M9 11.5h4"/></svg></span><span class="how-n num">02</span></div><div><h3>חותמים על הסכם</h3><p>הסכם לווה-מלווה, לפני שמעבירים כסף.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><span class="how-n num">03</span></div><div><h3>מעבירים שקלים</h3><p>בהעברה בנקאית, בלי עמלות שקל-דולר.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5"/><path d="M16.5 13.5h.01"/></svg></span><span class="how-n num">04</span></div><div><h3>מקבלים USDT</h3><p>ישירות לארנק שלכם.</p></div></li></ol>
+      <ol class="how-steps" data-how="withdraw" aria-hidden="true"><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><span class="how-n num">01</span></div><div><h3>פונים אלינו</h3><p>בוואטסאפ או בטופס, ונסביר מה צריך.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1-1.4 1.8-1.4 2.3 0s1.4 1.4 2.4 0 1.5-1 2.3.3"/><path d="M9 11.5h4"/></svg></span><span class="how-n num">02</span></div><div><h3>חותמים על הסכם</h3><p>הסכם לווה-מלווה, לפני ששולחים USDT.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span><span class="how-n num">03</span></div><div><h3>שולחים USDT</h3><p>מהארנק שלכם אלינו.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><span class="how-n num">04</span></div><div><h3>מקבלים שקלים</h3><p><span class="nw">לחשבון הבנק,</span> <span class="nw">בניכוי עמלה קבועה של 6<span class="pc">%</span>.</span></p></div></li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="deals" data-page="home" aria-labelledby="deals-title">
+    <div class="wrap">
+      <div class="deals-head">
+        <h2 id="deals-title"><span class="dai-eb" aria-hidden="true"><b>//</b> עסקאות</span>עסקאות שבוצעו</h2>
+        <p>העברות של הלקוחות שלנו, מהקטנות ועד הגדולות.</p>
+      </div>
+      <div class="wheel">
+        <div class="wheel-stage" tabindex="0" role="region" aria-roledescription="גלגל" aria-label="עסקאות שבוצעו. החיצים מעבירים בין השיחות.">
+          <figure class="deal" data-amt="₪100,000" data-when="אוגוסט 2026" data-full="deals/wf3.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪100,000, אוגוסט 2026"><img style="--py:16.4%" src="deals/w3.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪100,000, אוגוסט 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+          <figure class="deal" data-amt="1,895 USDT" data-when="אוקטובר 2026" data-full="deals/wf1.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: 1,895 USDT, אוקטובר 2026"><img style="--py:14.4%" src="deals/w1.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על 1,895 USDT, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+          <figure class="deal" data-amt="₪10,200" data-when="דצמבר 2025" data-full="deals/wf9.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪10,200, דצמבר 2025"><img style="--py:58%" src="deals/w9.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪10,200, דצמבר 2025. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+          <figure class="deal" data-amt="₪6,000" data-when="אוקטובר 2026" data-full="deals/wf2.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪6,000, אוקטובר 2026"><img style="--py:82.2%" src="deals/w2.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪6,000, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+        </div>
+        <div class="wheel-cap" aria-live="polite"><b class="num" id="deal-amt">₪100,000</b><span id="deal-when">אוגוסט 2026</span></div>
+        <div class="wheel-ctrl">
+          <button class="wheel-btn" type="button" data-step="-1" aria-label="השיחה הקודמת"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+          <div class="wheel-dots" role="group" aria-label="בחירת שיחה"></div>
+          <button class="wheel-btn" type="button" data-step="1" aria-label="השיחה הבאה"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        </div>
+        <button class="motion-btn wheel-pause" type="button" aria-pressed="false" aria-label="עצירת הסיבוב האוטומטי"><svg viewBox="0 0 24 24" aria-hidden="true"><path class="i-pause" d="M9 6v12M15 6v12"/><path class="i-play" d="M8 5.5v13l11-6.5z"/></svg></button>
+      </div>
+      <div class="deals-foot">
+        <a class="btn btn-line" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%94%D7%A2%D7%A1%D7%A7%D7%90%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%94%D7%AA%D7%97%D7%99%D7%9C" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>רוצים להיות הבאים? דברו איתנו</span></a>
+        <p>הפרטים האישיים בשיחות טושטשו לשמירה על פרטיות הלקוחות.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="lb" id="deal-lb" role="dialog" aria-modal="true" aria-label="צילום מסך מוגדל" hidden>
+    <button class="lb-close" type="button" aria-label="סגירה"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img alt="">
+  </div>
+
+  <section id="market" data-page="market" aria-labelledby="market-title">
+    <div class="wrap">
+      <div class="market-head reveal">
+        <h2 id="market-title" class="sec-title"><span class="dai-eb" aria-hidden="true"><b>//</b> <i>live · CoinGecko</i></span>מחירי שוק עדכניים</h2>
+        <div class="ranges" role="group" aria-label="טווח זמן">
+          <button type="button" data-days="1" aria-pressed="true">1D</button>
+          <button type="button" data-days="7" aria-pressed="false">1W</button>
+          <button type="button" data-days="30" aria-pressed="false">1M</button>
+          <button type="button" data-days="365" aria-pressed="false">1Y</button>
+        </div>
+      </div>
+      <div class="coins">
+        <article class="coin featured" data-id="tether" data-vs="ils" data-name="USDT" data-sym="Tether" data-glyph="₮"></article>
+        <article class="coin" data-id="bitcoin" data-vs="usd" data-name="BTC" data-sym="Bitcoin" data-glyph="₿"></article>
+        <article class="coin" data-id="ethereum" data-vs="usd" data-name="ETH" data-sym="Ethereum" data-glyph="Ξ"></article>
+        <article class="coin" data-id="ripple" data-vs="usd" data-name="XRP" data-sym="Ripple" data-glyph="X"></article>
+      </div>
+      <div class="market-foot">
+        <p class="market-note">אצלנו ממירים ל־USDT. נתונים מ־CoinGecko, להמחשה בלבד.</p>
+        <a class="btn btn-accent page-cta" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%90%D7%99%D7%AA%D7%99%20%D7%90%D7%AA%20%D7%9E%D7%97%D7%99%D7%A8%D7%99%20%D7%94%D7%A9%D7%95%D7%A7%20%D7%91%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%90%D7%99%D7%9A%20%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>רוצים להתחיל? דברו איתנו</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" data-page="services" aria-labelledby="svc-title">
+    <div class="wrap">
+      <div class="svc-grid">
+        <div class="sec-head">
+          <h2 id="svc-title" class="sr-only">הליווי שלנו</h2>
+          <p class="say"><span class="dai-eb" aria-hidden="true"><b>//</b> ליווי אישי</span>כל מה שצריך כדי להתחיל, במקום אחד.</p>
+          <a class="btn btn-accent page-cta" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%9C%D7%99%D7%95%D7%95%D7%99%20%D7%A9%D7%9C%D7%9B%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>דברו איתנו בוואטסאפ</span></a>
+        </div>
+        <ul class="svc-list">
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.6"/><rect x="17" y="14" width="4" height="6" rx="1.6"/><path d="M19 20c0 1.2-1.6 2-4 2h-2"/></svg></span><div><h3>פתיחת ארנק עם ליווי אישי</h3><p>נפתח איתכם ארנק קריפטו ונוודא שכל שלב מתבצע נכון ובצורה בטוחה.</p></div></li>
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h14l-3.5-3.5M20 16H6l3.5 3.5"/></svg></span><div><h3>המרה לקריפטו בהעברה בנקאית</h3><p>שירות אמין, עמלת עסקה מקסימלית של 6<span class="pc">%</span> ותנאים נוחים.</p></div></li>
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><div><h3>משיכת USDT לחשבון הבנק</h3><p>עמלה קבועה של 6<span class="pc">%</span> על כל משיכה, מינימום <span class="num">1,000<span class="pc">$</span></span>.</p></div></li>
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12c-2-2.7-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.3 6-4zm0 0c2 2.7 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.3-6 4z"/></svg></span><div><h3>העברות ללא הגבלה</h3><p>שליטה מלאה בכסף שלכם, בלי מגבלות מיותרות.</p></div></li>
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><div><h3>חודש בקהילה במתנה</h3><p>עם כל המרה, עדכונים ועסקאות בזמן אמת בוואטסאפ.</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="community" data-page="community" aria-labelledby="community-title">
+    <div class="wrap">
+      <div class="cA">
+        <div class="cA-txt">
+          <h2 id="community-title"><span class="dai-eb" aria-hidden="true"><b>//</b> <span dir="ltr">Earn with us</span></span>הקהילה שלנו</h2>
+          <p class="cA-lead mb">עדכוני שוק, שיח שוטף והעסקאות שלנו בזמן אמת, בקבוצת <span dir="ltr">WhatsApp</span> אחת.</p>
+          <p class="cA-lead dk">עדכונים על אירועים שצפויים להזיז את השוק עוד לפני שהם קורים, והעסקאות שלנו בזמן אמת – הכול בקבוצת <span dir="ltr">WhatsApp</span> אחת.</p>
+          <ol class="cA-pts">
+            <li><span class="n num">01</span><div><b>עדכוני שוק</b><span>אירועים שצפויים להזיז את השוק לפני שהם קורים.</span></div></li>
+            <li><span class="n num">02</span><div><b>העסקאות שלנו בזמן אמת</b><span>הכניסות והיציאות שלנו, עם המחיר והתזמון.</span></div></li>
+          </ol>
+          <div class="cA-gift">
+            <div><b>החודש הראשון עלינו</b><span>עם כל המרה דרכנו.</span></div>
+            <a class="btn btn-dark" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%94%D7%A7%D7%94%D7%99%D7%9C%D7%94" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>אני רוצה להצטרף</span></a>
+          </div>
+          <p class="cA-note mb">המידע בקבוצה מיועד להעשרה ולמטרות מידע בלבד, ואינו מהווה ייעוץ השקעות או המלצה לביצוע עסקה. שמות חברי הקבוצה בצילומים טושטשו.</p>
+          <p class="cA-note dk">למטרות מידע בלבד, לא ייעוץ השקעות ולא המלצה לעסקה.<br>שמות החברים בצילומים טושטשו.</p>
+        </div>
+        <div class="cA-media">
+          <div class="cA-fan" role="group" aria-label="צילומים מהקבוצה. אפשר להחליק או להשתמש בחיצים.">
+            <button class="cA-ph pos-c" type="button" data-lb="community/kf5.webp" aria-label="הגדלת צילום מהקבוצה 1"><img src="community/k5.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: עדכון על ביטקוין וכרטיס רווח בעסקת שורט על BTC. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-l" type="button" data-lb="community/kf1.webp" aria-label="הגדלת צילום מהקבוצה 2"><img src="community/k1.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: כרטיס רווח בעסקת שורט על ETH, עם עדכוני שוק לשבוע הקרוב. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-b" type="button" data-lb="community/kf2.webp" aria-label="הגדלת צילום מהקבוצה 3"><img src="community/k2.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: כרטיסי רווח מעסקאות ADA. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-b" type="button" data-lb="community/kf3.webp" aria-label="הגדלת צילום מהקבוצה 4"><img src="community/k3.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: גרף שוק עם עדכון על קניית קוואנט. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-r" type="button" data-lb="community/kf4.webp" aria-label="הגדלת צילום מהקבוצה 5"><img src="community/k4.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: גרף שוק עם תזכורת לעדכון הקודם. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+          </div>
+          <div class="wheel-ctrl cA-ctrl">
+            <button class="wheel-btn" type="button" data-fan="-1" aria-label="הצילום הקודם"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+            <div class="wheel-dots" role="group" aria-label="בחירת צילום"></div>
+            <button class="wheel-btn" type="button" data-fan="1" aria-label="הצילום הבא"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" data-page="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+    <div class="contact-layout">
+     <div class="contact-intro">
+       <h2 id="contact-title"><span class="dai-eb" aria-hidden="true"><b>//</b> צור קשר</span>בואו נדבר</h2>
+       <p>השאירו פרטים ונחזור אליכם.</p>
+     </div>
+     <div class="contact-grid">
+      <form id="lead" novalidate>
+        <div class="fields">
+          <div><label for="f-name">שם מלא</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err"><p class="err" id="f-name-err" hidden>מלאו שם מלא.</p></div>
+          <div><label for="f-phone">מספר טלפון</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required aria-describedby="f-phone-err"><p class="err" id="f-phone-err" hidden>מלאו מספר טלפון תקין, לפחות 9 ספרות.</p></div>
+          <fieldset>
+            <legend>חדשים בתחום הקריפטו?</legend>
+            <div class="radios">
+              <label><input type="radio" name="new" value="yes"><span>כן</span></label>
+              <label><input type="radio" name="new" value="no"><span>לא</span></label>
+            </div>
+          </fieldset>
+          <div><label for="f-msg">הודעה (לא חובה)</label><textarea id="f-msg" name="message"></textarea></div>
+          <div class="sr-only" aria-hidden="true"><label for="f-web">אתר</label><input id="f-web" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="btn btn-accent" type="submit"><span>שליחה</span></button>
+          <p class="form-note">בשליחה אתם מאשרים שנשמור את הפרטים כדי לחזור אליכם בטלפון או בוואטסאפ.</p>
+        </div>
+        <div class="thanks" role="status">
+          <h3 id="thanks-title">עוד צעד אחד</h3>
+          <p id="thanks-text">שלחו לנו את הפרטים בוואטסאפ ונחזור אליכם בהקדם.</p>
+          <a class="btn btn-accent" id="lead-wa" href="https://wa.me/972523646416" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>שליחה בוואטסאפ</span></a>
+        </div>
+      </form>
+
+      <div class="contact-side contact-alt">
+        <a class="btn btn-accent" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%93%D7%91%D7%A8%20%D7%90%D7%99%D7%AA%D7%9B%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>פתחו שיחה בוואטסאפ</span></a>
+        <!-- TODO: טלפון ומייל אמיתיים; להוריד את hidden כשיש פרטים -->
+        <ul hidden>
+          <li>טלפון: [מספר]</li>
+          <li>מייל: [כתובת]</li>
+        </ul>
+      </div>
+     </div>
+    </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#top" aria-label="Caesar Change, לעמוד הראשי"><svg aria-hidden="true"><use href="#logo-tile"/></svg><span class="wm"><b>Caesar<i>Change</i></b></span></a>
+      <div class="foot-meta">
+        <!-- TODO: להציג רק אם יש רישיון -->
+        <div hidden>[רישיון נש״פ מרשות שוק ההון: מספר]</div>
+        <p class="a11y-row"><button type="button" class="a11y-btn" id="a11y-motion">עצירת אנימציות</button><span aria-hidden="true">·</span><button type="button" class="a11y-btn" id="a11y-open" aria-haspopup="dialog">הצהרת נגישות</button></p>
+        <p class="legal">המרת שקלים ל־USDT, משיכה לחשבון הבנק וליווי אישי. אין באמור ייעוץ השקעות. מטבעות דיגיטליים כרוכים בסיכון. <span class="num">© 2026</span> <span class="nw">Caesar Change</span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="a11y-dlg" id="a11y-dlg" role="dialog" aria-modal="true" aria-labelledby="a11y-title" hidden>
+  <div class="a11y-box">
+    <button type="button" class="a11y-x" aria-label="סגירה">×</button>
+    <h2 id="a11y-title">הצהרת נגישות</h2>
+    <p>אנחנו רוצים שכל אחד ואחת יוכלו להשתמש באתר בנוחות, ופועלים להתאים אותו לתקן הישראלי 5568, המבוסס על הנחיות WCAG ברמה AA.</p>
+    <h3>מה עשינו באתר</h3>
+    <ul>
+      <li>אפשר לנווט בכל האתר במקלדת, עם סימון ברור של המיקום וקישור "דלג לתוכן".</li>
+      <li>ניגודיות צבעים וגודל טקסט מינימלי לפי ההנחיות.</li>
+      <li>תיאור טקסט לתמונות ולכפתורים.</li>
+      <li>אפשר לעצור את האנימציות מהכפתור "עצירת אנימציות" בתחתית העמוד, והאתר מכבד את הגדרת "הפחתת תנועה" של המכשיר.</li>
+      <li>בטופס יש תוויות ברורות, והודעת שגיאה מופיעה ליד השדה.</li>
+    </ul>
+    <h3>נתקלתם בבעיה?</h3>
+    <p>אם משהו באתר לא נגיש לכם, ספרו לנו ונטפל בזה: <a href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%A8%D7%A6%D7%99%D7%AA%D7%99%20%D7%9C%D7%93%D7%95%D7%95%D7%97%20%D7%A2%D7%9C%20%D7%91%D7%A2%D7%99%D7%99%D7%AA%20%D7%A0%D7%92%D7%99%D7%A9%D7%95%D7%AA%20%D7%91%D7%90%D7%AA%D7%A8" target="_blank" rel="noopener">כתבו לנו בוואטסאפ</a>.</p>
+    <!-- TODO: פרטי רכז/ת הנגישות (שם, טלפון, מייל) כפי שהתקנות דורשות; להוסיף כשיש -->
+    <p class="a11y-date">עודכן לאחרונה: נובמבר 2026</p>
+  </div>
+</div>
+
+<div class="m-cta"><a class="btn btn-accent" href="https://wa.me/972523646416?text=%D7%94%D7%99%D7%99%2C%20%D7%94%D7%92%D7%A2%D7%AA%D7%99%20%D7%9E%D7%94%D7%90%D7%AA%D7%A8%20%D7%95%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A4%D7%A8%D7%98%D7%99%D7%9D" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg><span>דברו איתנו בוואטסאפ</span></a></div>
+
+
+<script>
+// מחשבון עמלות + טופס
+(function(){
+  // עמלת עסקה: 6% מ־$500 עד $1,000, 5% מ־$1,000 עד ₪10,000, ו־4% מ־₪10,000 ומעלה.
+  // הסף בשקלים מומר לדולרים לפי שער ה־USDT העדכני (≈ שער הדולר)
+  var MIN = 500, SMALL = 1000, LIMIT_ILS = 10000, RATES = [0.06, 0.05, 0.04];
+  var MODE = 'buy', WD_MIN = 1000, WD_RATE = 0.06;  // משיכה לבנק: 6% על כל משיכה, מינימום $1,000
+  var ils = 3.16;  // שער ברירת מחדל (הדולר בנובמבר 2026) עד שהשער החי נטען, או אם הוא לא זמין
+  var input = document.getElementById('amt'), feeEl = document.getElementById('fee'), netEl = document.getElementById('net'),
+      rateEl = document.getElementById('rate'), msgEl = document.getElementById('calc-msg'),
+      ilsEl = document.getElementById('amt-ils'), limEl = document.getElementById('lim-usd');
+  var rows = document.querySelectorAll('.tiers li');
+  var fmt = function(n){ var v = Math.round(n * 100) / 100; return v.toLocaleString('en-US', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 }) + '<span class="pc">$</span>'; };
+  var pct = function(r){ return (Math.round(r * 1000) / 10) + '<span class="pc">%</span>'; };
+  function tierFor(n){ return n < SMALL ? 0 : (n * ils < LIMIT_ILS ? 1 : 2); }
+  function show(m){ msgEl.innerHTML = m; msgEl.hidden = !m; }
+  var go = document.getElementById('calc-go'), WA = go ? go.getAttribute('href').split('?')[0] : '';
+  function setGo(n){
+    if (!go) return;
+    var t = MODE === 'withdraw'
+      ? (n >= WD_MIN ? 'היי, אני רוצה למשוך ' + n.toLocaleString('en-US') + '$ לחשבון הבנק' : 'היי, אני רוצה לשמוע על משיכה לחשבון הבנק')
+      : (n >= MIN ? 'היי, אני רוצה להמיר ' + n.toLocaleString('en-US') + '$' : 'היי, אני רוצה לשמוע על המרה');
+    go.setAttribute('href', WA + '?text=' + encodeURIComponent(t));
+  }
+  function calc(){
+    var n = parseInt(((input.value || '').split('.')[0].replace(/[^\d]/g, '') || '0').slice(0, 8), 10);
+    input.value = n ? n.toLocaleString('en-US') : '';
+    if (MODE === 'withdraw') {
+      rows.forEach(function(r){ r.classList.remove('on'); });
+      ilsEl.textContent = n ? 'בערך ₪' + Math.round(n * ils).toLocaleString('en-US') : ''; setGo(n); rateEl.innerHTML = pct(WD_RATE);
+      if (n < WD_MIN) { feeEl.textContent = '–'; netEl.textContent = '–'; show(n ? 'המינימום למשיכה הוא <span class="num">1,000<span class="pc">$</span></span>.' : ''); return; }
+      show(''); feeEl.innerHTML = fmt(n * WD_RATE); netEl.innerHTML = fmt(n * (1 - WD_RATE)); return;
+    }
+    var i = n >= MIN ? tierFor(n) : -1;
+    rows.forEach(function(r, k){ r.classList.toggle('on', k === i); });
+    ilsEl.textContent = n ? 'בערך ₪' + Math.round(n * ils).toLocaleString('en-US') : '';
+    limEl.innerHTML = '(≈ ' + Math.floor(LIMIT_ILS / ils).toLocaleString('en-US') + '<span class="pc">$</span>)';
+    setGo(n);
+    if (n < MIN) {
+      rateEl.textContent = '–'; feeEl.textContent = '–'; netEl.textContent = '–';
+      show(n ? 'המינימום להמרה הוא <span class="num">500<span class="pc">$</span></span>.' : '');
+      return;
+    }
+    show('');
+    var r = RATES[i];
+    rateEl.innerHTML = pct(r); feeEl.innerHTML = fmt(n * r); netEl.innerHTML = fmt(n * (1 - r));
+  }
+  // the $ sits right after the number, like every $ in the calculator: the field is as wide as what is typed
+  var amountBox = input.parentNode, meas = document.createElement('span');
+  meas.setAttribute('aria-hidden', 'true'); meas.style.cssText = 'position:fixed;left:0;top:0;visibility:hidden;pointer-events:none;white-space:pre';
+  document.body.appendChild(meas);
+  function fitAmt(){
+    var cs = getComputedStyle(input);
+    ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing', 'fontVariantNumeric', 'fontFeatureSettings'].forEach(function(k){ meas.style[k] = cs[k]; });
+    meas.textContent = input.value || '0';
+    input.style.width = Math.ceil(meas.getBoundingClientRect().width + 3) + 'px';
+  }
+  amountBox.addEventListener('click', function(e){ if (e.target !== input) input.focus(); });
+  var prevDigits = '';
+  input.addEventListener('input', function(e){
+    var raw = input.value, p = input.selectionStart == null ? raw.length : input.selectionStart;
+    var digits = raw.replace(/[^\d]/g, ''), d = raw.slice(0, p).replace(/[^\d]/g, '').length;
+    if (digits === prevDigits && e.inputType === 'deleteContentBackward' && d > 0) { var head = raw.slice(0, p), k = head.search(/\d[^\d]*$/); input.value = head.slice(0, k) + head.slice(k + 1) + raw.slice(p); d--; }
+    else if (digits === prevDigits && e.inputType === 'deleteContentForward') { var tail = raw.slice(p), j = tail.search(/\d/); if (j >= 0) input.value = raw.slice(0, p) + tail.slice(0, j) + tail.slice(j + 1); }
+    var keep = input.value.split('.')[0].replace(/[^\d]/g, '').slice(0, 8);
+    calc();
+    if (/^0\d/.test(keep)) input.value = keep.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    fitAmt();
+    prevDigits = input.value.replace(/[^\d]/g, '');
+    if (document.activeElement === input) { var v = input.value, i = 0, c = 0; while (i < v.length && c < d) { if (/\d/.test(v[i])) c++; i++; } try { input.setSelectionRange(i, i); } catch (er) {} }
+  });
+  input.addEventListener('blur', function(){ calc(); fitAmt(); prevDigits = input.value.replace(/[^\d]/g, ''); });
+  calc(); fitAmt(); prevDigits = input.value.replace(/[^\d]/g, '');
+  window.ccSetMode = function(m){ MODE = m; calc(); fitAmt(); };
+  window.addEventListener('resize', fitAmt);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAmt);
+  // כשהשער החי נטען, הסף מתעדכן לפי השער
+  document.addEventListener('usdtrate', function(e){ if (e.detail > 0) { ils = e.detail; calc(); } });
+  // הטופס נשמר בגיליון Google של העסק, ובנוסף נפתח וואטסאפ עם הפרטים כתובים בהודעה. אם השמירה נכשלת, הלקוח עדיין מתבקש לשלוח בוואטסאפ
+  var LEADS_URL = 'https://script.google.com/macros/s/AKfycbyJuW2Cx1xAJMR-JCo21s-dDtVGFf2choOTj4LLde5No_n_RzEBgqVZcNv11bmcxtENEw/exec';
+  var form = document.getElementById('lead'), leadWa = document.getElementById('lead-wa');
+  function saveLead(data){
+    return fetch(LEADS_URL, { method: 'POST', mode: 'no-cors', keepalive: true, body: new URLSearchParams(data) }).then(function(){
+      document.getElementById('thanks-title').textContent = 'קיבלנו, תודה';
+      document.getElementById('thanks-text').textContent = 'נחזור אליכם בהקדם. רוצים לדבר כבר עכשיו? שלחו לנו הודעה בוואטסאפ.';
+    }).catch(function(){});
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('f-name'), phone = document.getElementById('f-phone');
+    var badName = !name.value.trim(), badPhone = phone.value.replace(/[^\d]/g, '').length < 9;
+    flag(name, badName); flag(phone, badPhone);
+    if (badName) { name.focus(); return; }
+    if (badPhone) { phone.focus(); return; }
+    var isNew = form.querySelector('input[name="new"]:checked'), msg = document.getElementById('f-msg').value.trim();
+    var newText = !isNew ? 'לא צוין' : (isNew.value === 'no' ? 'לא' : 'כן');
+    saveLead({ name: name.value.trim(), phone: phone.value.trim(), isNew: newText, message: msg, website: document.getElementById('f-web').value });
+    var text = 'היי, השארתי פרטים באתר.\nשם: ' + name.value.trim() + '\nטלפון: ' + phone.value.trim() +
+               '\nחדש/ה בקריפטו: ' + newText + (msg ? '\nהודעה: ' + msg : '');
+    var url = leadWa.getAttribute('href').split('?')[0] + '?text=' + encodeURIComponent(text);
+    leadWa.setAttribute('href', url);
+    form.classList.add('sent');
+    var tt = document.getElementById('thanks-title'); if (tt) { tt.setAttribute('tabindex', '-1'); tt.focus(); }
+    var alt = document.querySelector('.contact-alt'); if (alt) alt.style.display = 'none';
+    try { window.open(url, '_blank', 'noopener'); } catch (err) {}
+  });
+  function flag(el, bad){
+    if (bad) el.setAttribute('aria-invalid', 'true'); else el.removeAttribute('aria-invalid');
+    var m = document.getElementById(el.id + '-err'); if (m) m.hidden = !bad;
+  }
+  ['f-name', 'f-phone'].forEach(function(id){
+    var el = document.getElementById(id);
+    el.addEventListener('input', function(){ if (el.hasAttribute('aria-invalid')) flag(el, false); });
+  });
+})();
+</script>
+
+<script>
+// שוק הקריפטו + שער USDT במחשבון (CoinGecko, ללא מפתח)
+(function(){
+  var REFRESH_MS = 60000, NS = 'http://www.w3.org/2000/svg', W = 96, H = 36, cache = {};
+  var days = 1;
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.coin'));
+  var livePrice = document.getElementById('live-price'), liveChange = document.getElementById('live-change');
+
+  function cur(vs){ return vs === 'ils' ? '₪' : '$'; }
+  function fmtPrice(v, vs){ var d = vs === 'ils' ? 2 : (v >= 1000 ? 0 : (v >= 1 ? 2 : 4)); return cur(vs) + v.toLocaleString('en-US', { minimumFractionDigits: d, maximumFractionDigits: d }); }
+  function el(tag, attrs){ var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+
+  function load(id, vs, d, force){
+    var key = id + ':' + vs + ':' + d, hit = cache[key];
+    if (hit && !force && Date.now() - hit.t < REFRESH_MS) return Promise.resolve(hit.data);
+    return fetch('/api/prices/chart/' + id + '/' + vs + '/' + d)
+      .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function(j){ cache[key] = { t: Date.now(), data: j.prices }; return j.prices; });
+  }
+
+  cards.forEach(function(c){
+    c.innerHTML =
+      '<div class="coin-id"><span class="badge" aria-hidden="true">' + c.dataset.glyph + '</span><span class="nm"><b>' + c.dataset.name + '</b><span>' + c.dataset.sym + '</span></span></div>' +
+      '<div class="pv"><b class="p">—</b><span class="c muted">טוען…</span></div>' +
+      '<div class="spark-wrap"><svg class="spark" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true"></svg>' +
+      '<i class="sp-line" aria-hidden="true"></i><i class="sp-dot" aria-hidden="true"></i><span class="sp-tip" aria-hidden="true"></span></div>';
+  });
+
+  function draw(svg, pts, color){
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    var ys = pts.map(function(p){ return p[1]; }), min = Math.min.apply(null, ys), max = Math.max.apply(null, ys), span = (max - min) || 1;
+    var d = pts.map(function(p, i){ return (i ? 'L' : 'M') + (i / (pts.length - 1) * W).toFixed(2) + ' ' + (3 + (1 - (p[1] - min) / span) * (H - 6)).toFixed(2); }).join(' ');
+    svg.appendChild(el('path', { d: d, fill: 'none', stroke: color, 'stroke-width': '1.8', 'vector-effect': 'non-scaling-stroke', 'stroke-linejoin': 'round' }));
+  }
+
+  function renderCard(c, force){
+    var id = c.dataset.id, vs = c.dataset.vs, d = days;
+    var pEl = c.querySelector('.p'), cEl = c.querySelector('.c'), svg = c.querySelector('.spark');
+    return load(id, vs, d, force).then(function(pts){
+      if (d !== days || !pts || pts.length < 2) return;
+      var a = pts[0][1], b = pts[pts.length - 1][1], ch = (b - a) / a * 100, up = ch >= 0;
+      pEl.textContent = fmtPrice(b, vs);
+      cEl.className = 'c ' + (up ? 'up' : 'down');
+      cEl.innerHTML = (up ? '▲ +' : '▼ ') + ch.toFixed(2) + '<span class="pc">%</span>';
+      draw(svg, pts, up ? '#3CCB8C' : '#F2706B');
+      svg._pts = pts; svg._vs = vs; svg._d = d;
+      if (id === 'tether' && d === 1) setLive(b, ch);
+    }).catch(function(){
+      if (pEl.textContent === '—') { cEl.className = 'c muted'; cEl.textContent = 'לא זמין כרגע'; }
+      if (id === 'tether' && d === 1 && livePrice.textContent === '—') { liveChange.className = 'c num muted'; liveChange.textContent = 'לא זמין כרגע'; }
+    });
+  }
+
+  function fmtTime(t, d){
+    var x = new Date(t), p = function(n){ return (n < 10 ? '0' : '') + n; };
+    var hm = p(x.getHours()) + ':' + p(x.getMinutes()), dm = p(x.getDate()) + '.' + p(x.getMonth() + 1);
+    return d === 1 ? hm : d === 7 ? dm + ' ' + hm : dm + '.' + String(x.getFullYear()).slice(2);
+  }
+  cards.forEach(function(c){
+    var wrap = c.querySelector('.spark-wrap'), svg = wrap.querySelector('.spark'), dot = wrap.querySelector('.sp-dot'),
+        line = wrap.querySelector('.sp-line'), tip = wrap.querySelector('.sp-tip');
+    function show(e){
+      var pts = svg._pts; if (!pts) return;
+      var r = wrap.getBoundingClientRect(), x = Math.max(0, Math.min(r.width, e.clientX - r.left));
+      var i = Math.round(x / r.width * (pts.length - 1)), v = pts[i][1];
+      var ys = pts.map(function(q){ return q[1]; }), mn = Math.min.apply(null, ys), span = (Math.max.apply(null, ys) - mn) || 1;
+      var sr = svg.getBoundingClientRect(), px = i / (pts.length - 1) * r.width, py = sr.top - r.top + (3 + (1 - (v - mn) / span) * (H - 6)) / H * sr.height;
+      dot.style.left = px + 'px'; dot.style.top = py + 'px'; line.style.left = px + 'px';
+      tip.innerHTML = '<b>' + fmtPrice(v, svg._vs) + '</b><span>' + fmtTime(pts[i][0], svg._d) + '</span>';
+      var tw = tip.offsetWidth, cx = Math.max(tw / 2 + 8, Math.min(window.innerWidth - tw / 2 - 8, r.left + px));
+      tip.style.left = (cx - r.left) + 'px';
+      wrap.classList.add('on');
+    }
+    wrap.addEventListener('pointermove', show);
+    wrap.addEventListener('pointerdown', show);
+    wrap.addEventListener('pointerleave', function(){ wrap.classList.remove('on'); });
+    wrap.addEventListener('pointercancel', function(){ wrap.classList.remove('on'); });
+  });
+
+  function setLive(price, ch){
+    livePrice.textContent = fmtPrice(price, 'ils');
+    try { document.dispatchEvent(new CustomEvent('usdtrate', { detail: price })); } catch (e) {}
+    liveChange.className = 'c num ' + (ch >= 0 ? 'up' : 'down');
+    liveChange.innerHTML = (ch >= 0 ? '▲ +' : '▼ ') + ch.toFixed(2) + '<span class="pc">%</span>';
+  }
+  function liveFromCache(force){
+    return load('tether', 'ils', 1, force).then(function(pts){
+      if (!pts || pts.length < 2) return;
+      var a = pts[0][1], b = pts[pts.length - 1][1]; setLive(b, (b - a) / a * 100);
+    }).catch(function(){ if (livePrice.textContent === '—') liveChange.textContent = 'השער לא זמין כרגע'; });
+  }
+
+  function renderAll(force){ cards.forEach(function(c){ renderCard(c, force); }); if (days !== 1) liveFromCache(force); }
+
+  document.querySelectorAll('.ranges button').forEach(function(b){
+    b.addEventListener('click', function(){
+      document.querySelectorAll('.ranges button').forEach(function(x){ x.setAttribute('aria-pressed', 'false'); });
+      b.setAttribute('aria-pressed', 'true'); days = parseInt(b.dataset.days, 10); renderAll(false);
+    });
+  });
+
+  renderAll(false);
+  // official coin icons from the same data source; the glyph stays if they don't load
+  fetch('/api/prices/markets')
+    .then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(list){
+      list.forEach(function(x){
+        var card = document.querySelector('.coin[data-id="' + x.id + '"] .badge');
+        if (!card || !x.image) return;
+        var img = new Image(); img.alt = ''; img.decoding = 'async';
+        img.onload = function(){ card.textContent = ''; card.appendChild(img); card.classList.add('has-img'); };
+        img.src = x.image;
+      });
+    }).catch(function(){});
+  setInterval(function(){ if (!document.hidden) renderAll(true); }, REFRESH_MS);
+})();
+</script>
+
+<script>
+// תפריט מלא במסך לטאבלט ולטלפון
+(function(){
+  var btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+  if (!btn || !menu) return;
+  function set(open){
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'סגירת תפריט' : 'פתיחת תפריט');
+    menu.hidden = !open;
+    document.documentElement.classList.toggle('menu-open', open);
+    [].forEach.call(document.querySelectorAll('main, footer, .m-cta'), function(el){ el.inert = open; });
+    if (open) { var f = menu.querySelector('a'); if (f) f.focus(); }
+  }
+  btn.addEventListener('click', function(){ set(btn.getAttribute('aria-expanded') !== 'true'); });
+  menu.addEventListener('click', function(e){ if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && !menu.hidden) { set(false); btn.focus(); } });
+  window.addEventListener('resize', function(){ if (window.innerWidth > 1024 && !menu.hidden) set(false); });
+})();
+</script>
+
+
+<script>
+// פס וואטסאפ קבוע בטלפון: רק בלשוניות שאין בהן כפתור וואטסאפ משלהן (שוק, שירותים)
+(function(){
+  var bar = document.querySelector('.m-cta');
+  if (!bar) return;
+  var a = bar.querySelector('a'), WA = a.getAttribute('href').split('?')[0];
+  var TEXT = { market: 'היי, ראיתי את מחירי השוק באתר ואשמח לשמוע איך מתחילים', services: 'היי, אשמח לשמוע על הליווי שלכם', community: 'היי, הגעתי מהאתר ואשמח לשמוע פרטים' };
+  function update(){ var p = document.documentElement.getAttribute('data-page') || 'home'; bar.classList.toggle('show', p === 'market' || p === 'services');
+    a.setAttribute('href', WA + '?text=' + encodeURIComponent(TEXT[p] || TEXT.community)); }
+  document.addEventListener('pagechange', update); update();
+})();
+</script>
+
+<script>
+// לשוניות: כל נושא בעמוד משלו. הקישורים #market, #services, #contact פותחים את העמוד המתאים
+(function(){
+  var MAP = { top: 'home', calc: 'home', withdraw: 'home', market: 'market', services: 'services', community: 'community', contact: 'contact' };
+  var NAMES = { market: 'שוק הקריפטו', services: 'הליווי שלנו', community: 'הקהילה שלנו', contact: 'צור קשר' };
+  var secs = [].slice.call(document.querySelectorAll('main > section[data-page]'));
+  var base = document.title, cur = null;
+  function setPage(page, animate){
+    if (page === cur) return false;
+    secs.forEach(function(s){ var on = s.getAttribute('data-page') === page; s.hidden = !on; s.classList.toggle('page-in', on && !!animate); });
+    document.querySelectorAll('.nav-links a, .menu a.m-link, .foot-nav a').forEach(function(a){
+      var id = a.getAttribute('href').slice(1);
+      if (id !== 'calc' && id !== 'withdraw' && MAP[id] === page) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
+    });
+    document.documentElement.setAttribute('data-page', page);
+    document.title = NAMES[page] ? NAMES[page] + ' | Caesar Change' : base;
+    cur = page;
+    try { document.dispatchEvent(new CustomEvent('pagechange', { detail: page })); } catch (e) {}
+    return true;
+  }
+  function go(id, animate){
+    var changed = setPage(MAP[id] || 'home', animate);
+    var y = 0;
+    if (id === 'calc' || id === 'withdraw') { var el = document.getElementById('calc'), t = 0; while (el) { t += el.offsetTop; el = el.offsetParent; } y = Math.max(0, t - (parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0) - 16); }
+    try { window.scrollTo({ top: y, behavior: changed ? 'instant' : 'smooth' }); } catch (e) { window.scrollTo(0, y); }
+  }
+  var HEADS = { home: 'hero-title', market: 'market-title', services: 'svc-title', community: 'community-title', contact: 'contact-title' };
+  function focusHead(elId, scroll){
+    var h = document.getElementById(elId); if (!h) return;
+    if (!h.hasAttribute('tabindex')) h.setAttribute('tabindex', '-1');
+    try { h.focus({ preventScroll: !scroll }); } catch (err) { h.focus(); }
+  }
+  var skip = document.querySelector('.skip-link');
+  if (skip) skip.addEventListener('click', function(e){ e.preventDefault(); focusHead(HEADS[cur] || 'hero-title', true); });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var id = a.getAttribute('href').slice(1);
+    if (!(id in MAP)) return;
+    if (document.body.classList.contains('editing') && !a.closest('.nav-links, .brand')) return;
+    e.preventDefault();
+    go(id, true);
+    focusHead(id === 'calc' || id === 'withdraw' ? 'calcsec-title' : HEADS[MAP[id]], false);
+    try { history.pushState(null, '', id === 'top' ? location.pathname + location.search : '#' + id); } catch (err) {}
+  });
+  window.addEventListener('popstate', function(){ go(location.hash.slice(1) || 'top', true); });
+  go(location.hash.slice(1) || 'top', false);
+})();
+</script>
+
+<script>
+// כניסה עדינה של אזורים בגלילה (מכבד העדפת "פחות תנועה")
+(function(){
+  var els = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) { els.forEach(function(e){ e.classList.add('in'); }); return; }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){ if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, { rootMargin: '0px 0px -8% 0px' });
+  els.forEach(function(e){ io.observe(e); });
+})();
+</script>
+
+<script>
+// גלגל העסקאות: החלקה, חיצים, נקודות, מקלדת, הגדלה בלחיצה וסיבוב אוטומטי עדין עם כפתור עצירה
+(function(){
+  var wheel = document.querySelector('.wheel');
+  if (!wheel) return;
+  var stage = wheel.querySelector('.wheel-stage'), cards = [].slice.call(stage.querySelectorAll('.deal')), n = cards.length, VIS = n >= 7 ? 2 : 1;
+  var amtEl = document.getElementById('deal-amt'), whenEl = document.getElementById('deal-when'), dotsEl = wheel.querySelector('.wheel-dots');
+  var lb = document.getElementById('deal-lb'), lbImg = lb.querySelector('img'), lbClose = lb.querySelector('.lb-close');
+  var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pos = 0, drag = null, suppress = false, auto = !reduce, hover = false, seen = false, lastFocus = null;
+
+  function wrapOff(o){ o = ((o % n) + n) % n; return o > n / 2 ? o - n : o; }
+  function active(){ return ((Math.round(pos) % n) + n) % n; }
+  function spacing(){ return cards[0].offsetWidth * (VIS < 2 ? (window.innerWidth <= 640 ? 0.66 : 0.8) : (window.innerWidth <= 640 ? 0.6 : 0.68)); }
+
+  var dots = cards.map(function(c, i){
+    var b = document.createElement('button');
+    b.type = 'button'; b.tabIndex = -1;
+    b.setAttribute('aria-label', c.dataset.amt + ', ' + c.dataset.when);
+    b.addEventListener('click', function(){ stop(); goTo(i); });
+    dotsEl.appendChild(b);
+    return b;
+  });
+
+  function place(c, o, sp){
+    var a = Math.abs(o), s = 1 - Math.min(a, 3) * 0.13;
+    c.style.transform = 'translateX(' + (-o * sp).toFixed(1) + 'px) translateZ(' + (-a * 80).toFixed(1) + 'px) rotateY(' + (o * 14).toFixed(2) + 'deg) scale(' + s.toFixed(3) + ')';
+    c.style.opacity = a <= VIS ? 1 : Math.max(0, VIS + 1 - a);
+    c.style.zIndex = String(100 - Math.round(a * 10));
+    c.style.setProperty('--dim', (Math.min(a, 2) * 0.3).toFixed(3));
+  }
+  function layout(){
+    var sp = spacing(), a0 = active();
+    cards.forEach(function(c, i){
+      // a card that wraps round never flies across in view: it fades out on the side it leaves, and comes in from the near edge
+      var raw = i - pos, o = wrapOff(raw), k = Math.round((o - raw) / n), keep = false;
+      if (c._k != null && k !== c._k) {
+        if (Math.abs(o) >= VIS + 1 - 0.001) { o = (c._o < 0 ? -1 : 1) * Math.abs(o); keep = true; }
+        else { c.style.transition = 'none'; place(c, (o < 0 ? -1 : 1) * (VIS + 1), sp); void c.offsetWidth; c.style.transition = ''; }
+      }
+      if (!keep) c._k = k;
+      c._o = o; place(c, o, sp);
+      var on = i === a0;
+      c.classList.toggle('is-on', on);
+      c.setAttribute('aria-hidden', on ? 'false' : 'true');
+      c.querySelector('.deal-open').tabIndex = on ? 0 : -1;
+    });
+    var c = cards[a0];
+    if (amtEl.textContent !== c.dataset.amt) { amtEl.textContent = c.dataset.amt; whenEl.textContent = c.dataset.when; }
+    dots.forEach(function(d, i){ d.setAttribute('aria-current', i === a0 ? 'true' : 'false'); });
+  }
+  function go(p){ pos = p; layout(); }
+  function step(d){ go(Math.round(pos) + d); }
+  function goTo(i){ go(Math.round(pos) + wrapOff(i - active())); }
+  var pauseBtn = wheel.querySelector('.wheel-pause');
+  function stop(){ auto = false; if (pauseBtn) pauseBtn.setAttribute('aria-pressed', 'true'); }
+  if (pauseBtn) {
+    if (reduce) pauseBtn.hidden = true;
+    pauseBtn.addEventListener('click', function(){ auto = !auto; pauseBtn.setAttribute('aria-pressed', auto ? 'false' : 'true'); });
+  }
+
+  wheel.querySelectorAll('.wheel-btn').forEach(function(b){
+    b.addEventListener('click', function(){ stop(); step(parseInt(b.dataset.step, 10)); });
+  });
+  wheel.addEventListener('keydown', function(e){
+    if (e.target.closest && e.target.closest('.wheel-dots')) return;
+    if (e.key === 'ArrowLeft') { e.preventDefault(); stop(); step(1); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); stop(); step(-1); }
+  });
+
+  // drag / swipe: dragging right brings the card on the left to the centre
+  stage.addEventListener('pointerdown', function(e){
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    drag = { x: e.clientX, y: e.clientY, start: pos, moved: false, id: e.pointerId, t: Date.now(), sp: spacing() };
+  });
+  stage.addEventListener('pointermove', function(e){
+    if (!drag) return;
+    var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (!drag.moved) {
+      if (Math.abs(dx) < 6) return;
+      if (Math.abs(dy) > Math.abs(dx)) { drag = null; return; }
+      drag.moved = true; stop();
+      try { stage.setPointerCapture(drag.id); } catch (err) {}
+      stage.classList.add('dragging');
+    }
+    pos = drag.start + dx / drag.sp; layout();
+  });
+  function endDrag(e){
+    if (!drag) return;
+    if (drag.moved) {
+      var dx = (e && typeof e.clientX === 'number' ? e.clientX : drag.x) - drag.x, v = dx / Math.max(1, Date.now() - drag.t);
+      stage.classList.remove('dragging');
+      var bias = Math.abs(v) > 0.35 && Math.abs(pos - drag.start) < 0.5 ? (dx > 0 ? 0.5 : -0.5) : 0;
+      go(Math.round(pos + bias));
+      suppress = true; setTimeout(function(){ suppress = false; }, 50);
+    }
+    drag = null;
+  }
+  stage.addEventListener('pointerup', endDrag);
+  stage.addEventListener('pointercancel', endDrag);
+
+  stage.addEventListener('click', function(e){
+    if (suppress) { e.preventDefault(); return; }
+    var c = e.target.closest('.deal'); if (!c) return;
+    var i = cards.indexOf(c);
+    if (i === active()) open(i); else { stop(); goTo(i); }
+  });
+
+  // enlarged chat
+  function open(i){
+    var c = cards[i];
+    lbImg.src = c.dataset.full; lbImg.alt = c.querySelector('img').alt;
+    lastFocus = document.activeElement;
+    lb.hidden = false; document.documentElement.classList.add('lb-open');
+    lbClose.focus();
+  }
+  function close(){
+    if (lb.hidden) return;
+    lb.hidden = true; document.documentElement.classList.remove('lb-open');
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  // screenshots elsewhere on the site (the community page) open in the same viewer
+  document.addEventListener('click', function(e){
+    var t = e.target.closest && e.target.closest('[data-lb]'); if (!t) return;
+    lbImg.src = t.dataset.lb; lbImg.alt = t.querySelector('img').alt;
+    lastFocus = t; lb.hidden = false; document.documentElement.classList.add('lb-open'); lbClose.focus();
+  });
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if (lb.hidden) return;
+    if (e.key === 'Escape') { e.preventDefault(); close(); }
+    else if (e.key === 'Tab') { e.preventDefault(); lbClose.focus(); }
+  });
+
+  // gentle auto-turn: only while the wheel is on screen, the tab is visible and nobody is touching it
+  stage.addEventListener('pointerenter', function(e){ if (e.pointerType === 'mouse') hover = true; });
+  stage.addEventListener('pointerleave', function(){ hover = false; });
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function(es){ seen = es[0].isIntersecting; }, { threshold: 0.4 }).observe(stage);
+  } else { seen = true; }
+  setInterval(function(){
+    var fa = document.activeElement;
+    if (auto && seen && !hover && !drag && lb.hidden && !document.hidden && !(wheel.contains(fa) && fa !== pauseBtn)) step(1);
+  }, 4200);
+
+  var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(layout, 80); });
+  document.addEventListener('pagechange', function(){ requestAnimationFrame(layout); });
+  layout();
+})();
+</script>
+<script>
+// הקהילה שלנו: חמישה צילומים שמתחלפים, שלושה נראים בכל רגע. לוחצים על צילום מהצד, מחליקים או משתמשים בחיצים; לחיצה על הצילום שבחזית מגדילה אותו
+(function(){
+  var fan = document.querySelector('.cA-fan'); if (!fan) return;
+  var phones = [].slice.call(fan.querySelectorAll('.cA-ph')), n = phones.length, cur = 0, drag = null, moved = false;
+  var ctrl = document.querySelector('.cA-ctrl'), dotsEl = ctrl.querySelector('.wheel-dots');
+  var dots = phones.map(function(p, i){
+    var b = document.createElement('button'); b.type = 'button'; b.tabIndex = -1; b.setAttribute('aria-label', 'צילום ' + (i + 1));
+    b.addEventListener('click', function(){ go(i); }); dotsEl.appendChild(b); return b;
+  });
+  function layout(){
+    phones.forEach(function(p, i){
+      var o = ((i - cur) % n + n) % n;
+      p.classList.remove('pos-c', 'pos-l', 'pos-r', 'pos-b');
+      p.classList.add(o === 0 ? 'pos-c' : (o === 1 ? 'pos-l' : (o === n - 1 ? 'pos-r' : 'pos-b')));
+      p.tabIndex = o === 0 || o === 1 || o === n - 1 ? 0 : -1;
+      var alt = (p.querySelector('img') || {}).alt || 'צילום'; p.setAttribute('aria-label', (o === 0 ? 'הגדלת ' : 'הצגת ') + alt);
+    });
+    dots.forEach(function(d, i){ d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
+  }
+  function go(i){ cur = ((i % n) + n) % n; layout(); }
+  ctrl.querySelectorAll('[data-fan]').forEach(function(b){ b.addEventListener('click', function(){ go(cur + parseInt(b.dataset.fan, 10)); }); });
+  fan.addEventListener('click', function(e){
+    var p = e.target.closest('.cA-ph'); if (!p) return;
+    if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; return; }
+    if (!p.classList.contains('pos-c')) { e.preventDefault(); e.stopPropagation(); go(phones.indexOf(p)); }
+  });
+  fan.addEventListener('pointerdown', function(e){ drag = { x: e.clientX, y: e.clientY }; moved = false; });
+  fan.addEventListener('pointerup', function(e){
+    if (!drag) return;
+    var dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag = null;
+    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) { moved = true; go(cur + (dx > 0 ? 1 : -1)); }
+  });
+  fan.addEventListener('pointercancel', function(){ drag = null; });
+  layout();
+})();
+</script>
+<script>
+// דף הבית במחשב: מטבעות זכוכית שמסתובבים כל הזמן. לחיצה על מטבע עוצרת, מביאה אותו למרכז ומציגה את השער (CoinGecko). סגירה מחזירה את הסיבוב.
+(function(){
+  var arc = document.querySelector('.coin-arc'); if (!arc) return;
+  var coins = [].slice.call(arc.querySelectorAll('.ca-coin')), n = coins.length, STEP = 360 / n;
+  var bodies = coins.map(function(c){ return c.querySelector('.ca-body'); }), orbits = [].slice.call(arc.querySelectorAll('.ca-orbit'));
+  var card = arc.querySelector('.ca-rate'), xBtn = arc.querySelector('.ca-x'), symEl = document.getElementById('ca-sym'), fullEl = document.getElementById('ca-full'),
+      priceEl = document.getElementById('ca-price'), ilsEl = document.getElementById('ca-ils'), chgEl = document.getElementById('ca-chg');
+  var INFO = { tether: ['USDT', 'Tether'], bitcoin: ['BTC', 'Bitcoin'], ethereum: ['ETH', 'Ethereum'], ripple: ['XRP', 'Ripple'] };
+  var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var SPEED = 1 / 2.6;                       // coins per second
+  var LINE = true;                           // true: the coins glide in a straight line across the whole width; false: the original ring
+  var FLIP = true;                           // true: the chosen coin turns over and shows its rate on the back; false: the rate card beside it
+  if (FLIP) arc.classList.add('flipmode');
+  var backs = coins.map(function(c){
+    var b = document.createElement('span'); b.className = 'ca-back'; b.setAttribute('aria-hidden', 'true');
+    b.innerHTML = '<b class="cb-t"></b><b class="cb-p num"></b><span class="cb-s num"></span><span class="cb-c"></span><a class="cb-more" href="#market" tabindex="-1">צפייה בגרף</a>';
+    b.querySelector('.cb-more').addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    c.querySelector('.ca-body').appendChild(b); return b;
+  });
+  var flipT;
+  // after 4 seconds the coin turns back by itself and the row moves on
+  function flip(i, on){ if (!FLIP || i < 0) return; coins[i].classList.toggle('flip', on); clearTimeout(flipT); if (on) flipT = setTimeout(function(){
+    var c = coins[sel]; close();
+    // a mouse click leaves focus on the coin, which would keep the row still; keyboard focus stays
+    if (c && document.activeElement === c && !c.matches(':focus-visible')) { c.blur(); focusIn = false; tick(); }
+  }, 4000); }
+  var rates = null, failed = false, pos = 0, speed = reduce ? 0 : SPEED, sel = -1, selAmt = 0, hover = false, focusIn = false, onScreen = true;
+  var geo = null, anim = null, last = 0, raf = 0, dirty = true, paused = false, pauseBtn = arc.querySelector('.ca-pause');
+  function wrap(v){ return ((v % n) + n) % n; }
+  function measure(){
+    // coin horizon: a wide ring whose top peeks up under the headline; the rate card opens beside the chosen coin
+    var w = arc.clientWidth, h = arc.clientHeight, d = coins[0].offsetWidth || 150, R = Math.max(760, w * 0.85);
+    var aT = arc.getBoundingClientRect().top, textB = 0, bento = document.querySelector('.hero-bento');
+    if (bento) [].forEach.call(bento.querySelectorAll('h1,.lead,.cta-row,.fee-cards'), function(el){ var r = el.getBoundingClientRect(); if (r.height) textB = Math.max(textB, r.bottom - aT); });
+    var want = textB + 44 + d * 0.55, heroEl = arc.parentNode;
+    if (window.innerWidth > 1024) { var hd = document.querySelector('header'), mh = Math.max(500, Math.min(window.innerHeight - (hd ? hd.offsetHeight : 0), Math.round(want + d / 2 + 44))) + 'px'; if (heroEl.style.minHeight !== mh) { heroEl.style.minHeight = mh; h = arc.clientHeight; } }
+    else if (heroEl.style.minHeight) heroEl.style.minHeight = '';
+    var yTop = Math.min(h - d / 2 - 28, Math.max(h - d / 2 - 110, want));
+    var gap = d * 1.16;
+    if (LINE) { R = 1e5; gap = Math.max(gap, (w + d) / (n - 1)); } // a huge ring is a straight line; spacing fills even very wide screens
+    var step = 2 * Math.asin(Math.min(1, gap / (2 * R))) * 180 / Math.PI;
+    geo = { cx: w / 2, cy: yTop + R, R: R, h: h, w: w, step: step, yTop: yTop };
+    var cw = card.offsetWidth || 216, ch = card.offsetHeight || 190;
+    var btn = document.querySelector('.hero .cta-row .btn'), bR = btn ? btn.getBoundingClientRect().right - arc.getBoundingClientRect().left : 0;
+    card.style.left = Math.round(Math.min(w - cw - 16, Math.max(w / 2 + d * 1.15 / 2 + 24, bR + 20))) + 'px';
+    placeCard();
+    orbits.forEach(function(o, j){ o.style.display = LINE ? 'none' : ''; if (LINE) return; var r =j ? R - d * .9 : R + d * .8; o.style.width = o.style.height = 2 * r + 'px'; o.style.left = (geo.cx - r) + 'px'; o.style.top = (geo.cy - r) + 'px'; });
+  }
+  function placeCard(){ if (!geo) return; var ch = card.offsetHeight || 190, cw = card.offsetWidth || 216, top = Math.max(8, Math.min(geo.h - ch - 12, geo.yTop - ch / 2));
+    card.style.top = Math.round(top) + 'px';
+    // short laptop screens: if the card would sit on the fee line, it moves sideways past it (or, if there is no room, just below it)
+    var fc = document.querySelector('.hero-bento .fee-cards'); if (!fc || !fc.offsetHeight) return;
+    var ar = arc.getBoundingClientRect(), f = fc.getBoundingClientRect(), cl = ar.left + (parseFloat(card.style.left) || 0), ct = ar.top + top;
+    if (ct < f.bottom + 8 && cl < f.right + 12 && cl + cw > f.left - 12) {
+      var nl = f.right + 20 - ar.left;
+      if (nl + cw <= ar.width - 16) card.style.left = Math.round(nl) + 'px'; else card.style.top = Math.round(f.bottom + 12 - ar.top) + 'px';
+    } }
+  function layout(){
+    if (!geo) measure();
+    var near = 0, best = 99;
+    coins.forEach(function(c, i){
+      var k = wrap(i - pos); if (k > n / 2) k -= n;
+      var ad = Math.abs(k), isSel = i === sel;
+      if (ad < best) { best = ad; near = i; }
+      var th = k * geo.step * Math.PI / 180, x = geo.cx + geo.R * Math.sin(th), y = geo.cy - geo.R * Math.cos(th);
+      var s = (1 - Math.min(ad, 4) * .035) * (isSel ? 1 + .14 * selAmt : 1);
+      var op = LINE ? 1 : ad < 2.6 ? 1 : Math.max(0, 1 - (ad - 2.6) / 1.4);
+      if (LINE) s = isSel ? 1 + .14 * selAmt : 1;
+      op *= Math.max(0, Math.min(1, Math.min(x, geo.w - x) / 160));          // fade at the side edges
+      op *= Math.max(0, Math.min(1, (geo.h - y + 30) / 110));                // and as the ring sinks below the fold
+      if (!isSel) op *= 1 - .5 * selAmt;
+      c.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px) rotate(' + (k * geo.step * .6).toFixed(2) + 'deg) scale(' + s.toFixed(4) + ')';
+      var f = isSel ? 1 - selAmt : 1, ry = (LINE ? Math.max(-30, Math.min(30, -k * 6)) : -k * 9) * f, rx = 16 * f;
+      bodies[i].style.transform = 'rotateY(' + ry.toFixed(2) + 'deg) rotateX(' + rx.toFixed(2) + 'deg)';
+      c.style.opacity = op.toFixed(3);
+      c.style.zIndex = isSel ? 30 : String(Math.round(20 - ad * 2));
+      c.style.visibility = op < .01 ? 'hidden' : 'visible';
+    });
+    coins.forEach(function(c, i){ c.tabIndex = (sel >= 0 ? i === sel : i === near) ? 0 : -1; });
+  }
+  function frame(t){
+    raf = 0;
+    var dt = last ? Math.min(.05, (t - last) / 1000) : 0; last = t;
+    if (anim) {
+      var p = Math.min(1, (t - anim.t0) / anim.dur), e = 1 - Math.pow(1 - p, 3);
+      pos = anim.from + (anim.to - anim.from) * e; dirty = true;
+      if (p >= 1) { pos = wrap(anim.to); anim = null; fill(); card.classList.add('show'); flip(sel, true); }
+    } else if (sel < 0 && !reduce) {
+      var want = (hover || focusIn || paused) ? 0 : SPEED;
+      speed += (want - speed) * Math.min(1, dt * (want ? 3 : 7));
+      if (!want && speed < .01) speed = 0;
+      if (speed > .0005) { pos = wrap(pos + speed * dt); dirty = true; }
+    }
+    var tgt = sel >= 0 ? 1 : 0;
+    if (Math.abs(tgt - selAmt) > .002) { selAmt += (tgt - selAmt) * Math.min(1, dt * 8); dirty = true; } else if (selAmt !== tgt) { selAmt = tgt; dirty = true; }
+    if (dirty) { layout(); dirty = false; }
+    tick();
+  }
+  function tick(){
+    var still = (hover || focusIn || paused) && speed === 0;
+    var busy = anim || (sel < 0 && !reduce && !still) || Math.abs((sel >= 0 ? 1 : 0) - selAmt) > 0 || dirty;
+    if (!raf && busy && onScreen && arc.offsetParent) raf = requestAnimationFrame(frame);
+    if (!busy) last = 0;
+  }
+  function fmt(v, cur){ var dgt = v >= 1000 ? 0 : (v >= 1 ? 2 : 4); return cur + v.toLocaleString('en-US', { minimumFractionDigits: dgt, maximumFractionDigits: dgt }); }
+  function fill(){
+    if (sel < 0) return;
+    var id = coins[sel].dataset.id, inf = INFO[id], r = rates && rates[id];
+    symEl.textContent = inf[0]; fullEl.textContent = inf[1];
+    if (r && r.usd) {
+      priceEl.textContent = fmt(r.usd, '$');
+      ilsEl.textContent = r.ils ? '≈ ' + fmt(r.ils, '₪') : '';
+      var ch = r.usd_24h_change || 0; chgEl.className = 'ca-chg ' + (ch >= 0 ? 'up' : 'dn');
+      chgEl.innerHTML = '24 שעות · <bdi>' + (ch >= 0 ? '+' : '') + ch.toFixed(2) + '<span class="pc">%</span></bdi>';
+    } else {
+      priceEl.textContent = '—'; ilsEl.textContent = ''; chgEl.className = 'ca-chg';
+      chgEl.textContent = failed ? 'השער לא זמין כרגע' : 'טוען…';
+    }
+    var bk = backs[sel];
+    bk.querySelector('.cb-t').textContent = inf[0];
+    // one price on the coin: USDT in shekels, every other coin in dollars
+    bk.querySelector('.cb-p').textContent = (id === 'tether' && r && r.ils) ? fmt(r.ils, '₪') : priceEl.textContent;
+    bk.querySelector('.cb-s').textContent = '';
+    // on the coin only the rise or fall in percent (the side card keeps "24 שעות")
+    var bc = bk.querySelector('.cb-c'), pct = chgEl.querySelector('bdi'); bc.className = 'cb-c ' + chgEl.className;
+    if (pct) bc.innerHTML = pct.outerHTML; else bc.textContent = chgEl.textContent;
+    placeCard();
+  }
+  function select(i){
+    if (sel === i) { close(); return; }
+    if (sel >= 0) { coins[sel].classList.remove('on'); flip(sel, false); }
+    sel = i; coins[i].classList.add('on'); card.classList.remove('show'); arc.classList.add('picked');
+    var dlt = wrap(i - pos); if (dlt > n / 2) dlt -= n;
+    if (reduce || Math.abs(dlt) < .01) { pos = wrap(i); anim = null; dirty = true; fill(); card.classList.add('show'); flip(i, true); }
+    else anim = { from: pos, to: pos + dlt, t0: performance.now(), dur: Math.min(1100, 520 + Math.abs(dlt) * 110) };
+    speed = 0; dirty = true; tick();
+  }
+  function close(){
+    if (sel < 0) return;
+    coins[sel].classList.remove('on'); flip(sel, false); sel = -1; anim = null; card.classList.remove('show'); arc.classList.remove('picked'); dirty = true; tick();
+  }
+  coins.forEach(function(c, i){
+    c.addEventListener('click', function(e){ e.stopPropagation(); select(i); });
+    c.addEventListener('keydown', function(e){
+      if (sel < 0) return;
+      if (e.key === 'ArrowLeft') { e.preventDefault(); select(wrap(sel - 1)); coins[sel].focus(); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); select(wrap(sel + 1)); coins[sel].focus(); }
+    });
+  });
+  xBtn.addEventListener('click', function(e){ e.stopPropagation(); close(); });
+  card.addEventListener('click', function(e){ e.stopPropagation(); });
+  document.addEventListener('click', close);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+  // stop while the mouse is on a coin (not anywhere in the hero); a short grace period covers the gaps between coins
+  var hoverT;
+  coins.forEach(function(c){
+    c.addEventListener('pointerenter', function(e){ if (e.pointerType === 'mouse') { clearTimeout(hoverT); hover = true; tick(); } });
+    c.addEventListener('pointerleave', function(){ clearTimeout(hoverT); hoverT = setTimeout(function(){ hover = false; tick(); }, 350); });
+  });
+  arc.addEventListener('focusin', function(e){ if (e.target === pauseBtn) return; focusIn = true; tick(); });
+  arc.addEventListener('focusout', function(e){ var r = e.relatedTarget; if (!r || !arc.contains(r) || r === pauseBtn) { focusIn = false; tick(); } });
+  if (pauseBtn) {
+    if (reduce) pauseBtn.hidden = true;
+    pauseBtn.addEventListener('click', function(e){ e.stopPropagation(); paused = !paused; pauseBtn.setAttribute('aria-pressed', paused ? 'true' : 'false'); tick(); });
+  }
+  if ('IntersectionObserver' in window) new IntersectionObserver(function(es){ onScreen = es[0].isIntersecting; tick(); }).observe(arc);
+  document.addEventListener('visibilitychange', function(){ last = 0; tick(); });
+  function load(){
+    fetch('/api/prices')
+      .then(function(r){ if (!r.ok) throw 0; return r.json(); })
+      .then(function(j){ rates = j; failed = false; if (!anim) fill(); })
+      .catch(function(){ failed = true; if (!rates && !anim) fill(); });
+  }
+  load(); setInterval(load, 60000);
+  var rt; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ geo = null; dirty = true; layout(); tick(); }, 80); });
+  layout(); tick();
+})();
+</script>
+
+<script>
+// DesignAI preview: dock, scroll depth, live-rate chip, window titles
+(function(){
+  var calc = document.querySelector('.calc'); if (calc) calc.setAttribute('data-file', 'calc.usdt');
+  var cg = document.querySelector('.contact-layout .contact-grid'); if (cg) cg.setAttribute('data-file', 'lead.form');
+  var TICK = { tether: 'USDT', bitcoin: 'BTC', ethereum: 'ETH', ripple: 'XRP' };
+  [].forEach.call(document.querySelectorAll('.ca-coin'), function(c){ var f = c.querySelector('.ca-face'); if (f) f.setAttribute('data-t', TICK[c.dataset.id] || ''); });
+  var rate = document.getElementById('dai-rate');
+  document.addEventListener('usdtrate', function(e){ if (rate && e.detail > 0) rate.textContent = '₪' + e.detail.toFixed(2); });
+  var dock = document.querySelector('.dai-dock'), links = dock ? [].slice.call(dock.querySelectorAll('a[data-p]')) : [];
+  var depthB = document.querySelector('.dai-depth b'), depthE = document.querySelector('.dai-depth em');
+  var hero = document.querySelector('.hero'), calcSec = document.getElementById('calc');
+  // the dock hides like a macOS dock: it peeks after each page change and shows when the mouse nears the bottom or a dock item has focus
+  var near = false, focusIn = false, until = 0;
+  var wasHero = null;
+  function inHero(){ return (document.documentElement.getAttribute('data-page') || 'home') === 'home' && hero && scrollY < hero.offsetHeight * .45; }
+  function setDock(){
+    var h = inHero();
+    wasHero = h;
+    if (dock) dock.classList.toggle('away', !(focusIn || (!h && (near || Date.now() < until))));
+  }
+  addEventListener('scroll', function(){ if (inHero() !== wasHero) { setDock(); setTimeout(setDock, 2230); } }, { passive: true });
+  function peek(ms){ until = Date.now() + ms; setDock(); setTimeout(setDock, ms + 30); }
+  addEventListener('pointermove', function(e){ var n = e.pointerType === 'mouse' && e.clientY > innerHeight - 110 && Math.abs(e.clientX - innerWidth / 2) < 380; if (n !== near) { near = n; setDock(); } }, { passive: true });
+  document.documentElement.addEventListener('pointerleave', function(){ if (near) { near = false; setDock(); } });
+  if (dock) {
+    dock.addEventListener('focusin', function(){ focusIn = true; setDock(); });
+    dock.addEventListener('focusout', function(e){ if (!dock.contains(e.relatedTarget)) { focusIn = false; setDock(); } });
+  }
+  document.addEventListener('pagechange', function(){ peek(2600); }); peek(2600);
+  function update(){
+    var page = document.documentElement.getAttribute('data-page') || 'home', key = page;
+    if (page === 'home' && calcSec && calcSec.getBoundingClientRect().top < innerHeight * .5 && calcSec.getBoundingClientRect().bottom > innerHeight * .3) key = 'calc';
+    links.forEach(function(a){ a.classList.toggle('on', a.dataset.p === key); if (a.dataset.p === key) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
+
+    var max = document.documentElement.scrollHeight - innerHeight, p = max > 0 ? Math.round(scrollY / max * 100) : 0;
+    if (depthB) depthB.textContent = Math.max(0, Math.min(100, p)) + '%';
+    if (depthE) depthE.style.height = Math.max(0, Math.min(100, p)) + '%';
+  }
+  var tk = 0; addEventListener('scroll', function(){ if (!tk) tk = requestAnimationFrame(function(){ tk = 0; update(); }); }, { passive: true });
+  addEventListener('resize', update); document.addEventListener('pagechange', function(){ requestAnimationFrame(update); }); update();
+})();
+</script>
+
+<script>
+// הצהרת נגישות ועצירת אנימציות (נשמר בדפדפן)
+(function(){
+  var dlg = document.getElementById('a11y-dlg'), openB = document.getElementById('a11y-open'), mot = document.getElementById('a11y-motion');
+  if (!dlg || !openB || !mot) return;
+  var x = dlg.querySelector('.a11y-x'), last = null;
+  function show(){ last = document.activeElement; dlg.hidden = false; document.documentElement.classList.add('lb-open'); x.focus(); }
+  function hide(){ dlg.hidden = true; document.documentElement.classList.remove('lb-open'); if (last && last.focus) last.focus(); }
+  openB.addEventListener('click', show); x.addEventListener('click', hide);
+  dlg.addEventListener('click', function(e){ if (e.target === dlg) hide(); });
+  document.addEventListener('keydown', function(e){
+    if (dlg.hidden) return;
+    if (e.key === 'Escape') { e.preventDefault(); hide(); }
+    else if (e.key === 'Tab') { var f = [].slice.call(dlg.querySelectorAll('button, a[href]')), i = f.indexOf(document.activeElement); e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus(); }
+  });
+  var KEY = 'cc-no-motion';
+  function setMotion(off){
+    document.documentElement.classList.toggle('no-motion', off);
+    mot.textContent = off ? 'הפעלת אנימציות' : 'עצירת אנימציות';
+    ['.ca-pause', '.wheel-pause'].forEach(function(sel){ var b = document.querySelector(sel); if (b && !b.hidden && (b.getAttribute('aria-pressed') === 'true') !== off) b.click(); });
+    try { localStorage.setItem(KEY, off ? '1' : '0'); } catch (e) {}
+  }
+  mot.addEventListener('click', function(){ setMotion(!document.documentElement.classList.contains('no-motion')); });
+  var saved = null; try { saved = localStorage.getItem(KEY); } catch (e) {}
+  if (saved === '1') setMotion(true);
+})();
+</script>
+
+<script>
+(function(){
+  var sec = document.getElementById('how'); if (!sec) return;
+  var lead = document.getElementById('how-lead'), L = { buy: 'מהפנייה הראשונה ועד שה־USDT בארנק.', withdraw: 'מה־USDT בארנק ועד הכסף בבנק.' };
+  function set(m){
+    sec.querySelectorAll('.how-steps').forEach(function(o){ o.setAttribute('aria-hidden', o.getAttribute('data-how') === m ? 'false' : 'true'); });
+    sec.querySelectorAll('.how-mode button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-how') === m ? 'true' : 'false'); });
+    lead.textContent = L[m];
+  }
+  sec.querySelectorAll('.how-mode button').forEach(function(b){ b.addEventListener('click', function(){ set(b.getAttribute('data-how')); }); });
+  window.ccHowSet = set;  // the calculator switch calls this, so the steps follow it
+})();
+</script>
+
+<script>
+// מחשבון ההמרה בשני הכיוונים: המתג מחליף את החישוב, התוויות, ההודעה בוואטסאפ והטקסט שליד המחשבון
+(function(){
+  var calc = document.querySelector('#calc .calc'); if (!calc) return;
+  var T = {
+    buy: { lead: 'בוחרים קנייה או משיכה, מקלידים סכום<br class=\"dk-br\"> ורואים מיד כמה תקבלו.', amt: 'סכום להמרה בדולרים', fee: 'עמלת עסקה',
+           out: 'תקבלו USDT בשווי', go: 'אני רוצה להתחיל', head: 'כמה תקבלו?', file: 'calc.usdt' },
+    withdraw: { lead: 'בוחרים קנייה או משיכה, מקלידים סכום<br class=\"dk-br\"> ורואים מיד כמה תקבלו.', amt: 'סכום למשיכה בדולרים', fee: 'עמלת משיכה קבועה',
+           out: 'יגיע לחשבון הבנק בשווי', go: 'אני רוצה למשוך', head: 'כמה יגיע לחשבון?', file: 'withdraw.usdt' }
+  };
+  var $ = function(id){ return document.getElementById(id); };
+  var btns = [].slice.call(calc.querySelectorAll('.calc-mode button'));
+  function set(m){
+    var t = T[m]; if (!t) return;
+    calc.setAttribute('data-mode', m); calc.setAttribute('data-file', t.file);
+    if ($('calc-lead')) $('calc-lead').innerHTML = t.lead;
+    [['amt-lbl', 'amt'], ['fee-lbl', 'fee'], ['out-lbl', 'out'], ['go-lbl', 'go'], ['calc-title', 'head']].forEach(function(p){ var e = $(p[0]); if (e) e.innerHTML = t[p[1]]; });
+    if ($('amt')) $('amt').setAttribute('aria-describedby', m === 'withdraw' ? 'wd-note' : 'calc-note');
+    btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-mode') === m ? 'true' : 'false'); });
+    if (window.ccSetMode) window.ccSetMode(m);
+    if (window.ccHowSet) window.ccHowSet(m);
+    lockH();
+  }
+  // switching never moves the page: the calculator area keeps the height of the taller mode, so the deals below stay put
+  var lay = calc.closest('.calc-layout');
+  function lockH(){
+    if (!lay) return;
+    lay.style.minHeight = '';
+    var cur = calc.getAttribute('data-mode') || 'buy', h1 = lay.offsetHeight;
+    calc.setAttribute('data-mode', cur === 'withdraw' ? 'buy' : 'withdraw');
+    var h2 = lay.offsetHeight;
+    calc.setAttribute('data-mode', cur);
+    lay.style.minHeight = Math.max(h1, h2) + 'px';
+  }
+  var rt = 0; window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(lockH, 120); });
+  var tb = calc.querySelector('.tiers-box'); if (tb) tb.addEventListener('toggle', lockH);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(lockH);
+  document.addEventListener('pagechange', function(){ requestAnimationFrame(lockH); });
+  lockH();
+  btns.forEach(function(b){ b.addEventListener('click', function(){ set(b.getAttribute('data-mode')); }); });
+  // a link to #withdraw (an ad, a message) opens the calculator on "withdraw"; a link to #calc on "buy"
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[href="#withdraw"], a[href="#calc"]'); if (a) set(a.getAttribute('href') === '#withdraw' ? 'withdraw' : 'buy'); });
+  window.addEventListener('popstate', function(){ if (location.hash === '#withdraw') set('withdraw'); else if (location.hash === '#calc') set('buy'); });
+  if (location.hash === '#withdraw') set('withdraw');
+})();
+</script>
+</body>
+</html>

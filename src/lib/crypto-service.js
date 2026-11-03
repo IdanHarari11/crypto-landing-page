@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const COINAPI_KEY = '36d38ddb-5565-4463-b28e-b4752860c326'
+// Old page only (no longer shown at /). The key must never be in the code: it comes from the environment.
+const COINAPI_KEY = process.env.COINAPI_KEY || ''
 const COINAPI_URL = 'https://rest.coinapi.io/v1'
 
 const COIN_IDS = {

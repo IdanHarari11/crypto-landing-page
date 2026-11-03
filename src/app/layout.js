@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Ceaser-Change",
-  description: "Ceaser-Change: Your trusted partner in cryptocurrency exchange.",
+  title: "Caesar Change",
+  description: "Caesar Change: Your trusted partner in cryptocurrency exchange.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
       <Head>
-        <title>Ceaser-Change</title>
-        <meta name="description" content="Ceaser-Change: Your trusted partner in cryptocurrency exchange." />
+        <title>Caesar Change</title>
+        <meta name="description" content="Caesar Change: Your trusted partner in cryptocurrency exchange." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
