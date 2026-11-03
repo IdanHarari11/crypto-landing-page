@@ -2233,12 +2233,12 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
     c.querySelector('.ca-body').appendChild(b); return b;
   });
   var flipT;
-  // after 5 seconds the coin turns back by itself and the row moves on
+  // after 4 seconds the coin turns back by itself and the row moves on
   function flip(i, on){ if (!FLIP || i < 0) return; coins[i].classList.toggle('flip', on); clearTimeout(flipT); if (on) flipT = setTimeout(function(){
     var c = coins[sel]; close();
     // a mouse click leaves focus on the coin, which would keep the row still; keyboard focus stays
     if (c && document.activeElement === c && !c.matches(':focus-visible')) { c.blur(); focusIn = false; tick(); }
-  }, 5000); }
+  }, 4000); }
   var rates = null, failed = false, pos = 0, speed = reduce ? 0 : SPEED, sel = -1, selAmt = 0, hover = false, focusIn = false, onScreen = true;
   var geo = null, anim = null, last = 0, raf = 0, dirty = true, paused = false, pauseBtn = arc.querySelector('.ca-pause');
   function wrap(v){ return ((v % n) + n) % n; }
