@@ -1287,6 +1287,11 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   .dai #community{--phH:clamp(380px,calc(100svh - var(--head) - 130px),780px)}
   html.dai main > section#community{padding-block:44px 0} /* title level with the other tabs */
   .dai .cA-ctrl{margin-top:0}
+  /* join card: the button sits on the title's line, the small line goes under both */
+  html.dai #community .cA-gift{display:grid;grid-template-columns:auto auto;justify-content:start;align-items:center;gap:10px 22px}
+  html.dai #community .cA-gift > div{display:contents}
+  html.dai #community .cA-gift > div span{grid-column:1 / -1;grid-row:2;margin-top:0}
+  html.dai #community .cA-gift .btn{grid-column:2;grid-row:1;min-height:42px}
 }
 @media (min-width:1200px){
   .dai #deals .wheel{--cw:clamp(150px,min(26vw,calc((100svh - 160px) / 2.172)),380px)}
