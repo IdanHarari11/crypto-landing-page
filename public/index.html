@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" class="js dai">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<style>body{margin:0}img{max-width:100%}</style>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Caesar Change</title>
-<meta name="description" content="ממירים שקלים ל־USDT בהעברה בנקאית, ללא עמלות שקל-דולר. עמלת עסקה מקסימלית של 6% וליווי אישי מהשיחה הראשונה.">
+<meta name="description" content="ממירים שקלים ל־USDT בהעברה בנקאית, ללא עמלות שקל-דולר, ומושכים USDT ישירות לחשבון הבנק. עמלה מקסימלית של 6% וליווי אישי מהשיחה הראשונה.">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%20120%22%3E%3Crect%20width%3D%22120%22%20height%3D%22120%22%20rx%3D%2228%22%20fill%3D%22%23F2652A%22/%3E%3Cg%20transform%3D%22translate%28-0.5%200%29%22%3E%3Cpath%20d%3D%22M79.28%2082.98%20A30%2030%200%201%201%2079.28%2037.02%22%20fill%3D%22none%22%20stroke%3D%22%230A0A0B%22%20stroke-width%3D%2218%22/%3E%3Crect%20x%3D%2285%22%20y%3D%2253%22%20width%3D%2214%22%20height%3D%2214%22%20fill%3D%22%230A0A0B%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="data:image/png;base64,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">
 <meta name="theme-color" content="#0B0B0C">
@@ -1229,6 +1229,54 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 @media (min-width:1025px) and (max-width:1199px){.dai .dai-chip{display:none}}
 @media (prefers-reduced-motion:reduce){.dai-dock{transition:none}}
 
+/* five service rows: a little tighter on short laptop screens so the whole list still fits */
+@media (min-width:1025px){
+  .dai .svc-list li{padding:clamp(10px,calc(4.4vh - 13px),28px) 0 clamp(12px,calc(4.4vh - 11px),30px)}
+  .dai .svc-list h3{margin-bottom:3px}
+}
+
+/* ===== איך זה עובד ===== */
+#how{padding:clamp(20px,4vh,48px) 0 clamp(16px,3vh,40px)}
+#how > .wrap::before{margin-bottom:clamp(18px,4vh,48px)}
+.dai .how-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(16px,3.4vh,32px)}
+.dai .how-head h2{font:900 clamp(30px,min(3.2vw,6.4vh),46px)/1.15 var(--sans);letter-spacing:-.035em}
+.dai .how-head h2 .dai-eb{margin-bottom:10px}
+.dai .how-head p{margin-top:clamp(6px,1.2vh,12px);font-size:clamp(16px,2.6vh,20px);font-weight:600;color:rgba(244,244,243,.62)}
+.dai .how-mode{display:flex;gap:4px;padding:4px;border:1px solid var(--line-2);border-radius:12px;background:var(--bg);flex-shrink:0}
+.dai .how-mode button{white-space:nowrap;min-height:40px;padding:0 22px;border:0;border-radius:9px;background:transparent;color:var(--muted);font:700 15px/1 var(--sans);cursor:pointer;transition:background-color .2s,color .2s}
+.dai .how-mode button:hover{color:var(--text)}
+.dai .how-mode button[aria-pressed="true"]{background:#F4F4F3;color:#0B0B0C}
+.dai .how-panes{display:grid}
+.dai .how-panes > .how-steps{grid-area:1/1;align-self:start}
+.dai .how-panes > .how-steps[aria-hidden="true"]{visibility:hidden}
+.dai .how-steps{list-style:none;margin:0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:26px}
+.dai .how-steps li{position:relative;display:flex;flex-direction:column;gap:clamp(12px,2.2vh,20px);padding:clamp(16px,2.8vh,24px) 22px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.dai .how-steps li:not(:last-child)::after{content:"";position:absolute;top:calc(clamp(16px,2.8vh,24px) + 17px);left:-15px;width:9px;height:9px;border-left:2px solid var(--accent);border-bottom:2px solid var(--accent);transform:rotate(45deg)}
+.dai .how-top{display:flex;align-items:center;justify-content:space-between}
+.dai .how-n{font:500 15px/1 var(--mono);color:var(--accent)}
+.dai .how-steps .svc-ic{width:44px;height:44px}
+.dai .how-steps .svc-ic svg{width:21px;height:21px}
+.dai .how-steps h3{font:800 clamp(19px,1.6vw,22px)/1.25 var(--sans);letter-spacing:-.015em;margin-bottom:6px}
+.dai .how-steps p{font-size:15.5px;line-height:1.5;font-weight:600;color:rgba(244,244,243,.62);text-wrap:balance}
+.dai .how-steps .pc{margin:0!important}
+.dai .how-steps .nw{white-space:nowrap}
+/* tablets: two by two, so the titles keep to one line */
+@media (min-width:641px) and (max-width:1024px){
+  .dai .how-steps{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dai .how-steps li:nth-child(2)::after{display:none}
+}
+@media (max-width:640px){
+  .dai .how-head{flex-direction:column;align-items:stretch;gap:16px}
+  .dai .how-head h2 .dai-eb{display:none}
+  .dai .how-mode button{flex:1;min-height:44px;font-size:16px}
+  .dai .how-steps{grid-auto-flow:row;gap:30px}
+  .dai .how-steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 14px;align-items:start;padding:16px}
+  .dai .how-top{display:contents}
+  .dai .how-n{position:absolute;top:18px;left:16px;font-size:14px}
+  .dai .how-steps li:not(:last-child)::after{top:auto;bottom:-17px;left:auto;right:34px;transform:rotate(-45deg)}
+  .dai .how-steps h3{font-size:19px;margin:3px 0 4px}
+}
+.legal .nw{white-space:nowrap}
 /* desktop: bigger screenshots, smaller arrows (deals and community) */
 @media (min-width:1025px){
   .dai .wheel-btn{width:36px;height:36px;border-radius:10px}
@@ -1254,8 +1302,8 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   html.dai .hero .cta-row{gap:20px}
 }
 </style>
-
-
+</head>
+<body>
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
     <symbol id="logo-tile" viewBox="0 0 120 120">
@@ -1374,10 +1422,10 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
           <div class="calc-mode" role="group" aria-label="סוג הפעולה"><button type="button" data-mode="buy" aria-pressed="true">קנייה</button><button type="button" data-mode="withdraw" aria-pressed="false">משיכה</button></div>
           <label for="amt" id="amt-lbl">סכום להמרה בדולרים</label>
           <div class="amount"><span aria-hidden="true">$</span><input id="amt" type="text" inputmode="numeric" value="5,000" autocomplete="off" aria-describedby="calc-note"></div>
-          <p class="ils-eq" id="amt-ils" aria-live="polite"></p>
+          <p class="ils-eq" id="amt-ils"></p>
           <p class="calc-msg" id="calc-msg" hidden></p>
         </div>
-        <ul class="rows" aria-live="polite">
+        <ul class="rows">
           <li><span class="rate-lbl">שער USDT<span class="dk-only"> עכשיו</span></span><span class="rate-line"><b class="num" id="live-price">—</b><span class="c num muted" id="live-change">טוען…</span></span></li>
           <li><span><span id="fee-lbl">עמלת עסקה</span> (<span id="rate" class="num">4<span class="pc">%</span></span>)</span><b id="fee" class="num">200<span class="pc">$</span></b></li>
           <li class="wd-only"><span>מינימום למשיכה</span><b class="num">1,000<span class="pc">$</span></b></li>
@@ -1388,14 +1436,29 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
           <details class="tiers-box buy-only">
             <summary>מדרגות עמלת העסקה</summary>
             <ul class="tiers" aria-label="עמלת עסקה לפי סכום ההמרה">
-              <li data-tier="0"><span class="range num">500<span class="pc">$</span> – 1,000<span class="pc">$</span></span><span class="pct num">6<span class="pc">%</span></span></li>
+              <li data-tier="0"><span class="range">מ־<span class="num">500<span class="pc">$</span></span> עד <span class="num">999<span class="pc">$</span></span></span><span class="pct num">6<span class="pc">%</span></span></li>
               <li data-tier="1"><span class="range">מ־<span class="num">1,000<span class="pc">$</span></span> עד <span class="num">₪10,000</span> <span class="lim num" id="lim-usd"></span></span><span class="pct num">5<span class="pc">%</span></span></li>
               <li data-tier="2"><span class="range">מ־<span class="num">₪10,000</span> ומעלה</span><span class="pct num">4<span class="pc">%</span></span></li>
             </ul>
           </details>
           <small id="calc-note" class="buy-only">מינימום <span class="num">500<span class="pc">$</span></span>. הסף של <span class="num">₪10,000</span> מחושב לפי שער הדולר העדכני. החישוב להמחשה, והשווי נקבע בזמן ההמרה.</small>
+          <small id="wd-note" class="wd-only">החישוב להמחשה, והשווי נקבע בזמן המשיכה.</small>
         </div>
       </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" data-page="home" aria-labelledby="how-title">
+    <div class="wrap">
+      <div class="how-head">
+        <div><h2 id="how-title"><span class="dai-eb" aria-hidden="true"><b>//</b> שלבים</span>איך זה עובד</h2>
+        <p id="how-lead">מהפנייה הראשונה ועד שה־USDT בארנק.</p></div>
+        <div class="how-mode" role="group" aria-label="שלבים לפי סוג הפעולה"><button type="button" data-how="buy" aria-pressed="true">קנייה</button><button type="button" data-how="withdraw" aria-pressed="false">משיכה</button></div>
+      </div>
+      <div class="how-panes">
+      <ol class="how-steps" data-how="buy" aria-hidden="false"><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><span class="how-n num">01</span></div><div><h3>פונים אלינו</h3><p><span class="nw">בוואטסאפ או בטופס.</span> <span class="nw">אין ארנק? נפתח אותו יחד.</span></p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1-1.4 1.8-1.4 2.3 0s1.4 1.4 2.4 0 1.5-1 2.3.3"/><path d="M9 11.5h4"/></svg></span><span class="how-n num">02</span></div><div><h3>חותמים על הסכם</h3><p>הסכם לווה-מלווה, לפני שמעבירים כסף.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><span class="how-n num">03</span></div><div><h3>מעבירים שקלים</h3><p>בהעברה בנקאית, בלי עמלות שקל-דולר.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5"/><path d="M16.5 13.5h.01"/></svg></span><span class="how-n num">04</span></div><div><h3>מקבלים USDT</h3><p>ישירות לארנק שלכם.</p></div></li></ol>
+      <ol class="how-steps" data-how="withdraw" aria-hidden="true"><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><span class="how-n num">01</span></div><div><h3>פונים אלינו</h3><p>בוואטסאפ או בטופס, ונסביר מה צריך.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M8.5 16.5c1-1.4 1.8-1.4 2.3 0s1.4 1.4 2.4 0 1.5-1 2.3.3"/><path d="M9 11.5h4"/></svg></span><span class="how-n num">02</span></div><div><h3>חותמים על הסכם</h3><p>הסכם לווה-מלווה, לפני ששולחים USDT.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></span><span class="how-n num">03</span></div><div><h3>שולחים USDT</h3><p>מהארנק שלכם אלינו.</p></div></li><li><div class="how-top"><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><span class="how-n num">04</span></div><div><h3>מקבלים שקלים</h3><p><span class="nw">לחשבון הבנק,</span> <span class="nw">בניכוי עמלה קבועה של 6<span class="pc">%</span>.</span></p></div></li></ol>
       </div>
     </div>
   </section>
@@ -1408,16 +1471,12 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
       </div>
       <div class="wheel">
         <div class="wheel-stage" tabindex="0" role="region" aria-roledescription="גלגל" aria-label="עסקאות שבוצעו. החיצים מעבירים בין השיחות.">
-          <figure class="deal" data-amt="₪6,000" data-when="אוקטובר 2026" data-full="deals/wf2.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪6,000, אוקטובר 2026"><img style="--py:82.2%" src="deals/w2.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪6,000, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
-          <figure class="deal" data-amt="1,895 USDT" data-when="אוקטובר 2026" data-full="deals/wf1.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: 1,895 USDT, אוקטובר 2026"><img style="--py:14.4%" src="deals/w1.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על 1,895 USDT, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
           <figure class="deal" data-amt="₪100,000" data-when="אוגוסט 2026" data-full="deals/wf3.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪100,000, אוגוסט 2026"><img style="--py:16.4%" src="deals/w3.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪100,000, אוגוסט 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
-          <figure class="deal" data-amt="3,845 USDT" data-when="מרץ 2026" data-full="deals/wf4.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: 3,845 USDT, מרץ 2026"><img style="--py:18.5%" src="deals/w4.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על 3,845 USDT, מרץ 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
-          <figure class="deal" data-amt="₪3,500" data-when="ינואר 2026" data-full="deals/wf5.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪3,500, ינואר 2026"><img style="--py:74%" src="deals/w5.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪3,500, ינואר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
-          <figure class="deal" data-amt="₪15,000" data-when="ינואר 2026" data-full="deals/wf6.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪15,000, ינואר 2026"><img style="--py:16.4%" src="deals/w6.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪15,000, ינואר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async" loading="lazy"></button></figure>
-          <figure class="deal" data-amt="₪4,700" data-when="דצמבר 2025" data-full="deals/wf7.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪4,700, דצמבר 2025"><img style="--py:16.4%" src="deals/w7.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪4,700, דצמבר 2025. הפרטים האישיים מטושטשים." loading="lazy" decoding="async" loading="lazy"></button></figure>
-          <figure class="deal" data-amt="₪16,500" data-when="נובמבר 2025" data-full="deals/wf8.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪16,500, נובמבר 2025"><img style="--py:16.4%" src="deals/w8.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪16,500, נובמבר 2025. הפרטים האישיים מטושטשים." loading="lazy" decoding="async" loading="lazy"></button></figure>
+          <figure class="deal" data-amt="1,895 USDT" data-when="אוקטובר 2026" data-full="deals/wf1.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: 1,895 USDT, אוקטובר 2026"><img style="--py:14.4%" src="deals/w1.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על 1,895 USDT, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+          <figure class="deal" data-amt="₪10,200" data-when="דצמבר 2025" data-full="deals/wf9.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪10,200, דצמבר 2025"><img style="--py:58%" src="deals/w9.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪10,200, דצמבר 2025. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
+          <figure class="deal" data-amt="₪6,000" data-when="אוקטובר 2026" data-full="deals/wf2.webp"><button class="deal-open" type="button" aria-label="הגדלת השיחה: ₪6,000, אוקטובר 2026"><img style="--py:82.2%" src="deals/w2.webp" width="540" height="1173" alt="צילום שיחת וואטסאפ עם עסקה על ₪6,000, אוקטובר 2026. הפרטים האישיים מטושטשים." loading="lazy" decoding="async"></button></figure>
         </div>
-        <div class="wheel-cap" aria-live="polite"><b class="num" id="deal-amt">₪6,000</b><span id="deal-when">אוקטובר 2026</span></div>
+        <div class="wheel-cap" aria-live="polite"><b class="num" id="deal-amt">₪100,000</b><span id="deal-when">אוגוסט 2026</span></div>
         <div class="wheel-ctrl">
           <button class="wheel-btn" type="button" data-step="-1" aria-label="השיחה הקודמת"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
           <div class="wheel-dots" role="group" aria-label="בחירת שיחה"></div>
@@ -1472,6 +1531,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
         <ul class="svc-list">
           <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="6" rx="1.6"/><rect x="17" y="14" width="4" height="6" rx="1.6"/><path d="M19 20c0 1.2-1.6 2-4 2h-2"/></svg></span><div><h3>פתיחת ארנק עם ליווי אישי</h3><p>נפתח איתכם ארנק קריפטו ונוודא שכל שלב מתבצע נכון ובצורה בטוחה.</p></div></li>
           <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h14l-3.5-3.5M20 16H6l3.5 3.5"/></svg></span><div><h3>המרה לקריפטו בהעברה בנקאית</h3><p>שירות אמין, עמלת עסקה מקסימלית של 6<span class="pc">%</span> ותנאים נוחים.</p></div></li>
+          <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9.5 12 4l9 5.5z"/><path d="M5.5 12v5.5M10 12v5.5M14 12v5.5M18.5 12v5.5M3 20.5h18"/></svg></span><div><h3>משיכת USDT לחשבון הבנק</h3><p>עמלה קבועה של 6<span class="pc">%</span> על כל משיכה, מינימום <span class="num">1,000<span class="pc">$</span></span>.</p></div></li>
           <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 12c-2-2.7-4-4-6-4a4 4 0 0 0 0 8c2 0 4-1.3 6-4zm0 0c2 2.7 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.3-6 4z"/></svg></span><div><h3>העברות ללא הגבלה</h3><p>שליטה מלאה בכסף שלכם, בלי מגבלות מיותרות.</p></div></li>
           <li><span class="svc-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 4.5h10.5a2 2 0 0 1 2 2V12a2 2 0 0 1-2 2H9l-3.5 3v-3H4a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2z"/><path d="M19.5 9H20a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-1v3l-3.5-3H12"/></svg></span><div><h3>חודש בקהילה במתנה</h3><p>עם כל המרה, עדכונים ועסקאות בזמן אמת בוואטסאפ.</p></div></li>
         </ul>
@@ -1485,7 +1545,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
         <div class="cA-txt">
           <h2 id="community-title"><span class="dai-eb" aria-hidden="true"><b>//</b> <span dir="ltr">Earn with us</span></span>הקהילה שלנו</h2>
           <p class="cA-lead mb">עדכוני שוק, שיח שוטף והעסקאות שלנו בזמן אמת, בקבוצת <span dir="ltr">WhatsApp</span> אחת.</p>
-          <p class="cA-lead dk">עדכונים על אירועים שצפויים להזיז את השוק עוד לפני שהם קורים והעסקאות שלנו בזמן אמת – הכול בקבוצת <span dir="ltr">WhatsApp</span> אחת.</p>
+          <p class="cA-lead dk">עדכונים על אירועים שצפויים להזיז את השוק עוד לפני שהם קורים, והעסקאות שלנו בזמן אמת – הכול בקבוצת <span dir="ltr">WhatsApp</span> אחת.</p>
           <ol class="cA-pts">
             <li><span class="n num">01</span><div><b>עדכוני שוק</b><span>אירועים שצפויים להזיז את השוק לפני שהם קורים.</span></div></li>
             <li><span class="n num">02</span><div><b>העסקאות שלנו בזמן אמת</b><span>הכניסות והיציאות שלנו, עם המחיר והתזמון.</span></div></li>
@@ -1499,11 +1559,11 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
         </div>
         <div class="cA-media">
           <div class="cA-fan" role="group" aria-label="צילומים מהקבוצה. אפשר להחליק או להשתמש בחיצים.">
-            <button class="cA-ph pos-c" type="button" data-lb="community/kf5.webp" aria-label="הגדלת צילום מהקבוצה 1"><img src="community/k5.webp" width="540" height="1173" alt="צילום מקבוצת הווצאפ: עדכון על ביטקוין וכרטיס רווח בעסקת שורט על BTC. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
-            <button class="cA-ph pos-l" type="button" data-lb="community/kf1.webp" aria-label="הגדלת צילום מהקבוצה 2"><img src="community/k1.webp" width="540" height="1173" alt="צילום מקבוצת הווצאפ: כרטיס רווח בעסקת שורט על ETH, עם עדכוני שוק לשבוע הקרוב. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
-            <button class="cA-ph pos-b" type="button" data-lb="community/kf2.webp" aria-label="הגדלת צילום מהקבוצה 3"><img src="community/k2.webp" width="540" height="1173" alt="צילום מקבוצת הווצאפ: כרטיסי רווח מעסקאות ADA. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
-            <button class="cA-ph pos-b" type="button" data-lb="community/kf3.webp" aria-label="הגדלת צילום מהקבוצה 4"><img src="community/k3.webp" width="540" height="1173" alt="צילום מקבוצת הווצאפ: גרף שוק עם עדכון על קניית קוואנט. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
-            <button class="cA-ph pos-r" type="button" data-lb="community/kf4.webp" aria-label="הגדלת צילום מהקבוצה 5"><img src="community/k4.webp" width="540" height="1173" alt="צילום מקבוצת הווצאפ: גרף שוק עם תזכורת לעדכון הקודם. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-c" type="button" data-lb="community/kf5.webp" aria-label="הגדלת צילום מהקבוצה 1"><img src="community/k5.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: עדכון על ביטקוין וכרטיס רווח בעסקת שורט על BTC. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-l" type="button" data-lb="community/kf1.webp" aria-label="הגדלת צילום מהקבוצה 2"><img src="community/k1.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: כרטיס רווח בעסקת שורט על ETH, עם עדכוני שוק לשבוע הקרוב. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-b" type="button" data-lb="community/kf2.webp" aria-label="הגדלת צילום מהקבוצה 3"><img src="community/k2.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: כרטיסי רווח מעסקאות ADA. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-b" type="button" data-lb="community/kf3.webp" aria-label="הגדלת צילום מהקבוצה 4"><img src="community/k3.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: גרף שוק עם עדכון על קניית קוואנט. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
+            <button class="cA-ph pos-r" type="button" data-lb="community/kf4.webp" aria-label="הגדלת צילום מהקבוצה 5"><img src="community/k4.webp" width="540" height="1173" alt="צילום מקבוצת הוואטסאפ: גרף שוק עם תזכורת לעדכון הקודם. שמות החברים מטושטשים." loading="lazy" decoding="async"></button>
           </div>
           <div class="wheel-ctrl cA-ctrl">
             <button class="wheel-btn" type="button" data-fan="-1" aria-label="הצילום הקודם"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
@@ -1568,7 +1628,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
         <!-- TODO: להציג רק אם יש רישיון -->
         <div hidden>[רישיון נש״פ מרשות שוק ההון: מספר]</div>
         <p class="a11y-row"><button type="button" class="a11y-btn" id="a11y-motion">עצירת אנימציות</button><span aria-hidden="true">·</span><button type="button" class="a11y-btn" id="a11y-open" aria-haspopup="dialog">הצהרת נגישות</button></p>
-        <p class="legal">המרת שקלים ל־USDT וליווי טכני. אין באמור ייעוץ השקעות. מטבעות דיגיטליים כרוכים בסיכון. <span class="num">© 2026</span> Caesar Change</p>
+        <p class="legal">המרת שקלים ל־USDT, משיכה לחשבון הבנק וליווי אישי. אין באמור ייעוץ השקעות. מטבעות דיגיטליים כרוכים בסיכון. <span class="num">© 2026</span> <span class="nw">Caesar Change</span></p>
       </div>
     </div>
   </div>
@@ -1583,7 +1643,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
       <li>אפשר לנווט בכל האתר במקלדת, עם סימון ברור של המיקום וקישור "דלג לתוכן".</li>
       <li>ניגודיות צבעים וגודל טקסט מינימלי לפי ההנחיות.</li>
       <li>תיאור טקסט לתמונות ולכפתורים.</li>
-      <li>אפשר לעצור את האנימציות מהקישור "עצירת אנימציות" בתחתית העמוד, והאתר מכבד את הגדרת "הפחתת תנועה" של המכשיר.</li>
+      <li>אפשר לעצור את האנימציות מהכפתור "עצירת אנימציות" בתחתית העמוד, והאתר מכבד את הגדרת "הפחתת תנועה" של המכשיר.</li>
       <li>בטופס יש תוויות ברורות, והודעת שגיאה מופיעה ליד השדה.</li>
     </ul>
     <h3>נתקלתם בבעיה?</h3>
@@ -1603,12 +1663,12 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   // הסף בשקלים מומר לדולרים לפי שער ה־USDT העדכני (≈ שער הדולר)
   var MIN = 500, SMALL = 1000, LIMIT_ILS = 10000, RATES = [0.06, 0.05, 0.04];
   var MODE = 'buy', WD_MIN = 1000, WD_RATE = 0.06;  // משיכה לבנק: 6% על כל משיכה, מינימום $1,000
-  var ils = 3.13;  // TODO: שער ברירת מחדל עד שהשער החי נטען (או אם הוא לא זמין)
+  var ils = 3.16;  // שער ברירת מחדל (הדולר בנובמבר 2026) עד שהשער החי נטען, או אם הוא לא זמין
   var input = document.getElementById('amt'), feeEl = document.getElementById('fee'), netEl = document.getElementById('net'),
       rateEl = document.getElementById('rate'), msgEl = document.getElementById('calc-msg'),
       ilsEl = document.getElementById('amt-ils'), limEl = document.getElementById('lim-usd');
   var rows = document.querySelectorAll('.tiers li');
-  var fmt = function(n){ return (Math.round(n * 100) / 100).toLocaleString('en-US', { maximumFractionDigits: 2 }) + '<span class="pc">$</span>'; };
+  var fmt = function(n){ var v = Math.round(n * 100) / 100; return v.toLocaleString('en-US', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 }) + '<span class="pc">$</span>'; };
   var pct = function(r){ return (Math.round(r * 1000) / 10) + '<span class="pc">%</span>'; };
   function tierFor(n){ return n < SMALL ? 0 : (n * ils < LIMIT_ILS ? 1 : 2); }
   function show(m){ msgEl.innerHTML = m; msgEl.hidden = !m; }
@@ -1616,12 +1676,12 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   function setGo(n){
     if (!go) return;
     var t = MODE === 'withdraw'
-      ? (n >= WD_MIN ? 'היי, אני רוצה למשוך $' + n.toLocaleString('en-US') + ' לחשבון הבנק' : 'היי, אני רוצה לשמוע על משיכה לחשבון הבנק')
-      : (n >= MIN ? 'היי, אני רוצה להמיר $' + n.toLocaleString('en-US') : 'היי, אני רוצה לשמוע על המרה');
+      ? (n >= WD_MIN ? 'היי, אני רוצה למשוך ' + n.toLocaleString('en-US') + '$ לחשבון הבנק' : 'היי, אני רוצה לשמוע על משיכה לחשבון הבנק')
+      : (n >= MIN ? 'היי, אני רוצה להמיר ' + n.toLocaleString('en-US') + '$' : 'היי, אני רוצה לשמוע על המרה');
     go.setAttribute('href', WA + '?text=' + encodeURIComponent(t));
   }
   function calc(){
-    var n = parseInt(((input.value || '').split('.')[0].replace(/[^\d]/g, '') || '0').slice(0, 9), 10);
+    var n = parseInt(((input.value || '').split('.')[0].replace(/[^\d]/g, '') || '0').slice(0, 8), 10);
     input.value = n ? n.toLocaleString('en-US') : '';
     if (MODE === 'withdraw') {
       rows.forEach(function(r){ r.classList.remove('on'); });
@@ -1654,7 +1714,21 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     input.style.width = Math.ceil(meas.getBoundingClientRect().width + 3) + 'px';
   }
   amountBox.addEventListener('click', function(e){ if (e.target !== input) input.focus(); });
-  input.addEventListener('input', function(){ calc(); fitAmt(); }); calc(); fitAmt();
+  var prevDigits = '';
+  input.addEventListener('input', function(e){
+    var raw = input.value, p = input.selectionStart == null ? raw.length : input.selectionStart;
+    var digits = raw.replace(/[^\d]/g, ''), d = raw.slice(0, p).replace(/[^\d]/g, '').length;
+    if (digits === prevDigits && e.inputType === 'deleteContentBackward' && d > 0) { var head = raw.slice(0, p), k = head.search(/\d[^\d]*$/); input.value = head.slice(0, k) + head.slice(k + 1) + raw.slice(p); d--; }
+    else if (digits === prevDigits && e.inputType === 'deleteContentForward') { var tail = raw.slice(p), j = tail.search(/\d/); if (j >= 0) input.value = raw.slice(0, p) + tail.slice(0, j) + tail.slice(j + 1); }
+    var keep = input.value.split('.')[0].replace(/[^\d]/g, '').slice(0, 8);
+    calc();
+    if (/^0\d/.test(keep)) input.value = keep.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    fitAmt();
+    prevDigits = input.value.replace(/[^\d]/g, '');
+    if (document.activeElement === input) { var v = input.value, i = 0, c = 0; while (i < v.length && c < d) { if (/\d/.test(v[i])) c++; i++; } try { input.setSelectionRange(i, i); } catch (er) {} }
+  });
+  input.addEventListener('blur', function(){ calc(); fitAmt(); prevDigits = input.value.replace(/[^\d]/g, ''); });
+  calc(); fitAmt(); prevDigits = input.value.replace(/[^\d]/g, '');
   window.ccSetMode = function(m){ MODE = m; calc(); fitAmt(); };
   window.addEventListener('resize', fitAmt);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAmt);
@@ -1684,6 +1758,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     var url = leadWa.getAttribute('href').split('?')[0] + '?text=' + encodeURIComponent(text);
     leadWa.setAttribute('href', url);
     form.classList.add('sent');
+    var tt = document.getElementById('thanks-title'); if (tt) { tt.setAttribute('tabindex', '-1'); tt.focus(); }
     var alt = document.querySelector('.contact-alt'); if (alt) alt.style.display = 'none';
     try { window.open(url, '_blank', 'noopener'); } catch (err) {}
   });
@@ -1721,7 +1796,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   cards.forEach(function(c){
     c.innerHTML =
       '<div class="coin-id"><span class="badge" aria-hidden="true">' + c.dataset.glyph + '</span><span class="nm"><b>' + c.dataset.name + '</b><span>' + c.dataset.sym + '</span></span></div>' +
-      '<div class="pv" aria-live="polite"><b class="p">—</b><span class="c muted">טוען…</span></div>' +
+      '<div class="pv"><b class="p">—</b><span class="c muted">טוען…</span></div>' +
       '<div class="spark-wrap"><svg class="spark" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true"></svg>' +
       '<i class="sp-line" aria-hidden="true"></i><i class="sp-dot" aria-hidden="true"></i><span class="sp-tip" aria-hidden="true"></span></div>';
   });
@@ -1826,6 +1901,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     btn.setAttribute('aria-label', open ? 'סגירת תפריט' : 'פתיחת תפריט');
     menu.hidden = !open;
     document.documentElement.classList.toggle('menu-open', open);
+    [].forEach.call(document.querySelectorAll('main, footer, .m-cta'), function(el){ el.inert = open; });
     if (open) { var f = menu.querySelector('a'); if (f) f.focus(); }
   }
   btn.addEventListener('click', function(){ set(btn.getAttribute('aria-expanded') !== 'true'); });
@@ -1916,7 +1992,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 (function(){
   var wheel = document.querySelector('.wheel');
   if (!wheel) return;
-  var stage = wheel.querySelector('.wheel-stage'), cards = [].slice.call(stage.querySelectorAll('.deal')), n = cards.length;
+  var stage = wheel.querySelector('.wheel-stage'), cards = [].slice.call(stage.querySelectorAll('.deal')), n = cards.length, VIS = n >= 7 ? 2 : 1;
   var amtEl = document.getElementById('deal-amt'), whenEl = document.getElementById('deal-when'), dotsEl = wheel.querySelector('.wheel-dots');
   var lb = document.getElementById('deal-lb'), lbImg = lb.querySelector('img'), lbClose = lb.querySelector('.lb-close');
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1924,7 +2000,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 
   function wrapOff(o){ o = ((o % n) + n) % n; return o > n / 2 ? o - n : o; }
   function active(){ return ((Math.round(pos) % n) + n) % n; }
-  function spacing(){ return cards[0].offsetWidth * (window.innerWidth <= 640 ? 0.6 : 0.68); }
+  function spacing(){ return cards[0].offsetWidth * (VIS < 2 ? (window.innerWidth <= 640 ? 0.66 : 0.8) : (window.innerWidth <= 640 ? 0.6 : 0.68)); }
 
   var dots = cards.map(function(c, i){
     var b = document.createElement('button');
@@ -1935,14 +2011,24 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     return b;
   });
 
+  function place(c, o, sp){
+    var a = Math.abs(o), s = 1 - Math.min(a, 3) * 0.13;
+    c.style.transform = 'translateX(' + (-o * sp).toFixed(1) + 'px) translateZ(' + (-a * 80).toFixed(1) + 'px) rotateY(' + (o * 14).toFixed(2) + 'deg) scale(' + s.toFixed(3) + ')';
+    c.style.opacity = a <= VIS ? 1 : Math.max(0, VIS + 1 - a);
+    c.style.zIndex = String(100 - Math.round(a * 10));
+    c.style.setProperty('--dim', (Math.min(a, 2) * 0.3).toFixed(3));
+  }
   function layout(){
     var sp = spacing(), a0 = active();
     cards.forEach(function(c, i){
-      var o = wrapOff(i - pos), a = Math.abs(o), s = 1 - Math.min(a, 3) * 0.13;
-      c.style.transform = 'translateX(' + (-o * sp).toFixed(1) + 'px) translateZ(' + (-a * 80).toFixed(1) + 'px) rotateY(' + (o * 14).toFixed(2) + 'deg) scale(' + s.toFixed(3) + ')';
-      c.style.opacity = a <= 2 ? 1 : Math.max(0, 3 - a);
-      c.style.zIndex = String(100 - Math.round(a * 10));
-      c.style.setProperty('--dim', (Math.min(a, 2) * 0.3).toFixed(3));
+      // a card that wraps round never flies across in view: it fades out on the side it leaves, and comes in from the near edge
+      var raw = i - pos, o = wrapOff(raw), k = Math.round((o - raw) / n), keep = false;
+      if (c._k != null && k !== c._k) {
+        if (Math.abs(o) >= VIS + 1 - 0.001) { o = (c._o < 0 ? -1 : 1) * Math.abs(o); keep = true; }
+        else { c.style.transition = 'none'; place(c, (o < 0 ? -1 : 1) * (VIS + 1), sp); void c.offsetWidth; c.style.transition = ''; }
+      }
+      if (!keep) c._k = k;
+      c._o = o; place(c, o, sp);
       var on = i === a0;
       c.classList.toggle('is-on', on);
       c.setAttribute('aria-hidden', on ? 'false' : 'true');
@@ -2068,7 +2154,7 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
       p.classList.remove('pos-c', 'pos-l', 'pos-r', 'pos-b');
       p.classList.add(o === 0 ? 'pos-c' : (o === 1 ? 'pos-l' : (o === n - 1 ? 'pos-r' : 'pos-b')));
       p.tabIndex = o === 0 || o === 1 || o === n - 1 ? 0 : -1;
-      p.setAttribute('aria-label', o === 0 ? 'הגדלת הצילום' : 'הצגת הצילום');
+      var alt = (p.querySelector('img') || {}).alt || 'צילום'; p.setAttribute('aria-label', (o === 0 ? 'הגדלת ' : 'הצגת ') + alt);
     });
     dots.forEach(function(d, i){ d.setAttribute('aria-current', i === cur ? 'true' : 'false'); });
   }
@@ -2120,7 +2206,15 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     placeCard();
     orbits.forEach(function(o, j){ var r = j ? R - d * .9 : R + d * .8; o.style.width = o.style.height = 2 * r + 'px'; o.style.left = (geo.cx - r) + 'px'; o.style.top = (geo.cy - r) + 'px'; });
   }
-  function placeCard(){ if (!geo) return; var ch = card.offsetHeight || 190; card.style.top = Math.round(Math.max(8, Math.min(geo.h - ch - 12, geo.yTop - ch / 2))) + 'px'; }
+  function placeCard(){ if (!geo) return; var ch = card.offsetHeight || 190, cw = card.offsetWidth || 216, top = Math.max(8, Math.min(geo.h - ch - 12, geo.yTop - ch / 2));
+    card.style.top = Math.round(top) + 'px';
+    // short laptop screens: if the card would sit on the fee line, it moves sideways past it (or, if there is no room, just below it)
+    var fc = document.querySelector('.hero-bento .fee-cards'); if (!fc || !fc.offsetHeight) return;
+    var ar = arc.getBoundingClientRect(), f = fc.getBoundingClientRect(), cl = ar.left + (parseFloat(card.style.left) || 0), ct = ar.top + top;
+    if (ct < f.bottom + 8 && cl < f.right + 12 && cl + cw > f.left - 12) {
+      var nl = f.right + 20 - ar.left;
+      if (nl + cw <= ar.width - 16) card.style.left = Math.round(nl) + 'px'; else card.style.top = Math.round(f.bottom + 12 - ar.top) + 'px';
+    } }
   function layout(){
     if (!geo) measure();
     var near = 0, best = 99;
@@ -2307,6 +2401,20 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
 </script>
 
 <script>
+(function(){
+  var sec = document.getElementById('how'); if (!sec) return;
+  var lead = document.getElementById('how-lead'), L = { buy: 'מהפנייה הראשונה ועד שה־USDT בארנק.', withdraw: 'מה־USDT בארנק ועד הכסף בבנק.' };
+  function set(m){
+    sec.querySelectorAll('.how-steps').forEach(function(o){ o.setAttribute('aria-hidden', o.getAttribute('data-how') === m ? 'false' : 'true'); });
+    sec.querySelectorAll('.how-mode button').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-how') === m ? 'true' : 'false'); });
+    lead.textContent = L[m];
+  }
+  sec.querySelectorAll('.how-mode button').forEach(function(b){ b.addEventListener('click', function(){ set(b.getAttribute('data-how')); }); });
+  window.ccHowSet = set;  // the calculator switch calls this, so the steps follow it
+})();
+</script>
+
+<script>
 // מחשבון ההמרה בשני הכיוונים: המתג מחליף את החישוב, התוויות, ההודעה בוואטסאפ והטקסט שליד המחשבון
 (function(){
   var calc = document.querySelector('#calc .calc'); if (!calc) return;
@@ -2323,8 +2431,10 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
     calc.setAttribute('data-mode', m); calc.setAttribute('data-file', t.file);
     if ($('calc-lead')) $('calc-lead').innerHTML = t.lead;
     [['amt-lbl', 'amt'], ['fee-lbl', 'fee'], ['out-lbl', 'out'], ['go-lbl', 'go'], ['calc-title', 'head']].forEach(function(p){ var e = $(p[0]); if (e) e.innerHTML = t[p[1]]; });
+    if ($('amt')) $('amt').setAttribute('aria-describedby', m === 'withdraw' ? 'wd-note' : 'calc-note');
     btns.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-mode') === m ? 'true' : 'false'); });
     if (window.ccSetMode) window.ccSetMode(m);
+    if (window.ccHowSet) window.ccHowSet(m);
     lockH();
   }
   // switching never moves the page: the calculator area keeps the height of the taller mode, so the deals below stay put
@@ -2350,3 +2460,5 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   if (location.hash === '#withdraw') set('withdraw');
 })();
 </script>
+</body>
+</html>
