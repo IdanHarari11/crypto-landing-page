@@ -2198,6 +2198,7 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
   var INFO = { tether: ['USDT', 'Tether'], bitcoin: ['BTC', 'Bitcoin'], ethereum: ['ETH', 'Ethereum'], ripple: ['XRP', 'Ripple'] };
   var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   var SPEED = 1 / 2.6;                       // coins per second
+  var LINE = true;                           // true: the coins glide in a straight line across the whole width; false: the original ring
   var rates = null, failed = false, pos = 0, speed = reduce ? 0 : SPEED, sel = -1, selAmt = 0, hover = false, focusIn = false, onScreen = true;
   var geo = null, anim = null, last = 0, raf = 0, dirty = true, paused = false, pauseBtn = arc.querySelector('.ca-pause');
   function wrap(v){ return ((v % n) + n) % n; }
@@ -2210,13 +2211,15 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
     if (window.innerWidth > 1024) { var hd = document.querySelector('header'), mh = Math.max(500, Math.min(window.innerHeight - (hd ? hd.offsetHeight : 0), Math.round(want + d / 2 + 44))) + 'px'; if (heroEl.style.minHeight !== mh) { heroEl.style.minHeight = mh; h = arc.clientHeight; } }
     else if (heroEl.style.minHeight) heroEl.style.minHeight = '';
     var yTop = Math.min(h - d / 2 - 28, Math.max(h - d / 2 - 110, want));
-    var step = 2 * Math.asin(Math.min(1, d * 1.16 / (2 * R))) * 180 / Math.PI;
+    var gap = d * 1.16;
+    if (LINE) { R = 1e5; gap = Math.max(gap, (w + d) / (n - 1)); } // a huge ring is a straight line; spacing fills even very wide screens
+    var step = 2 * Math.asin(Math.min(1, gap / (2 * R))) * 180 / Math.PI;
     geo = { cx: w / 2, cy: yTop + R, R: R, h: h, w: w, step: step, yTop: yTop };
     var cw = card.offsetWidth || 216, ch = card.offsetHeight || 190;
     var btn = document.querySelector('.hero .cta-row .btn'), bR = btn ? btn.getBoundingClientRect().right - arc.getBoundingClientRect().left : 0;
     card.style.left = Math.round(Math.min(w - cw - 16, Math.max(w / 2 + d * 1.15 / 2 + 24, bR + 20))) + 'px';
     placeCard();
-    orbits.forEach(function(o, j){ var r = j ? R - d * .9 : R + d * .8; o.style.width = o.style.height = 2 * r + 'px'; o.style.left = (geo.cx - r) + 'px'; o.style.top = (geo.cy - r) + 'px'; });
+    orbits.forEach(function(o, j){ o.style.display = LINE ? 'none' : ''; if (LINE) return; var r =j ? R - d * .9 : R + d * .8; o.style.width = o.style.height = 2 * r + 'px'; o.style.left = (geo.cx - r) + 'px'; o.style.top = (geo.cy - r) + 'px'; });
   }
   function placeCard(){ if (!geo) return; var ch = card.offsetHeight || 190, cw = card.offsetWidth || 216, top = Math.max(8, Math.min(geo.h - ch - 12, geo.yTop - ch / 2));
     card.style.top = Math.round(top) + 'px';
@@ -2236,12 +2239,13 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
       if (ad < best) { best = ad; near = i; }
       var th = k * geo.step * Math.PI / 180, x = geo.cx + geo.R * Math.sin(th), y = geo.cy - geo.R * Math.cos(th);
       var s = (1 - Math.min(ad, 4) * .035) * (isSel ? 1 + .14 * selAmt : 1);
-      var op = ad < 2.6 ? 1 : Math.max(0, 1 - (ad - 2.6) / 1.4);
+      var op = LINE ? 1 : ad < 2.6 ? 1 : Math.max(0, 1 - (ad - 2.6) / 1.4);
+      if (LINE) s = isSel ? 1 + .14 * selAmt : 1;
       op *= Math.max(0, Math.min(1, Math.min(x, geo.w - x) / 160));          // fade at the side edges
       op *= Math.max(0, Math.min(1, (geo.h - y + 30) / 110));                // and as the ring sinks below the fold
       if (!isSel) op *= 1 - .5 * selAmt;
       c.style.transform = 'translate(' + x.toFixed(1) + 'px,' + y.toFixed(1) + 'px) rotate(' + (k * geo.step * .6).toFixed(2) + 'deg) scale(' + s.toFixed(4) + ')';
-      var f = isSel ? 1 - selAmt : 1, ry = -k * 9 * f, rx = 16 * f;
+      var f = isSel ? 1 - selAmt : 1, ry = (LINE ? Math.max(-30, Math.min(30, -k * 6)) : -k * 9) * f, rx = 16 * f;
       bodies[i].style.transform = 'rotateY(' + ry.toFixed(2) + 'deg) rotateX(' + rx.toFixed(2) + 'deg)';
       c.style.opacity = op.toFixed(3);
       c.style.zIndex = isSel ? 30 : String(Math.round(20 - ad * 2));
