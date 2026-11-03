@@ -1287,6 +1287,22 @@ html.dai.no-motion *,html.dai.no-motion *::before,html.dai.no-motion *::after{an
   .dai #community{--phH:clamp(380px,calc(100svh - var(--head) - 130px),780px)}
   html.dai main > section#community{padding-block:44px 0} /* title level with the other tabs */
   .dai .cA-ctrl{margin-top:0}
+  /* coin flip: the chosen coin turns over, its back shows the rate; the side card stays only for screen readers */
+  html.dai .flipmode .ca-coin .ca-body{transform:rotateY(0deg)!important;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+  html.dai .flipmode .ca-coin.flip .ca-body{transform:rotateY(180deg)!important}
+  html.dai .flipmode .ca-face{-webkit-backface-visibility:hidden;backface-visibility:hidden}
+  html.dai .ca-back{display:none}
+  html.dai .flipmode .ca-back{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:50%;background:#F4F4F3;color:#0B0B0C;box-shadow:0 0 0 4px rgba(242,101,42,.38),0 26px 46px -24px rgba(0,0,0,.95);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;text-align:center;direction:rtl}
+  html.dai .ca-back .cb-t{font:700 calc(var(--d) * .085)/1 var(--mono);letter-spacing:.08em;color:#5A5A5E}
+  html.dai .ca-back .cb-p{font:800 calc(var(--d) * .15)/1.15 var(--num);direction:ltr;margin-top:2px}
+  html.dai .ca-back .cb-s{font:600 calc(var(--d) * .08)/1.2 var(--num);color:#5A5A5E;direction:ltr}
+  html.dai .ca-back .cb-s:empty{display:none}
+  html.dai .ca-back .cb-c{font:700 calc(var(--d) * .075)/1.3 var(--sans);color:#5A5A5E}
+  html.dai .ca-back .cb-c.up{color:#13915A} html.dai .ca-back .cb-c.dn{color:#C8322C}
+  html.dai .ca-back .cb-c bdi{direction:ltr;unicode-bidi:isolate}
+  html.dai .ca-back .cb-more{pointer-events:auto;margin-top:4px;font:600 calc(var(--d) * .075)/1 var(--sans);color:#0B0B0C;text-decoration:none;border-bottom:1px solid rgba(242,101,42,.7)}
+  html.dai .flipmode .ca-rate{clip-path:inset(50%);pointer-events:none}
+  @media (prefers-reduced-motion:reduce){ html.dai .flipmode .ca-coin .ca-body{transition:none} }
   html.dai main > section#calc{padding-top:clamp(40px,7vh,72px);margin-top:clamp(48px,8vh,88px)} /* more space between the coins and the calculator (the margin sits outside, so the menu jump still fits the screen) */
   html.dai #calc > .wrap::before{margin-bottom:clamp(72px,10vh,96px)}
   html.dai #deals .deals-head{position:sticky;top:116px;align-self:start;z-index:2} /* the title travels with the scroll, like the other sections */
@@ -2203,6 +2219,15 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
   var reduce = !!(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
   var SPEED = 1 / 2.6;                       // coins per second
   var LINE = true;                           // true: the coins glide in a straight line across the whole width; false: the original ring
+  var FLIP = true;                           // true: the chosen coin turns over and shows its rate on the back; false: the rate card beside it
+  if (FLIP) arc.classList.add('flipmode');
+  var backs = coins.map(function(c){
+    var b = document.createElement('span'); b.className = 'ca-back'; b.setAttribute('aria-hidden', 'true');
+    b.innerHTML = '<b class="cb-t"></b><b class="cb-p num"></b><span class="cb-s num"></span><span class="cb-c"></span><a class="cb-more" href="#market" tabindex="-1">לצפייה בגרף</a>';
+    b.querySelector('.cb-more').addEventListener('click', function(e){ e.stopPropagation(); close(); });
+    c.querySelector('.ca-body').appendChild(b); return b;
+  });
+  function flip(i, on){ if (FLIP && i >= 0) coins[i].classList.toggle('flip', on); }
   var rates = null, failed = false, pos = 0, speed = reduce ? 0 : SPEED, sel = -1, selAmt = 0, hover = false, focusIn = false, onScreen = true;
   var geo = null, anim = null, last = 0, raf = 0, dirty = true, paused = false, pauseBtn = arc.querySelector('.ca-pause');
   function wrap(v){ return ((v % n) + n) % n; }
@@ -2263,7 +2288,7 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
     if (anim) {
       var p = Math.min(1, (t - anim.t0) / anim.dur), e = 1 - Math.pow(1 - p, 3);
       pos = anim.from + (anim.to - anim.from) * e; dirty = true;
-      if (p >= 1) { pos = wrap(anim.to); anim = null; fill(); card.classList.add('show'); }
+      if (p >= 1) { pos = wrap(anim.to); anim = null; fill(); card.classList.add('show'); flip(sel, true); }
     } else if (sel < 0 && !reduce) {
       var want = (hover || focusIn || paused) ? 0 : SPEED;
       speed += (want - speed) * Math.min(1, dt * (want ? 3 : 7));
@@ -2295,20 +2320,25 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
       priceEl.textContent = '—'; ilsEl.textContent = ''; chgEl.className = 'ca-chg';
       chgEl.textContent = failed ? 'השער לא זמין כרגע' : 'טוען…';
     }
+    var bk = backs[sel];
+    bk.querySelector('.cb-t').textContent = inf[0];
+    bk.querySelector('.cb-p').textContent = priceEl.textContent;
+    bk.querySelector('.cb-s').textContent = ilsEl.textContent;
+    var bc = bk.querySelector('.cb-c'); bc.className = 'cb-c ' + chgEl.className; bc.innerHTML = chgEl.innerHTML;
     placeCard();
   }
   function select(i){
     if (sel === i) { close(); return; }
-    if (sel >= 0) coins[sel].classList.remove('on');
+    if (sel >= 0) { coins[sel].classList.remove('on'); flip(sel, false); }
     sel = i; coins[i].classList.add('on'); card.classList.remove('show'); arc.classList.add('picked');
     var dlt = wrap(i - pos); if (dlt > n / 2) dlt -= n;
-    if (reduce || Math.abs(dlt) < .01) { pos = wrap(i); anim = null; dirty = true; fill(); card.classList.add('show'); }
+    if (reduce || Math.abs(dlt) < .01) { pos = wrap(i); anim = null; dirty = true; fill(); card.classList.add('show'); flip(i, true); }
     else anim = { from: pos, to: pos + dlt, t0: performance.now(), dur: Math.min(1100, 520 + Math.abs(dlt) * 110) };
     speed = 0; dirty = true; tick();
   }
   function close(){
     if (sel < 0) return;
-    coins[sel].classList.remove('on'); sel = -1; anim = null; card.classList.remove('show'); arc.classList.remove('picked'); dirty = true; tick();
+    coins[sel].classList.remove('on'); flip(sel, false); sel = -1; anim = null; card.classList.remove('show'); arc.classList.remove('picked'); dirty = true; tick();
   }
   coins.forEach(function(c, i){
     c.addEventListener('click', function(e){ e.stopPropagation(); select(i); });
