@@ -1310,10 +1310,12 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
 }
 /* phone home: more air, and the first screen ends before the calculator title (also behind the browser's bars) */
 @media (max-width:640px){
-  html.dai .hero{min-height:calc(100vh - var(--head));min-height:calc(100svh - var(--head));padding-bottom:48px}
-  html.dai .hero .lead{margin:28px 0 44px}
-  html.dai .hero .fee-cards{margin-bottom:48px}
-  html.dai .hero .cta-row{gap:20px}
+  html.dai .hero{min-height:calc(100vh - var(--head) + 56px);min-height:calc(100svh - var(--head) + 56px);padding-top:56px;padding-bottom:56px}
+  html.dai .hero .lead{margin:36px 0 56px}
+  html.dai .hero .fee-cards{margin-bottom:64px}
+  html.dai .hero .cta-row{gap:22px}
+  /* the same faint dot grid as on the computer */
+  html.dai .hero{background-image:linear-gradient(180deg,rgba(11,11,12,0) 40%,var(--bg) 92%),radial-gradient(rgba(255,255,255,.085) 1px,transparent 1.3px);background-size:100% 100%,22px 22px}
 }
 </style>
 </head>
