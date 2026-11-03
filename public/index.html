@@ -2338,7 +2338,9 @@ html.dai main > section#deals{padding-top:clamp(28px,4vh,48px)}
     // one price on the coin: USDT in shekels, every other coin in dollars
     bk.querySelector('.cb-p').textContent = (id === 'tether' && r && r.ils) ? fmt(r.ils, '₪') : priceEl.textContent;
     bk.querySelector('.cb-s').textContent = '';
-    var bc = bk.querySelector('.cb-c'); bc.className = 'cb-c ' + chgEl.className; bc.innerHTML = chgEl.innerHTML;
+    // on the coin only the rise or fall in percent (the side card keeps "24 שעות")
+    var bc = bk.querySelector('.cb-c'), pct = chgEl.querySelector('bdi'); bc.className = 'cb-c ' + chgEl.className;
+    if (pct) bc.innerHTML = pct.outerHTML; else bc.textContent = chgEl.textContent;
     placeCard();
   }
   function select(i){
