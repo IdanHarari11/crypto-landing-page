@@ -15,15 +15,15 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Caesar Change",
-  description: "Caesar Change: Your trusted partner in cryptocurrency exchange.",
+  description: "ממירים שקלים ל־USDT בהעברה בנקאית, ללא עמלות שקל-דולר, ומושכים USDT ישירות לחשבון הבנק.",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" dir="rtl">
+    <html lang="he" dir="rtl">
       <Head>
         <title>Caesar Change</title>
-        <meta name="description" content="Caesar Change: Your trusted partner in cryptocurrency exchange." />
+        <meta name="description" content="ממירים שקלים ל־USDT בהעברה בנקאית, ללא עמלות שקל-דולר, ומושכים USDT ישירות לחשבון הבנק." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
