@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caesar-change.com/sitemap.xml
